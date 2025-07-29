@@ -8,6 +8,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+
   // Skip API routes during build for static export
   skipTrailingSlashRedirect: true,
   skipMiddlewareUrlNormalize: true,

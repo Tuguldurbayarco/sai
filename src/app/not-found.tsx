@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-export const dynamic = "force-dynamic"
+export const dynamic = "force-static";
 
 export default function NotFound() {
   return (
@@ -9,5 +9,5 @@ export default function NotFound() {
       <p>Could not find requested resource</p>
       <Link href="/">Return Home</Link>
     </div>
-  )
+  );
 }
