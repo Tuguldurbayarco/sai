@@ -1,5 +1,5 @@
 import createNextIntlPlugin from "next-intl/plugin";
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,10 +8,18 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-
-  // Skip API routes during build for static export
+  
+  // Remove basePath and assetPrefix to avoid routing issues
+  // GitHub Pages will serve from whatever domain is configured
+  
+  // Static export specific configurations
   skipTrailingSlashRedirect: true,
   skipMiddlewareUrlNormalize: true,
+  
+  // Generate static pages for all locales
+  async generateBuildId() {
+    return 'static-build';
+  },
 };
 
 export default withNextIntl(nextConfig);
