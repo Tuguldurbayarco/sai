@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export"
+    "build:static": "node scripts/build-static.js"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
