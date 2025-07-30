@@ -12,7 +12,7 @@
         "label": "EVENTS"
       },
       {
-        "label": "TOURS"
+        "label": "TOURS" 
       },
       {
         "label": "INFORMATION"
@@ -96,13 +96,6 @@
     "country11": "Taiwan",
     "country12": "USA",
     "country13": "Other"
-  },
-  "Terms": {
-    "title": "TERMS & CONDITIONS",
-    "contract": "YOUR HOLIDAY CONTRACT",
-    "contract_text": "When you book a tour or other travel arrangements our contract with you takes effect when we send you a written Booking Confirmation / Invoice by email. Once the contract is made we are responsible for providing you with the tour you have booked and you are responsible to pay us for it, in each case subject to terms and conditions.",
-    "note": "PLEASE NOTE",
-    "note_text": "It is important to check carefully the Booking Confirmation and the Itinerary of your tour when you receive it that all the details are exactly as you requested. Our responsibility is to provide you with the services you have booked as described in the itinerary and as confirmed to you. If your group consists of two or more people traveling together, the person who makes the tour booking by signing our booking form or otherwise contracting with us accepts the responsibility for making all payments to us for all members of the party. We will send all the documents and other relevant information to the lead guest, and the lead guest is responsible for ensuring that the other members of the party are kept fully informed. If you are aged under 18 /on the departure date/ and your parents or guardians are not traveling with you, we must have their written consent to proceed with the booking."
   },
   "Events": {
     "title": "EVENTS",
@@ -342,19 +335,19 @@
     },
     "visit": "Seasons in Mongolia",
     "seasons": {
-      "title1": "Winter",
-      "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
-      "description1-1": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
-      "title2": "Spring",
-      "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
-      "description2-1": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
-      "title3": "Summer",
-      "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
-      "description3-1": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
-      "title4": "Autumn",
-      "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
-      "description4-1": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
-    },
+        "title1": "Winter",
+        "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
+        "description1-1": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
+        "title2": "Spring",
+        "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
+        "description2-1": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
+        "title3": "Summer",
+        "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
+        "description3-1": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
+        "title4": "Autumn",
+        "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
+        "description4-1": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
+      },
     "weather": {
       "title": "Average weather in Mongolia",
       "text1": "Mongolia's climate can be described has highly continental dominied climate with warm summers and long, dry and very cold winters. Known as \"the land of blue sky\", Mongolia is a very sunny country and has usually about 250 sunny days a year. The country has the world's most typical continental climate with extreme diurnal and annual ranges of temperature. Average temperature in most of the country is below zero from November to March and close to it in April and October. Winter nights of -40°C are common most years (minimum recorded -55°C at lake Uvs). Summer extremes reach as high as +40°C in the Gobi Desert and +33°C in the capital Ulaanbaatar. Monthly temperature variations of +45°C and more are not uncommon in many regions of Mongolia.",
@@ -364,9 +357,9 @@
     }
   },
   "Tours": {
-    "title": "CLASSIC TOURS",
+    "title": "CLASSIC TOURS", 
     "title_on_picture": "TOURS",
-    "individual_title": "INDIVIDUAL TOURS",
+    "individual_title": "INDIVIDUAL TOURS", 
     "subtitle": "TOURS & TRIPS",
     "text": "Traveling to the Mongolia as part of a group has many advantages. You can meet like-minded individuals and make new friends. On top of that, group tours also allow for discounted bundle deals - so you get to enjoy everything Mongolia offer at much more reasonable price.",
     "subtitle1": "INFORMATION ABOUT TOURS",

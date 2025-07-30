@@ -97,13 +97,6 @@
     "country12": "미국",
     "country13": "기타"
   },
-  "Terms": {
-    "title": "이용약관",
-    "contract": "휴가 계약",
-    "contract_text": "투어나 기타 여행 일정을 예약할 때, 우리와의 계약은 이메일로 서면 예약 확인서/송장을 보낼 때 효력이 발생합니다. 계약이 체결되면 우리는 예약한 투어를 제공할 책임이 있고, 귀하는 그에 대한 비용을 지불할 책임이 있으며, 각각 이용약관에 따릅니다.",
-    "note": "주의사항",
-    "note_text": "예약 확인서와 투어 일정을 받았을 때 모든 세부사항이 요청한 대로 정확한지 신중하게 확인하는 것이 중요합니다. 우리의 책임은 일정에 설명되고 확인된 대로 예약한 서비스를 제공하는 것입니다. 그룹이 함께 여행하는 두 명 이상의 사람으로 구성된 경우, 우리 예약 양식에 서명하거나 우리와 계약을 체결하여 투어를 예약하는 사람은 파티의 모든 구성원에 대한 모든 지불을 우리에게 할 책임을 받아들입니다. 우리는 모든 서류와 기타 관련 정보를 대표 손님에게 보낼 것이며, 대표 손님은 파티의 다른 구성원들이 완전히 정보를 받도록 보장할 책임이 있습니다. 출발일 기준으로 18세 미만이고 부모나 보호자가 함께 여행하지 않는 경우, 예약을 진행하기 위해 부모나 보호자의 서면 동의가 있어야 합니다."
-  },
   "Events": {
     "title": "EVENTS",
     "next": "Next",
@@ -342,19 +335,19 @@
     },
     "visit": "Seasons in Mongolia",
     "seasons": {
-      "title1": "Winter",
-      "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
-      "description1-1": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
-      "title2": "Spring",
-      "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
-      "description2-1": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
-      "title3": "Summer",
-      "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
-      "description3-1": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
-      "title4": "Autumn",
-      "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
-      "description4-1": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
-    },
+        "title1": "Winter",
+        "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
+        "description1-1": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
+        "title2": "Spring",
+        "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
+        "description2-1": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
+        "title3": "Summer",
+        "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
+        "description3-1": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
+        "title4": "Autumn",
+        "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
+        "description4-1": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
+      },
     "weather": {
       "title": "Average weather in Mongolia",
       "text1": "Mongolia's climate can be described has highly continental dominied climate with warm summers and long, dry and very cold winters. Known as \"the land of blue sky\", Mongolia is a very sunny country and has usually about 250 sunny days a year. The country has the world's most typical continental climate with extreme diurnal and annual ranges of temperature. Average temperature in most of the country is below zero from November to March and close to it in April and October. Winter nights of -40°C are common most years (minimum recorded -55°C at lake Uvs). Summer extremes reach as high as +40°C in the Gobi Desert and +33°C in the capital Ulaanbaatar. Monthly temperature variations of +45°C and more are not uncommon in many regions of Mongolia.",
@@ -366,7 +359,7 @@
   "Tours": {
     "title": "클래식 투어",
     "title_on_picture": "투어",
-    "individual_title": "개별 투어",
+    "individual_title": "개별 투어", 
     "subtitle": "투어 및 여행",
     "text": "단체로 몽골을 여행하는 것은 많은 장점이 있습니다. 같은 생각을 가진 사람들을 만나고 새로운 친구를 사귈 수 있습니다. 게다가 단체 여행은 할인된 묶음 상품도 제공하므로 모든 것을 즐길 수 있습니다. 몽골을 훨씬 더 합리적인 가격으로 제공합니다.",
     "subtitle1": "투어에 대한 정보",

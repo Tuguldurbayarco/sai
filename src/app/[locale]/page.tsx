@@ -2,25 +2,14 @@ import Slider from "@/components/UI/Slider";
 import Festivals from "@/components/UI/Festivals";
 import Trips from "@/components/UI/Trips";
 import Link from "next/link";
-import { getTranslations } from "next-intl/server";
-import { unstable_setRequestLocale } from "next-intl/server";
+import {getTranslations} from 'next-intl/server';
+import {unstable_setRequestLocale} from 'next-intl/server';
 import IndividualTours from "@/components/UI/IndividualTours";
 import Accommodation from "@/components/UI/Accomodation";
-import { locales } from "@/navigation";
 
-export const dynamic = 'force-static';
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
-
-export default async function Index({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function Index({params: {locale}}: {params: {locale: string}}) {
   unstable_setRequestLocale(locale);
-  const t = await getTranslations("Index");
+  const t = await getTranslations('Index');
   return (
     <main>
       <div>
@@ -28,35 +17,27 @@ export default async function Index({
           <Slider />
         </div>
         <div className="header_container_for_picture">
-          <p className="mainpage_header_on_pictute">
-            {t("title")} <br />
-            {t("subtitle")}
-          </p>
-          <Link
-            href="/contacts/#targetBlock"
-            className="mainpage_link_on_pictute"
-          >
-            {t("link")}
+          <p className="mainpage_header_on_pictute">{t('title')} <br />{t('subtitle')}</p>
+          <Link href="/contacts/#targetBlock" className="mainpage_link_on_pictute">
+            {t('link')}
           </Link>
         </div>
       </div>
-      <div className="visibility_area">
-        <h2 className="tour_items_header trocchi-regular">{t("header")}</h2>
+      <div className="visibility_area" >
+        <h2 className="tour_items_header trocchi-regular">{t('header')}</h2>
         <div>
-          <Festivals />
+          <Festivals/>
         </div>
         <div>
-          <Trips />
+          <Trips/>
         </div>
         <div>
-          <IndividualTours />
+          <IndividualTours/>
         </div>
         <div>
-          <Accommodation
-            params={{
-              locale: "",
-            }}
-          />
+          <Accommodation params={{
+            locale: ""
+          }}/>
         </div>
       </div>
     </main>

@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/build-static.js",
-    "build:server": "next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build:static": "node scripts/build-static.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",

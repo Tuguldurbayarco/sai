@@ -1,14 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import SeasonsSlider from '@/components/UI/SeasonsSlider';
 import {unstable_setRequestLocale} from 'next-intl/server';
-import {locales} from '@/navigation';
 
-export const dynamic = 'force-static';
-
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
 const Visit = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Information');

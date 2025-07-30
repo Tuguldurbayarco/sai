@@ -2,14 +2,7 @@ import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
 import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
-import {locales} from '@/navigation';
 
-export const dynamic = 'force-static';
-
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
 const Khuvsgul1 = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Khuvsgul');

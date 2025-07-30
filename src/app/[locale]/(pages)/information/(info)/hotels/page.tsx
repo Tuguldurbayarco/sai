@@ -1,14 +1,7 @@
 import {unstable_setRequestLocale} from 'next-intl/server';
 import {getTranslations} from 'next-intl/server';
 import '../../../../globals.css';
-import {locales} from '@/navigation';
 
-export const dynamic = 'force-static';
-
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
 const Hotels = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Accommodation')
