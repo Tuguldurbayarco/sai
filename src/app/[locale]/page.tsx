@@ -54,7 +54,7 @@ export default async function Index({
         <div>
           <Accommodation
             params={{
-              locale: "",
+              locale: locale,
             }}
           />
         </div>
