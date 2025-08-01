@@ -151,7 +151,7 @@
       },
       {
         "title": "NAADAM FESTIVAL",
-        "description": "The Naadam Festival is truly one of a kind—a refined and vivid expression of Mongolia’s ancient nomadic heritage. Celebrated with great pride and reverence, it marks national independence through a unique blend of athletic competition and artistic performance. This cherished event brings together the "Three Manly Games" of wrestling, horse racing, and archery, alongside colorful ceremonies and cultural displays. Immerse yourself in the vibrant spirit of Naadam and experience the living traditions of Mongolia in one unforgettable celebration."
+        "description": "The Naadam Festival is truly one of a kind—a refined and vivid expression of Mongolia’s ancient nomadic heritage. Celebrated with great pride and reverence, it marks national independence through a unique blend of athletic competition and artistic performance. This cherished event brings together the \"Three Manly Games\" of wrestling, horse racing, and archery, alongside colorful ceremonies and cultural displays. Immerse yourself in the vibrant spirit of Naadam and experience the living traditions of Mongolia in one unforgettable celebration."
       }
     ],
     "eventContainer": "read more"
@@ -319,14 +319,14 @@
     },
     "visa": {
       "title": "HOW TO GET MONGOLIAN VISA?",
-      "text": "Most visitors need a visa to enter Mongolia, but some countries are visa-exempt for short stays. You can apply for a visa at a Mongolian embassy before your trip. If there isn’t one in your country, you can get a 30-day visa on arrival at the airport or railway station for about $50. We’ll provide an official invitation letter to help with your visa application when you book with us.",
-      "subtitle": "NO Visa Needed For:",
+      "text1": "Most visitors need a visa to enter Mongolia, but some countries are visa-exempt for short stays. You can apply for a visa at a Mongolian embassy before your trip. If there isn’t one in your country, you can get a 30-day visa on arrival at the airport or railway station for about $50. We’ll provide an official invitation letter to help with your visa application when you book with us.",
+      "subtitle1": "NO Visa Needed For:",
 	  "ul1": "Citizens of Belarus, Brazil, Canada, Kazakhstan, Macao, and the USA (up to 3 months)",
       "ul2": "Citizens of Germany, Israel, Japan, Malaysia, Russia, and Turkey (up to 1 month)",
       "ul3": "Citizens of the Philippines (up to 3 weeks)",
       "ul4": "Citizens of Singapore and Hong Kong (up to 2 weeks)",
       "ul5": "Citizens of Cuba (up to 1 month)",
-	  "subtitle": "Diplomatic or Official Passport Holders:",
+	  "subtitle2": "Diplomatic or Official Passport Holders:",
 	  "text": "Visa-free travel is allowed for holders from several countries, including China, Vietnam, Bulgaria, Thailand, Romania, Chile, Laos, Serbia, Czech Republic, Slovakia, Mexico, Hungary, North Korea, and South Korea (usually up to 3 months).",
       "subtitle": "Other Notes:",
 	  "ul6": "Indian travelers need a visa but don’t have to pay the visa fee.",
@@ -549,7 +549,7 @@
     "schedule4-5": "After 15:30 - Climb the sand dunes and ride a camel",
     "schedule4-6": "19:00 - Dinner",
     "day5": "Day 5. Bayanzag",
-    "day5text": "Bayanzag, also known as the Flaming Cliffs, is famous for its red clay formations sculpted by wind and rain over thousands of years. The name Bayanzag means "rich in saxaul," referring to the native desert tree that grows here. In 1922, American paleontologist Roy Chapman Andrews and his team accidentally discovered dinosaur fossils while searching for traces of ancient humans. Their find—dinosaur bones and the world’s first dinosaur eggs—put Bayanzag on the world map as a major paleontological site.",
+    "day5text": "Bayanzag, also known as the Flaming Cliffs, is famous for its red clay formations sculpted by wind and rain over thousands of years. The name Bayanzag means \"rich in saxaul,\" referring to the native desert tree that grows here. In 1922, American paleontologist Roy Chapman Andrews and his team accidentally discovered dinosaur fossils while searching for traces of ancient humans. Their find—dinosaur bones and the world’s first dinosaur eggs—put Bayanzag on the world map as a major paleontological site.",
     "schedule5-1": "08:00 - Breakfast",
     "schedule5-2": "09:00 - Depart for Bayanzag",
     "schedule5-3": "Around 12:00 - Lunch",
@@ -614,7 +614,7 @@
     "schedule13-3": "Around 12:00 - Lunch",
     "schedule13-4": "Around 15:00 - Arrival in the city",
     "schedule13-5": "After 15:30 - Time to relax, explore UB on your own",
-    "schedule13-5": "19:00 - Dinner",
+    "schedule13-6": "19:00 - Dinner",
     "button": "Go to Booking"
   },
   "City": {
