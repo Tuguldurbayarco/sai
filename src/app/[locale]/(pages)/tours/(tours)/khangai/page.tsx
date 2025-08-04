@@ -323,6 +323,7 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule6-2')}</li>
                   <li>{t('schedule6-3')}</li>
                   <li>{t('schedule6-4')}</li>
+                  <li>{t('schedule6-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -377,6 +378,7 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule7-3')}</li>
                   <li>{t('schedule7-4')}</li>
                   <li>{t('schedule7-5')}</li>
+                  <li>{t('schedule7-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -430,6 +432,8 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule8-2')}</li>
                   <li>{t('schedule8-3')}</li>
                   <li>{t('schedule8-4')}</li>
+                  <li>{t('schedule8-5')}</li>
+                  <li>{t('schedule8-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -538,6 +542,7 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule10-1')}</li>
                   <li>{t('schedule10-2')}</li>
                   <li>{t('schedule10-3')}</li>
+                  <li>{t('schedule10-4')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -576,10 +581,6 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
               <div>
                 <p className='tour_left_column_text'>{t('day11text')}</p>
               </div>
-              <div>
-                <p className='tour_left_column_subheader'>{t('attention11')}</p>
-                <p className='tour_left_column_text_sec'>{t('att_desc1')}<br/>{t('att_desc2')}<br/>{t('att_desc3')}</p>
-              </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
@@ -593,6 +594,7 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule11-4')}</li>
                   <li>{t('schedule11-5')}</li>
                   <li>{t('schedule11-6')}</li>
+                  <li>{t('schedule11-7')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -642,10 +644,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule11-1')}</li>
-                  <li>{t('schedule11-2')}</li>
-                  <li>{t('schedule11-3')}</li>
-                  <li>{t('schedule11-4')}</li>
+                  <li>{t('schedule12-1')}</li>
+                  <li>{t('schedule12-2')}</li>
+                  <li>{t('schedule12-3')}</li>
+                  <li>{t('schedule12-4')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>

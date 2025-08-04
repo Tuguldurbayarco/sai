@@ -18,15 +18,6 @@ const Visa = async ({params: {locale}}: {params: {locale: string}}) => {
             <li>{t('visa.ul5')}</li>
             <li>{t('visa.ul6')}</li>
             <li>{t('visa.ul7')}</li>
-            <li>{t('visa.ul8')}</li>
-            <li>{t('visa.ul9')}</li>
-          </ul>
-          <h2 className='visa_text'>{t('visa.subtitle')}</h2>
-          <ul style={{fontWeight: "500"}} className='visa_points'>
-            <li>{t('visa.ul10')}</li>
-            <li>{t('visa.ul11')}</li>
-            <li>{t('visa.ul12')}</li>
-            <li>{t('visa.ul13')}</li>
           </ul>
         </div>
       </div>

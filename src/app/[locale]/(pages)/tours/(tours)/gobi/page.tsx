@@ -35,11 +35,7 @@ const Gobi = async ({params: {locale}}: {params: {locale: string}}) => {
               </div>
               <div>
                 <p className='tour_left_column_text'>{t('day1text')}</p>
-              </div>
-              <div>
-                <p className='tour_left_column_subheader'>{t('attention')}</p>
-                <p className='tour_left_column_text_sec'>{t('attention_desc')}</p>
-              </div>
+              </div>              
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
@@ -105,6 +101,7 @@ const Gobi = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule2-2')}</li>
                   <li>{t('schedule2-3')}</li>
                   <li>{t('schedule2-4')}</li>
+                  <li>{t('schedule2-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -268,6 +265,7 @@ const Gobi = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule5-3')}</li>
                   <li>{t('schedule5-4')}</li>
                   <li>{t('schedule5-5')}</li>
+                  <li>{t('schedule5-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -305,10 +303,6 @@ const Gobi = async ({params: {locale}}: {params: {locale: string}}) => {
               </div>
               <div>
                 <p className='tour_left_column_text'>{t('day6text')}</p>
-              </div>
-              <div>
-                <p className='tour_left_column_subheader'>{t('attention1')}</p>
-                <p className='tour_left_column_text_sec'>{t('att_desc1')} <br/>{t('att_desc2')} <br/>{t('att_desc3')}</p>
               </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}

@@ -36,10 +36,6 @@ const Khuvsgul1 = async ({params: {locale}}: {params: {locale: string}}) => {
               <div>
                 <p className='tour_left_column_text'>{t('day1text')}</p>
               </div>
-              <div>
-                <p className='tour_left_column_subheader'>{t('attention')}</p>
-                <p className='tour_left_column_text_sec'>{t('attention_desc')}</p>
-              </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
@@ -52,6 +48,7 @@ const Khuvsgul1 = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule1-3')}</li>
                   <li>{t('schedule1-4')}</li>
                   <li>{t('schedule1-5')}</li>
+                  <li>{t('schedule1-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -105,6 +102,7 @@ const Khuvsgul1 = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule2-2')}</li>
                   <li>{t('schedule2-3')}</li>
                   <li>{t('schedule2-4')}</li>
+                  <li>{t('schedule2-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -158,6 +156,7 @@ const Khuvsgul1 = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule3-2')}</li>
                   <li>{t('schedule3-3')}</li>
                   <li>{t('schedule3-4')}</li>
+                  <li>{t('schedule3-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -248,10 +247,6 @@ const Khuvsgul1 = async ({params: {locale}}: {params: {locale: string}}) => {
               </div>
               <div>
                 <p className='tour_left_column_text'>{t('day5text')}</p>
-              </div>
-              <div>
-                <p className='tour_left_column_subheader'>{t('attention5')}</p>
-                <p className='tour_left_column_text_sec'>{t('att_desc5_1')}<br/>{t('att_desc5_2')}<br/>{t('att_desc5_3')}<br/>{t('att_desc5_4')}</p>
               </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}

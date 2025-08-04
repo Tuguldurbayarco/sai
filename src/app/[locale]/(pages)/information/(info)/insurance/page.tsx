@@ -10,8 +10,14 @@ const Insurance = async ({params: {locale}}: {params: {locale: string}}) => {
         <h2 className='visa_title'>{t('insurance.title')}</h2>
         <div className='visa_text'>
           <p>{t('insurance.text1')}</p>
+          <br/>
           <p>{t('insurance.text2')}</p>
+          <br/>
           <p>{t('insurance.text3')}</p>
+          <br/>
+          <p>{t('insurance.text4')}</p>
+          <br/>
+          <p>{t('insurance.text5')}</p>
         </div>
       </div>
     </div>

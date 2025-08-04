@@ -15,7 +15,7 @@ const EventContainer = () => {
                 alt='images'
                 width='100%'
                 height='auto'
-                style={{borderRadius: "10px"}}
+                style={{borderRadius: "10px", marginTop:"38px"}}
               />
             </a>
             <div className='events_display_text_cont'>

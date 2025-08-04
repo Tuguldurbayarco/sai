@@ -36,10 +36,6 @@ const Central = async ({params: {locale}}: {params: {locale: string}}) => {
               <div>
                 <p className='tour_left_column_text'>{t('day1text')}</p>
               </div>
-              <div>
-                <p className='tour_left_column_subheader'>{t('attention')}</p>
-                <p className='tour_left_column_text_sec'>{t('att_desc')}</p>
-              </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
@@ -53,7 +49,6 @@ const Central = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule1-4')}</li>
                   <li>{t('schedule1-5')}</li>
                   <li>{t('schedule1-6')}</li>
-                  <li>{t('schedule1-7')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -108,6 +103,7 @@ const Central = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule2-3')}</li>
                   <li>{t('schedule2-4')}</li>
                   <li>{t('schedule2-5')}</li>
+                  <li>{t('schedule2-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
