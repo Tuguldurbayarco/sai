@@ -13,7 +13,7 @@ type Language = {
 const languages: Language[] = [
   { code: 'en', name: 'English', flag: '/g-britain.png', nativeName: 'English' },
   { code: 'ko', name: 'Korean', flag: '/s-korea.png', nativeName: '한국어' },
-  { code: 'hb', name: 'Hebrew', flag: '/israel.svg', nativeName: 'עברית' },
+  { code: 'hb', name: 'Hebrew', flag: '/israel.jpeg', nativeName: 'עברית' },
 ];
 
 export default function LocalSwitcher() {
