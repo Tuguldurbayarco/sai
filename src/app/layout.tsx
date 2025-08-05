@@ -11,7 +11,7 @@ const inter = Roboto({
   weight: "100"
 });
 
-const locales = ['en', 'ko'];
+const locales = ['en', 'ko', 'hb'];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({locale}));

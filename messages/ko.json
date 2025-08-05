@@ -1,18 +1,18 @@
 {
   "Index": {
-    "title": "우리는 여러분께 안전, 자유, 유연성을 약속합니다.",
-    "subtitle": "맞춤형 여행을 만들고 24시간 이내에 가격 견적을 받으세요.",
-    "link": "맞춤형 여행에 대해 자세히 알아보기",
+    "title": "여러분의 안전, 편안함, 자유로운 탐험을 위해 최선을 다하겠습니다.",
+    "subtitle": "맞춤 여행을 만들고 24시간 내로 견적을 받아보세요.",
+    "link": "맞춤 여행 더 알아보기",
     "header": "축제",
     "menu": [
       {
-        "label": "정보"
+        "label": "회사 소개"
       },
       {
         "label": "이벤트"
       },
       {
-        "label": "투어"
+        "label": "투어" 
       },
       {
         "label": "정보"
@@ -25,42 +25,42 @@
     "language2": "한국어"
   },
   "About": {
-    "title": "ABOUT US",
-    "text": "Our company was founded in 2024. We are a young tour company with significant expertise in our field. Despite our relative youth, our team comprises seasoned professionals, each a virtuoso in their craft. Our passion for exploration and dedication to delivering exceptional travel experiences set us apart. With a dynamic blend of creativity, expertise, and unwavering commitment, we craft personalized adventures that exceed expectations. From our knowledgeable guides to our detail-oriented planners, every team member is a master in their field, ensuring your journey is seamless and extraordinary. Join us for a new era of travel, where youth meets expertise, and every adventure is a masterpiece. Welcome to a travel experience like no other, curated by a team of true artisans.",
-    "subtitle": "SAIBAI TOUR",
-    "vehicle": "OUR VEHICLES",
-    "cars_desc": "몽골의 도로는 비포장도로와 자연적 특별한 요인으로 인해 국제적으로 인증된 최고의 내구성에 차량을 여행 서비스에 제공하고 있음니다. 사이바이투어는 여행자의 안전과 편안함을 위해 다양한 오프로드 및 온로드 차량을 제공합니다.",
-    "goals_header": "OUR GOALS",
-    "mission": "OUR MISSION",
+    "title": "회사 소개",
+    "text": "우리 회사는 2024년에 설립되었습니다. 비록 젊은 여행사이지만, 우리 팀은 수년간의 경험과 진정한 열정을 가지고 있습니다. 각 분야의 전문가들이 모여 독특하고 매끄러운 여행 경험을 제공합니다. 열정적인 가이드부터 세심한 플래너까지, 모든 디테일을 중요하게 생각합니다. 새로운 모험을 제공하기 위해 여기 있습니다. 마음과 기술로 만든 여행을 함께 발견해보세요. 특별한 여정에 오신 것을 환영합니다!",
+    "subtitle": "사이바이 투어",
+    "vehicle": "우리의 차량",
+    "cars_desc": "몽골의 도로는 대부분 비포장이며 자연 조건으로 인해 도전적일 수 있습니다. 그래서 우리는 안전하고 내구성 있는 차량을 제공합니다. 러시아 군용 밴부터 현대적인 4x4와 대형 버스까지 다양한 차량을 보유하고 있습니다.",
+    "goals_header": "우리의 목표",
+    "mission": "우리의 사명",
     "mission_desc": [
       {
-        "title": "Cooperates with local & global partners (as connecting local communities to global market & international businesses to micro-entrepreneurs)"
+        "title": "의미 있는 여행을 만들어 몽골의 최고를 경험할 수 있도록 하는 것"
       },
       {
-        "title": "Deals with groups & FITs (in order maximize benefits to our clients and minimize impacts to environment we keep maximum number of parties up to 14pax in our adventure treks)"
+        "title": "여행자와 현지 문화를 연결하고 지역 사회를 지원하는 것"
       },
       {
-        "title": "Offers tailor made programs & set itineraries ( there is always flexibilities in our tours even those operate according to set itineraries )"
+        "title": "환경 영향을 최소화하고 몽골의 자연과 문화 유산을 보존하는 지속 가능한 관광을 촉진하는 것"
       },
       {
-        "title": "Sells exclusives & budgets (we value all our tours with luxury content and authentic experience at best and reasonable prices)"
+        "title": "고객의 기대를 뛰어넘는 맞춤형 여행 경험을 제공하는 것"
       },
       {
-        "title": "Generates happy and satisfied clients (we do our best efforts to make our clients enjoyed with the services as getting over their expectations. In serving our clients before, during and after a trip we strive to build a complete satisfaction)"
+        "title": "매 여행 전, 중, 후에 탁월한 서비스와 진정한 관심으로 고객과 오래가는 관계를 구축하는 것"
       }
     ],
-    "team": "SKILLED TEAM",
-    "team_desc": "As a service orientated company, we have 4 permanent staff employ full time at the office and over 30 personnel throughout the country who employ during the main travel season. All our staff are well trained, in-depth experienced and possess good knowledge for local areas and host & guest's expectations. Our managers who are responsible for different language speaking markets as English, Korean, Chinese, Russian and Japanese, communicate efficiently with our partners, speedily creating and helping to plan custom-made itineraries of unique travel products due to their clients' wishes, and offering at most reasonable and attractive net prices. Guides and local tour leaders are the most important element of safe and enjoyable adventures. Our guides/tour leaders speak English, Korean, Russian, Japanese and Chinese languages.",
-    "staff": "OFFICE STAFF",
-    "staff_desc": "Saibai Tour is a specialist tour operator offering the best holidays in Mongolia. There are 4 permanent staff employes full time at the office. Saibai Tour has own network of an extensive supply chain operating across the country, made up of many different stakeholders such as nomadic communities, multilingual guides, tourist camps, transportation providers, restaurants, hoteliers, entertainment and leisure enterprises. Our attention to detail and personal approach will make your trip unforgettable. We are always on call to assist you with any requests or questions that you may have. All our staff are well trained, in-depth experienced and possess good knowledge for local areas and host & guest's expectations."
+    "team": "숙련된 팀",
+    "team_desc": "서비스 중심의 회사로서, 우리는 여행 시즌 동안 전국에서 35명 이상의 풀타임 및 파트타임 직원이 활동합니다. 모든 팀원은 현지 지역과 호스트 및 게스트의 요구에 대해 깊이 이해하고 있습니다. 영어, 한국어, 중국어, 러시아어, 일본어를 구사하는 관리자들이 고객의 요구에 맞춘 맞춤형 일정을 빠르게 설계합니다.",
+    "staff": "사무실 직원",
+    "staff_desc": "사이바이 투어는 몽골에서 최고의 휴가를 제공하는 전문 여행사입니다. 우리 팀은 네 명의 풀타임 사무실 직원과 광범위한 파트너 네트워크로 구성되어 있습니다. 현지 가이드부터 호텔, 레스토랑까지 모든 세부 사항을 챙깁니다."
   },
   "Contacts": {
-    "title": "회사 소개",
-    "header": "사이바이 투어에 문의하세요",
-    "text": "우리의 친절하고 경험이 풍부한 직원은 항상 여행 상품 및 서비스에 대한 귀하의 질문에 답변할 준비가 되어 있습니다. 아래 양식을 작성해 주시면 매우 빠른 속도로 연락드리겠습니다.",
-    "second": "요청을 남겨주세요",
-    "third": "요청해주시면 연락드리겠습니다.",
-    "fourth": "Google 지도에서 보기",
+    "title": "연락처",
+    "header": "사이바이 투어와 연락하기",
+    "text": "우리의 친절하고 경험 많은 팀은 항상 여행 상품과 서비스에 대한 질문에 답변할 준비가 되어 있습니다. 아래 양식을 작성해주시면 빠르게 답변드리겠습니다.",
+    "second": "요청사항을 남겨주세요",
+    "third": "곧 연락드리겠습니다.",
+    "fourth": "구글 지도에서 보기",
     "formHeader": "예약 양식",
     "name": "이름",
     "first": "이름",
@@ -68,20 +68,20 @@
     "email": "이메일",
     "country": "국가",
     "tour": "투어",
-    "number": "전화 번호",
+    "number": "참가자 수",
     "message": "메시지",
-    "agree": "이용약관에 동의합니다",
+    "agree": "약관에 동의합니다",
     "button": "양식 보내기",
     "choice": "-선택-",
     "disabled_mask1": "클래식 투어",
     "choice1": "시티 투어",
     "choice2": "고비 투어",
     "choice3": "중앙 투어",
-    "choice4": "쿠브스굴 호수 투어",
-    "choice5": "고비항가이 투어",
+    "choice4": "후브스굴 호수 투어",
+    "choice5": "고비-항가이 투어",
     "disabled_mask2": "개별 투어",
     "choice6": "말 투어",
-    "choice7": "알타이 타반 복드 투어",
+    "choice7": "알타이 타반 보그드 투어",
     "choice8": "순록 목동 투어",
     "country1": "대한민국",
     "country2": "중국",
@@ -98,28 +98,28 @@
     "country13": "기타"
   },
   "Events": {
-    "title": "EVENTS",
-    "next": "Next",
-    "previous": "Previous",
+    "title": "이벤트",
+    "next": "다음",
+    "previous": "이전",
     "camel-festival": {
-      "title": "Camel festival",
-      "text": "This thrilling festival was first initiated in 1997 by the locals of Umnugovi Province to celebrate Mongolian camels and protect the species, the rich Mongolian camel breeding heritage to the next generation."
+      "title": "낙타 축제",
+      "text": "몽골 남부의 광활한 지역에서 열리는 '천 마리 낙타 축제'는 몽골의 상징적인 동물인 바크트리아 낙타를 기리는 독특한 겨울 축제입니다. 1997년 지역 목동들과 비정부 기구의 협력으로 시작되었으며, 낙타 개체 수 감소에 대한 인식을 높이고 전통을 보존하기 위해 마련되었습니다. 이제는 국내외 관광객들이 모이는 주요 행사로 자리매김했습니다."
     },
     "eagle-festival": {
-      "title": "Eagle festival",
-      "text": "Join the Kazakh Eagle Hunters on a hunt during the cold winter months. The Kazakhs use eagles to hunt for foxes and hares that are easy to see against the snow. For those who do, seeing an eagle released from a man's forearm swoop down and kill a fox a mile away is a truly unforgettable experience."
+      "title": "독수리 축제",
+      "text": "몽골 서부의 알타이 산맥에서 매년 열리는 독수리 축제는 카자흐 독수리 사냥꾼들이 모여 전통을 기리는 행사입니다. 독수리의 속도, 정확성, 아름다움을 겨루는 이 축제는 인간과 새 사이의 깊은 유대를 보여줍니다."
     },
     "ice-festival": {
-      "title": "Ice festival",
-      "text": "Nomadic reindeer herders and shamans show off their cultural performances, such as art, music and shaman rituals. This Ice Festival has been developing year by year. International visitors come to the Festival to capture scenic images and experience nomadic culture."
+      "title": "얼음 축제",
+      "text": "후브스굴 호수에서 매년 3월에 열리는 얼음 축제는 지역 주민들과 순록 목동들이 모여 문화와 자연을 축하하는 행사입니다. 겨울 스포츠와 전통 경기가 펼쳐지며, 순록 목동들의 독특한 문화를 경험할 수 있는 기회를 제공합니다."
     },
     "naadam-festival": {
-      "title": "Naadam festival",
-      "text": "The core of the festival - three manly sports - the wrestling, horse-racing and archery embrace many elements of art, such as singing, dancing and performing. Nomadic Mongolians have known when to throw the parties. Naadam Festival is held in the most enjoyable month of the most pleasant season in the country."
+      "title": "나담 축제",
+      "text": "몽골의 가장 상징적인 국경일인 나담 축제는 7월 11일부터 13일까지 열립니다. 씨름, 말 경주, 양궁 등 '3대 남자 경기'가 펼쳐지며, 몽골의 독립과 문화적 자부심을 축하합니다."
     },
     "tsagaan-sar": {
-      "title": "Tsagaan Sar",
-      "text": "Winter in Mongolia is a remarkable experience for those willing to take themselves outside of their comfort zone. Pack your thermals and come to Mongolia this winter and do something a little out of the ordinary. Come and enjoy being part of a minority who visit Mongolia in the winter and actually interact with the local people."
+      "title": "차강 사르",
+      "text": "차강 사르는 몽골의 가장 중요한 전통 명절로, 겨울의 끝과 봄의 시작을 알립니다. 가족들이 모여 과거를 반성하고 새로운 해를 따뜻하게 맞이합니다. 전통 의상을 입고, 어른들에게 존경의 인사를 올리며, 전통 음식을 나눕니다."
     },
     "festivals": [
       {
@@ -134,169 +134,171 @@
     ],
     "event-container": [
       {
-        "title": "TSAGAAN SAR",
-        "description": "Tsagaan Sar /White Month/ takes place in the beginning of spring and is the biggest annual celebration in Mongolia. We recommend you to experience this festival and discover your memorable trip. Immerse yourself in the rich cultural traditions, taste traditional foods, and enjoy vibrant festivities that showcase Mongolia's unique heritage and hospitality."
+        "title": "차강 사르",
+        "description": "차강 사르는 몽골의 음력 새해로, 가장 중요한 명절입니다. 봄의 시작을 알리며, 가족들이 모여 전통을 이어갑니다. 전통 음식인 '부즈'를 맛보고, 화려한 몽골 전통 의상을 입고, 오랜 세월 이어온 의식에 참여할 수 있습니다."
       },
       {
-        "title": "CAMEL FESTIVAL",
-        "description": "Travel south to the Gobi Desert to attend the renowned \"Thousand Camel Festival\", one of the most famous winter festivals globally. Organized by a local non-governmental organization dedicated to protecting and preserving the Bactrian camel population, the festival aims to raise awareness about the decline of these majestic creatures over the past twelve years."
+        "title": "낙타 축제",
+        "description": "전설적인 고비 사막에서 열리는 천 마리 낙타 축제는 세계에서 가장 독특한 겨울 행사 중 하나입니다. 이 행사는 멸종 위기에 처한 바크트리아 낙타를 보호하기 위해 마련되었습니다."
       },
       {
-        "title": "EAGLE FESTIVAL",
-        "description": "Every year, the eagle hunters of the Altai Mountains in western Mongolia take part in a competition to determine the best among the 90 to 100 competing eagles. The competition assesses their speed, agility, beauty, and hunting skills, showcasing the remarkable bond between the hunters and their majestic eagles."
+        "title": "독수리 축제",
+        "description": "매년 몽골의 알타이 산맥에서 독수리 사냥꾼들이 모여 최고의 독수리를 가리는 경쟁을 벌입니다. 이 축제는 사냥꾼과 독수리 사이의 깊은 유대를 보여주는 행사입니다."
       },
       {
-        "title": "ICE FESTIVAL",
-        "description": "Local communities gather on the lake for the winter Ice Festival. Several winter and cultural activities are held each year, such as ice skating, horse sleigh racing, ice sumo, and traditional winter games and competitions. It's a wonderful opportunity to embrace the winter spirit and engage in the vibrant festivities with the community."
+        "title": "얼음 축제",
+        "description": "매년 겨울, 후브스굴 주의 지역 사회가 얼어붙은 호수 위에서 얼음 축제를 개최합니다. 이 행사에는 다양한 겨울 스포츠와 전통 경기가 펼쳐집니다."
       },
       {
-        "title": "NAADAM FESTIVAL",
-        "description": "The Naadam Festival is the only one of its kind; it is a sophisticated and eloquent expression of nomadic culture. It is a revered celebration of national independence, embodying an exceptional combination of arts and sports. Immerse yourself in the rich traditions and vibrant festivities of this unique event."
+        "title": "나담 축제",
+        "description": "나담 축제는 몽골의 고유한 유목 문화를 생생하게 표현한 행사입니다. 씨름, 말 경주, 양궁 등 3대 남자 경기가 펼쳐지며, 화려한 의식과 문화 공연이 함께합니다."
       }
     ],
-    "eventContainer": "read more"
+    "eventContainer": "더 보기"
   },
   "Information": {
-    "title": "ABOUT MONGOLIA",
-    "subtitle": "MONGOLIA BASIC INFORMATION",
-    "text": "Mongolia is truly one of the world's last undiscovered travel destinations and the safest country to visit. It is a land where you can experience wide-open spaces, cobalt blue skies, forests, deserts, crystal clear rivers and lakes, and the traditional hospitality of the nomads. Permanent dwellings are few and far between, fences are even fewer and the land is owned by the people, like one large National Park. As a tremendous destination to experience the outdoors, Mongolia also boasts of a unique history dating back to the Mongol Empire of Ghinggis Khaan. Simply put, it is a land of adventure, horses, nomads, and the blue sky.",
-    "subtitle2": "Travel options",
-    "cuisine": "Mongolian cuisine",
-    "cuisine_desc": "Indulge in the exquisite flavors of Mongolian cuisine, a symphony of flavors rooted in the bounties of the land. From savory meat delicacies and creamy dairy wonders to the infusion of aromatic herbs and luscious berries, our cuisine paints a vivid portrait of tradition and nature's abundance. Explore the tapestry of Mongolian gastronomy, where each bite is a harmonious blend of local ingredients, echoing the rich cultural heritage. Immerse yourself in the diverse palette of our culinary offerings, a journey that unveils the essence of Mongolia's culinary treasures.",
-    "culture": "Mongolian culture",
-    "culture_desc": "Embark on an enchanting journey to Mongolia, a hidden gem among travel destinations. This extraordinary land beckons with its untouched beauty and unparalleled safety. Picture vast expanses of open landscapes, where azure skies stretch over pristine forests, deserts, and crystalline rivers. Experience the genuine hospitality of nomadic communities, where permanent dwellings are scarce, and the land resembles one vast National Park. Mongolia, a haven for outdoor enthusiasts, reveals a rich history dating back to the legendary Mongol Empire of Genghis Khan. Brace yourself for an adventure filled with majestic horses, nomadic traditions, and the endless embrace of the blue sky. Uncover the allure of Mongolia - a land waiting to captivate your heart.",
-    "cashmere": "Mongolian cashmere",
-    "kashmere_desc": "Explore the epitome of luxury with Mongolia's finest cashmere, renowned for its exquisite quality and unmatched softness. Immerse yourself in the world of premium leather goods, where Mongolian craftsmanship takes center stage. From buttery-soft leather accessories to durable and stylish products, Mongolia showcases the artistry of its skilled artisans. Indulge in the allure of cashmere and leather, a testament to Mongolia's commitment to producing the highest quality and most refined goods, offering you an unparalleled blend of comfort and sophistication. Discover the touch of elegance that only the best Mongolian cashmere and leather goods can provide.",
-    "museum": "Museums and Galleries in Ulaanbaatar",
+    "title": "몽골 정보",
+    "subtitle": "기본 정보",
+    "text": "몽골은 세계에서 가장 안전하고 손길이 닿지 않은 여행지 중 하나입니다. 끝없는 초원, 숲, 사막, 호수, 강이 어우러진 이 나라는 전통적인 유목민의 환대가 살아 있습니다. 도시 개발이 늦게 시작되어 자연이 잘 보존되어 있으며, 국립 공원처럼 열려 있습니다. 칭기즈 칸의 유산이 여전히 민족 정체성을 형성하고 있는 몽골은 모험, 유목민, 말이 있는 푸른 하늘 아래의 땅입니다.",
+    "subtitle2": "여행 옵션",
+    "cuisine": "몽골 요리",
+    "cuisine_desc": "몽골 요리는 유목 생활 방식과 땅에 깊이 연결된 풍부하고 푸짐한 맛을 자랑합니다. 부드러운 고기 요리부터 크리미한 유제품까지, 각 식사는 광활한 초원과 변화하는 계절이 형성한 삶의 방식을 반영합니다.",
+    "culture": "몽골 문화",
+    "culture_desc": "몽골은 독특하고 환영하는 목적지입니다. 끝없는 초원, 사막, 맑은 강, 푸른 숲이 넓은 푸른 하늘 아래 펼쳐집니다. 유목민들은 방문객을 따뜻하게 맞이하며, 영구적인 주거지가 드문 이 땅은 하나의 큰 국립 공원처럼 느껴집니다.",
+    "cashmere": "몽골 캐시미어",
+    "kashmere_desc": "세계적으로 유명한 몽골의 최고급 캐시미어를 경험해보세요. 부드럽고 고품질의 캐시미어와 가죽 제품은 몽골 장인들의 기술과 세심한 주의를 보여줍니다.",
+    "museum": "울란바토르의 박물관과 갤러리",
     "museum_list": [
       {
-        "title": "National Museum of History"
+        "title": "칭기즈 칸 국립 박물관"
       },
       {
-        "title": "Zanabazar Museum of Fine Arts"
+        "title": "몽골 국립 박물관"
       },
       {
-        "title": "Bogd Khaan Winter Palace Museum"
+        "title": "자나바자르 미술관"
       },
       {
-        "title": "Choijin Lama Temple Museum"
+        "title": "복드 칸 궁전 박물관"
       },
       {
-        "title": "The Central Museum of Mongolian Dinosaurs"
+        "title": "초이진 라마 사원 박물관"
       },
       {
-        "title": "International Intellectual Museum"
+        "title": "몽골 중앙 공룡 박물관"
       },
       {
-        "title": "Mongolian National Modern Art Gallery"
+        "title": "국제 지적 박물관"
       },
       {
-        "title": "976 Art Gallery"
+        "title": "몽골 국립 현대 미술관"
       },
       {
-        "title": "Red Ger Art Gallery"
+        "title": "976 아트 갤러리"
       },
       {
-        "title": "Art Mongolia"
+        "title": "레드 게르 아트 갤러리"
       },
       {
-        "title": "Buddhist Temples and Monasteries in UB"
+        "title": "아트 몽골리아"
       }
     ],
-    "temple": "Temples",
+    "temple": "사원",
     "temple_list": [
       {
-        "title": "Gandan Monastery"
+        "title": "간단 수도원"
       },
       {
-        "title": "Dashchoilon Monastery"
+        "title": "다쇼일린 수도원"
       },
       {
-        "title": "Geser Temple"
+        "title": "게세르 사원"
       }
     ],
-    "music": "Music, Ballet, Musical, Plays in UB",
+    "music": "울란바토르의 음악, 발레, 뮤지컬, 연극",
     "music_list": [
       {
-        "title": "Tumen Enkh National Song & Dance Ensemble"
+        "title": "투멘 엥크 국립 가무 앙상블"
       },
       {
-        "title": "State Opera & Ballet Theatre"
+        "title": "국립 오페라 및 발레 극장"
       },
       {
-        "title": "UB Fat Cat Jazz Club"
+        "title": "UB 팻 캣 재즈 클럽"
       },
       {
-        "title": "National Academic Drama Theatre"
+        "title": "국립 학술 드라마 극장"
       },
       {
-        "title": "Gandan Live House (bar)"
+        "title": "간단 라이브 하우스 (바)"
       }
     ],
-    "restaurante": "Restaurants & chains",
+    "restaurante": "레스토랑 & 체인점",
     "restaurante_list": [
       {
-        "title": "Contemporary & classy: Rosewood, Choijin Lama Temple, Zoma Kitchen & Bar, Route 22"
+        "title": "현대적 & 고급스러운: 로즈우드, 초이진 라마 사원, 조마 키친 & 바, 루트 22"
       },
       {
-        "title": "Cozy &western: Green zone, Café 40k"
+        "title": "아늑한 & 서양식: 그린 존, 카페 40k"
       },
       {
-        "title": "Mongolian: Modern Nomads, Mongol Zoog, Asiana"
+        "title": "몽골식: 모던 노마드, 몽골 조그, 아시아나"
       },
       {
-        "title": "Vegetarian & Vegan: Rosewood, Bluefin Cuisine D’Art, Luna Blanca, Foody (Shangri-la mall)"
+        "title": "채식 & 비건: 로즈우드, 블루핀 퀴진 다르트, 루나 블랑카, 푸디 (상그릴라 몰)"
       },
       {
-        "title": "Western Chain: KFC, Burger King, Pizza hut"
+        "title": "서양 체인점: KFC, 버거 킹, 피자 헛"
       },
       {
-        "title": "Korean: Uri Shigdan, Bon juk, Dony Pork"
+        "title": "한식: 우리 식당, 본죽, 돈이 포크"
       },
       {
-        "title": "Western & Italian: Verranda, Silk Road"
+        "title": "서양 & 이탈리아식: 베란다, 실크 로드"
       },
       {
-        "title": "Burger places: Ruby room, The birch"
+        "title": "버거 장소: 루비 룸, 더 버치"
       },
       {
-        "title": "Western Cheese & Wine: MACU Fromagerie"
+        "title": "서양 치즈 & 와인: MACU 프로마즈리"
       },
       {
-        "title": "Japanese: Miko, Sakura bakery"
+        "title": "일식: 미코, 사쿠라 베이커리"
       },
       {
-        "title": "Indian: Delhi Dalbar, Hazara"
+        "title": "인도식: 델리 달바르, 하자라"
       },
       {
-        "title": "Hot Pot: The Bull, Momo Hotpot"
+        "title": "핫팟: 더 불, 모모 핫팟"
       },
       {
-        "title": "Artsy coffee & food: Exhibition Coffee Bar, Pastel"
+        "title": "아트 커피 & 음식: 엑시비션 커피 바, 파스텔"
       },
       {
-        "title": "Peruvian: Nazca Taste of Peru"
+        "title": "페루식: 나스카 테이스트 오브 페루"
       }
     ],
     "transport": [
       {
-        "title": "Train ticket",
-        "description": "The Trans-Siberian Railway is the longest continuous rail line on earth, a 'bucket list' entry for every savvy traveler. The total distance by rail from Beijing to St. Petersburg, Russia, is 7925 km. The world's most famous railway route runs between Moscow - Ulaanbaatar - Beijing. You can start your trip at any of these points, and immerse yourself in three completely different cultures."
+        "title": "기차 티켓",
+        "description": "시베리아 횡단 철도는 세계에서 가장 긴 연속 철도 노선으로, 모스크바, 울란바타르, 베이징을 연결합니다. 이 전설적인 노선을 따라 세 가지 독특한 문화를 경험할 수 있습니다."
       },
       {
-        "title": "Car rent",
-        "description": "Explore Mongolia with comfort and flexibility by renting a car from our travel agency. Our fleet offers a diverse range of vehicles, from rugged 4x4s for off-road adventures to comfortable sedans for city exploration. Enjoy the freedom to set your own itinerary and discover the breathtaking landscapes of Mongolia at your own pace."
+        "title": "차량 렌탈",
+        "description": "우리 여행사를 통해 운전자와 함께 또는 없이 차량을 렌트하세요. 거친 지형에 적합한 4x4부터 도시 여행에 적합한 세단까지 다양한 차량을 선택할 수 있습니다."
       },
       {
-        "title": "Flights",
-        "description": "Experience the skies above Mongolia with our efficient and convenient air travel services. Fly effortlessly to your desired destinations on our modern and well-maintained fleet of aircraft. Whether you're planning a quick domestic hop or an international adventure, our airline offers a range of routes to suit your travel needs."
+        "title": "항공편",
+        "description": "몽골의 하늘을 효율적이고 편리하게 여행하세요. 국내 여행이나 독특한 항공 모험을 계획할 수 있습니다."
       }
     ],
     "insurance": {
-      "title": "Travel Insurance",
-      "text1": "Travel insurance for independent travelers and intrepid families. You'd rather not think about all of the things that might go wrong on your trip, but these things can and do happen.",
-      "text2": "World Nomads travel insurance has been designed by travelers for travelers, to cover your trip essentials. Even if you run out of travel insurance or leave without it, World Nomads can cover you. We don't just keep you and your family protected, with us, you'll travel smarter and safer.",
-      "text3": "You can buy, extend and claim online, even after you've left home. Travel insurance from WorldNomads.com is available to people from over 150 countries. It's designed for adventurous travelers with cover for overseas medical, evacuation, baggage and a range of adventure sports and activities."
+      "title": "여행 보험",
+      "text1": "사이바이 투어에서는 예상치 못한 상황에 대비해 여행 보험을 적극 권장합니다. 몽골은 인구 밀도가 매우 낮고, 도시 사이의 거리가 멀며, 외진 지역에서는 응급 서비스에 접근하기 어렵습니다.",
+      "text2": "의료 후송(메디백)을 포함한 포괄적인 여행 보험을 구매하시기 바랍니다.",
+      "text3": "적절한 보험은 의료 비상 사태, 여행 중단, 분실된 수하물 또는 지연에 대한 보호를 제공합니다.",
+      "text4": "어떤 보험을 선택해야 할지 모르겠다면 언제든지 문의해주세요. 신뢰할 수 있는 여행 보험 제공자를 추천해 드리겠습니다.",
+      "text5": "여러분의 안전과 안녕이 우리의 최우선 과제입니다."
     },
     "phone": {
       "title": [
@@ -304,113 +306,111 @@
           "title": "G-Mobile"
         },
         {
-          "title": "Unitel"
+          "title": "유니텔"
         },
         {
-          "title": "Skytel"
+          "title": "스카이텔"
         },
         {
-          "title": "Mobicom"
+          "title": "모비콤"
         }
       ],
-      "text": "Unitel, G-Mobile, Mobicom, and Skytel are prominent mobile providers in Mongolia. Unitel boasts extensive coverage and high-speed data services. G-Mobile focuses on affordable plans and innovative offerings. Mobicom, a pioneer, offers diverse telecom solutions. Skytel, known for reliability, excels in communication services and cutting-edge technologies. Together, they shape Mongolia's dynamic mobile landscape."
+      "text": "유니텔, G-Mobile, 모비콤, 스카이텔은 몽골의 주요 모바일 제공자입니다. 유니텔은 광범위한 커버리지와 고속 데이터 서비스를 자랑합니다. G-Mobile은 저렴한 요금과 혁신적인 서비스에 중점을 둡니다. 모비콤은 다양한 통신 솔루션을 제공하며, 스카이텔은 신뢰성과 최신 기술로 유명합니다."
     },
     "visa": {
-      "title": "HOW TO GET MONGOLIAN VISA?",
-      "text": "Visa is required for all, except citizens of the following countries. Visas are available from the Mongolian embassy in your country. If there is no Mongolia embassy in your country, one month visas can be obtained on the spot once you arrive at the airport or railway station. There will also be a visa fee of $50. We will supply an official confirmation letter (by email or post) for your visa application once you book a travel service with us.",
-      "ul1": "Belarus, Brazil, Canada, Kazakhstan, Macao,USA - no need a visa for a visit not exceeding three months",
-      "ul2": "German, Israel, Japan, Malaysia, Russia,Turkey - no need a visa for a visit not exceeding one month",
-      "ul3": "Philippines - no need a visa for a visit not exceeding three weeks",
-      "ul4": "Singapore ,Hong Kong- no need a visa for a visit not exceeding two weeks",
-      "ul5": "People's Republic of China, Vietnam, Bulgaria, Thailand, Romania and Chile - who has diplomatic or official passport -no need a visa for a visit",
-      "ul6": "Laos, Yugoslavia, Czech, Slovak, Mexico -who has diplomatic or official passport -no need a visa for a visit not exceeding three months",
-      "ul7": "Hungary, Democratic People's Republic of Korea, Republic of Korea - who has diplomatic or official passport -no need a visa for a visit not exceeding three month",
-      "ul8": "India - needs Mongolian visa without visa fee",
-      "ul9": "Cuba - no need a visa for a visit not exceeding one month Mongolian visas are issued by Mongolian Diplomatic Missions abroad or upon arrival at a special request. The Mongolian Embassies Abroad list",
-      "subtitle": "THE FOLLOWING MATERIALS ARE REQUIRED TO OBTAIN MONGOLIAN VISA:",
-      "ul10": "VALID PASSPORT",
-      "ul11": "ONE PASSPORT SIZED PHOTO",
-      "ul12": "APPLICATION FORM PDF (VISA APPLICATION FORM) (VISA APPLICATION FORM FOR TOURIST)",
-      "ul13": "EITHER AN INVITATION OF THE RECEIVING ENTITY (STATE, GOVERNMENT, NON-GOVERNMENTAL ORGANIZATION, BUSINESS ENTITY) OR AN OFFICIAL REQUEST OF THE SENDING COUNTRY AND THE ORGANIZATION."
+      "title": "몽골 비자 받는 방법",
+      "text1": "대부분의 방문객은 몽골 입국을 위해 비자가 필요하지만, 일부 국가는 단기 체류 시 비자가 면제됩니다. 몽골 대사관에서 비자를 신청할 수 있습니다. 귀하의 국가에 대사관이 없는 경우, 공항이나 기차역에서 약 $50의 도착 비자를 발급받을 수 있습니다. 예약 시 공식 초청장을 제공해 드립니다.",
+      "subtitle1": "비자 면제 국가:",
+      "ul1": "벨라루스, 브라질, 캐나다, 카자흐스탄, 마카오, 미국 (최대 3개월)",
+      "ul2": "독일, 이스라엘, 일본, 말레이시아, 러시아, 터키 (최대 1개월)",
+      "ul3": "필리핀 (최대 3주)",
+      "ul4": "싱가포르, 홍콩 (최대 2주)",
+      "ul5": "쿠바 (최대 1개월)",
+      "subtitle2": "외교 또는 공무 여권 소지자:",
+      "text": "중국, 베트남, 불가리아, 태국, 루마니아, 칠레, 라오스, 세르비아, 체코, 슬로바키아, 멕시코, 헝가리, 북한, 대한민국 (일반적으로 최대 3개월) 등 여러 국가의 외교 또는 공무 여권 소지자는 비자 없이 입국할 수 있습니다.",
+      "subtitle": "기타 참고 사항:",
+      "ul6": "인도 여행자는 비자가 필요하지만 비자 수수료는 면제됩니다.",
+      "ul7": "여행 전 항상 최신 정보를 확인하시기 바랍니다."
     },
-    "visit": "Seasons in Mongolia",
+    "visit": "몽골의 계절",
     "seasons": {
-        "title1": "Winter",
-        "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
-        "description1-1": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
-        "title2": "Spring",
-        "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
-        "description2-1": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
-        "title3": "Summer",
-        "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
-        "description3-1": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
-        "title4": "Autumn",
-        "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
-        "description4-1": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
+        "title1": "겨울",
+        "description1": "몽골의 겨울은 극심한 추위로, 기온이 -20에서 -35°C까지 떨어집니다. 눈 덮인 풍경은 초현실적이고 숨막히는 경험을 제공합니다.",
+        "description1-1": "가혹한 조건에도 불구하고, 몽골의 겨울은 문화 체험, 겨울 스포츠, 유목민들의 강인함을 목격할 수 있는 독특한 기회를 제공합니다.",
+        "title2": "봄",
+        "description2": "몽골의 봄은 3월부터 5월까지이며, 기온이 0에서 20°C로 상승합니다. 겨울잠에서 깨어난 풍경은 생기 넘치는 꽃들로 장식됩니다.",
+        "description2-1": "온화한 날씨는 야외 활동과 문화 탐험에 이상적이며, 유목민의 삶을 경험할 수 있는 완벽한 시기입니다.",
+        "title3": "여름",
+        "description3": "몽골의 여름은 6월부터 8월까지이며, 기온이 20에서 35°C까지 올라갑니다. 광활한 초원과 아름다운 풍경이 펼쳐지며, 야외 모험과 문화 탐험에 이상적인 계절입니다.",
+        "description3-1": "고비 사막의 최고 기온은 이 기간 동안 +58도까지 올라갈 수 있습니다. 유목민들은 이 달 동안 전통적인 삶의 방식을 보여줍니다.",
+        "title4": "가을",
+        "description4": "몽골의 가을은 9월부터 11월까지이며, 기온이 5에서 15°C 사이입니다. 화려한 여름 색채가 점점 사라지며, 풍경은 황금과 호박색의 매혹적인 캔버스로 변합니다.",
+        "description4-1": "이 계절은 선선한 공기와 숨막히는 풍경이 어우러져 문화 탐험과 야외 활동에 이상적입니다."
       },
     "weather": {
-      "title": "Average weather in Mongolia",
-      "text1": "Mongolia's climate can be described has highly continental dominied climate with warm summers and long, dry and very cold winters. Known as \"the land of blue sky\", Mongolia is a very sunny country and has usually about 250 sunny days a year. The country has the world's most typical continental climate with extreme diurnal and annual ranges of temperature. Average temperature in most of the country is below zero from November to March and close to it in April and October. Winter nights of -40°C are common most years (minimum recorded -55°C at lake Uvs). Summer extremes reach as high as +40°C in the Gobi Desert and +33°C in the capital Ulaanbaatar. Monthly temperature variations of +45°C and more are not uncommon in many regions of Mongolia.",
-      "text2": "Mongolia experiences diverse climatic conditions throughout the seasons. In winter, temperatures plummet well below freezing, creating a harsh and snowy environment. The iconic Gobi Desert transforms into a winter wonderland, offering a unique experience for adventurous travelers. Spring marks the awakening of nature, with temperatures gradually rising and landscapes blooming with vibrant colors. It's an ideal time to witness the nomadic way of life, as herders move their livestock to lush pastures.",
-      "text3": "Summer brings warm temperatures and clear skies, making it the peak travel season. The vast steppes showcase lush grasslands, and the Gobi Desert becomes a scorching landscape with temperatures soaring. It's the perfect time for outdoor activities and cultural exploration, including the celebration of Naadam, Mongolia's traditional festival. In autumn, the weather starts to cool down, and the landscapes transition into golden hues, creating a breathtaking backdrop for travelers.",
-      "text4": "Overall, Mongolia's climate offers a unique blend of extreme conditions, from the frigid winters to the warm summers, providing a diverse and ever-changing landscape for those seeking an unforgettable adventure in this enchanting country."
+      "title": "몽골의 평균 날씨",
+      "text1": "몽골은 극심한 기온 차와 뚜렷한 계절 변화를 특징으로 하는 대륙성 기후를 가지고 있습니다. '푸른 하늘의 땅'으로 알려진 몽골은 연중 약 250일의 맑은 날을 보이며, 세계에서 가장 햇볕이 많은 곳 중 하나입니다.",
+      "text2": "11월부터 3월까지는 평균 기온이 영하이며, 4월과 10월에도 기온은 영하에 가깝습니다. 겨울 밤에는 특히 북부와 중부 지역에서 -40°C까지 떨어질 수 있으며, 최저 기록은 우브스 호수에서 -55°C입니다. 반면 여름에는 고비 사막에서 +40°C까지 올라가며, 세계에서 가장 추운 수도인 울란바타르에서는 약 +33°C까지 올라갑니다.",
+      "text3": "몽골의 각 계절은 독특한 여행 경험을 제공합니다. 겨울은 길고 건조하며 극심한 추위로, 고비 사막도 얼어붙은 조용한 풍경으로 변합니다. 봄은 기온이 서서히 상승하며 유목민들이 새로운 목초지로 이동하기 시작하는 시기입니다.",
+      "text4": "여름은 여행 성수기입니다. 긴 낮과 대체로 맑은 하늘은 야외 활동, 광활한 초원과 사막 탐험, 나담 축제와 같은 문화 체험에 이상적입니다. 가을에는 날씨가 점차 선선해지며 풍경은 황금빛으로 물들어 고요하고 사진 찍기 좋은 분위기를 만듭니다.",
+      "text5": "전반적으로 몽골의 기후는 대조적입니다. 추운 겨울, 더운 여름, 빠른 날씨 변화가 특징입니다. 이러한 조건은 땅뿐만 아니라 사람들의 강인한 정신도 형성합니다."
     }
   },
   "Tours": {
-    "title": "클래식 투어",
+    "title": "클래식 투어", 
     "title_on_picture": "투어",
     "individual_title": "개별 투어", 
-    "subtitle": "투어 및 여행",
-    "text": "단체로 몽골을 여행하는 것은 많은 장점이 있습니다. 같은 생각을 가진 사람들을 만나고 새로운 친구를 사귈 수 있습니다. 게다가 단체 여행은 할인된 묶음 상품도 제공하므로 모든 것을 즐길 수 있습니다. 몽골을 훨씬 더 합리적인 가격으로 제공합니다.",
-    "subtitle1": "투어에 대한 정보",
-    "main_tour": "고비캉가이 투어 - 12박 13일",
-    "main_tour_desc": "대륙 국가는 대부분 대초원으로 덮여 있지만, 길을 따라 호수, 협곡, 사구, 절벽과 같은 경이로운 광경도 볼 수 있습니다. 한 지방에서 다른 지방으로 이동하려면 지구상에서 가장 거친 지형을 며칠간 운전해야 하며, 종종 광활한 빈 공간을 가로질러야 합니다. 때로는 길에서 유일한 동반자가 평원에서 풀을 뜯고 있는 말, 야크, 양 떼뿐일 때도 있습니다. 다른 때에는 독수리가 위에서 맴돌고 있는 모습이 보입니다.",
-    "read_more": "더 읽어보세요",
+    "subtitle": "투어 & 여행",
+    "text": "그룹으로 몽골을 여행하는 것은 많은 장점이 있습니다. 뜻이 맞는 사람들을 만나고 새로운 친구를 사귈 수 있습니다. 게다가 그룹 투어는 할인된 패키지 상품을 제공하므로 몽골이 제공하는 모든 것을 더 합리적인 가격으로 즐길 수 있습니다.",
+    "subtitle1": "투어 정보",
+    "main_tour": "고비-항가이 투어 - 13일 12박",
+    "main_tour_desc": "몽골은 대부분 초원으로 덮여 있지만, 호수, 협곡, 모래 언덕, 절벽과 같은 놀라운 풍경을 볼 수 있습니다. 한 지역에서 다른 지역으로 이동하는 데는 종종 지구상에서 가장 거친 지형을 가로지르는 긴 운전이 필요합니다. 때로는 길에서 만나는 유일한 동반자는 초원에서 풀을 뜯는 말과 야크 떼입니다. 다른 때는 독수리가 조용히 머리 위를 맴돌기도 합니다.",
+    "read_more": "더 보기",
     "altai": "알타이 타반 보그드 투어",
-    "altai_desc": "알타이 타반복드 투어 > 사랑하는 여행자여, 몽골의 지붕인 알타이 타반복드의 장엄한 산과 아름다운 자연과 카자흐족의 문화를 만나러 여러분을 초대합니다.",
+    "altai_desc": "몽골의 가장 숨막히는 자연 경관 중 하나인 알타이 타반보그드의 웅장한 산, 경이로운 풍경, 풍부한 카자흐 문화를 발견하도록 초대합니다.",
     "tourList": [
       {
-        "title": "도시 투어",
-        "description": "울란바토르는 길을 찾기가 조금 어려울 수 있지만 경험이 풍부한 가이드의 도움으로 여행자는 세계적 수준의 박물관 방문, 전통 극장 관람, 세계 각국의 요리 맛보기, 캐시미어 매장 구경 등 목록에 있는 모든 활동을 완료할 수 있습니다. 새벽 3시까지 울란바토르 삶을 경험해보실수도 있습니아 . 실제로, 끊임없이 변화하는 이 도시는 몽골 모험의 가장 큰 놀라움일 수 있습니다."
+        "title": "시티 투어",
+        "description": "울란바타르는 혼자서 탐험하기에는 조금 어려울 수 있지만, 경험 많은 가이드와 함께라면 세계적 수준의 박물관, 전통 공연, 국제 요리, 고급 캐시미어 쇼핑을 즐길 수 있습니다. 도시는 새벽 3시까지 활기차며, 독특한 현지 경험을 제공합니다. 끊임없이 변화하는 울란바타르는 여행의 가장 예상치 못한 하이라이트가 될 수 있습니다."
       },
       {
         "title": "중앙 아이막 투어",
-        "description": "울란바토르는 길을 찾기가 조금 어려울 수 있지만 경험이 풍부한 가이드의 도움으로 여행자는 세계적 수준의 박물관 방문, 전통 극장 관람, 세계 각국의 요리 맛보기, 캐시미어 매장 구경 등 목록에 있는 모든 활동을 완료할 수 있습니다. 새벽 3시까지 울란바토르 삶을 경험해보실수도 있습니아 . 실제로, 끊임없이 변화하는 이 도시는 몽골 모험의 가장 큰 놀라움일 수 있습니다."
+        "description": "몽골의 환경은 광활한 자연 경관, 늦은 도시 개발, 자원 보존과 자연에 대한 깊은 존중을 바탕으로 한 전통적인 유목 생활 방식 덕분에 매우 잘 보존되어 있습니다. 중앙 투어를 선택하면 활기찬 도시와 고요한 시골의 최고를 모두 경험할 수 있습니다."
       },
       {
-        "title": "쿠브스굴 호수 투어",
-        "description": "쿠브스굴 호수는 아시아의 스위스, 아시아의 푸른 진주로 알려져 있습니다. 해발 1645m, 길이 136km, 깊이 262m이다. 아시아에서 두 번째로 큰 담수호로 몽골 담수량의 약 70%, 전 세계 담수량의 0.4%를 보유하고 있다."
+        "title": "후브스굴 호수 투어",
+        "description": "후브스굴 호수는 몽골 북부의 깊고 맑은 민물 호수로, 아시아에서 가장 큰 호수 중 하나입니다. 아름다운 푸른 물로 유명하며, 휴식, 하이킹, 승마, 손길이 닿지 않은 자연의 아름다움을 즐기기에 완벽한 곳입니다."
       },
       {
-        "title": "고비 사막 투어",
-        "description": "고비는 모래 언덕, 산, 그리고 눈표범과 박트리아 낙타와 같은 희귀 동물로 유명합니다. 고비 구르반사이칸 국립공원(Gobi Gurvansaikhan National Park)의 콩고린 엘스(Khongoryn Els) 모래 언덕은 바람이 불면 노래를 부른다고 합니다. "
+        "title": "고비 사막 여행",
+        "description": "고비는 모래 언덕, 산, 눈 표범과 같은 희귀 동물로 유명합니다. 고비 구르반사이한 국립공원의 홍고린 엘스 모래 언덕은 바람이 불 때 '노래'한다고 합니다. 고비는 또한 바얀자그의 불타는 절벽에서 발견된 공룡 화석으로도 잘 알려져 있습니다."
       },
       {
-        "title": "고비항가이 투어"
+        "title": "고비-항가이 투어"
       }
     ],
     "tourDays": [
       {
-        "days": "2박 3일"
+        "days": "2일 1박"
       },
       {
-        "days": "4박 5일"
+        "days": "5일 4박"
       },
       {
-        "days": "6박 7일"
+        "days": "7일 6박"
       },
       {
-        "days": "6박 7일"
+        "days": "7일 6박"
       }
     ],
     "individualList": [
       {
-        "title": "승마 여행에 대해서. ",
-        "description": "유목민 생활 양식 역사와 자연의 아름다움, 독특한 전통을 경험하게 될 것이며, 최고의 추억을 갖게 될 것입니다."
+        "title": "승마 투어",
+        "description": "울란바타르 외곽을 포함한 몽골 전역에서 승마 투어는 잊지 못할 경험을 제공합니다. 광활한 풍경을 가로지르며 유목민의 유산을 경험하고 몽골의 독특한 전통과 연결될 수 있습니다."
       },
       {
-        "title": "차탄 족 슨록 여행",
-        "description": "몽골의 가장 아름다운  원시 자연과 후브스굴시 서족 과 통족 지방 네트워킹 차단 된곳에 모험하며 차탄족에 독특한 문화를 알아가는 여행을 제안합니다."
+        "title": "순록 목동의 땅",
+        "description": "몽골의 외딴 타이가로 여행을 떠나 독특한 차탄 문화를 발견하세요. 순록을 타는 경험도 포함된 이 여행은 잊지 못할 모험이 될 것입니다."
       }
     ],
     "individuals": [
@@ -418,49 +418,49 @@
         "tour": "몽골 알타이 탐험"
       },
       {
-        "tour": "말 투어"
+        "tour": "승마 투어"
       },
       {
-        "tour": "순록 목동 토지"
+        "tour": "순록 목동의 땅"
       }
     ],
-    "altai_tour_title": "알타이 타반 보그드",
-    "altai_tour_text": "눈 덮인 Kuiten Uul 산(4,374m(14,201ft))은 공원에 이름을 부여한 Tavan Bogd 산맥(문자 그대로 '5성인')의 5개 봉우리 중 가장 높습니다. 면적은 630,000ha에 달하며 3개의 큰 담수호와 34개의 빙하, 그리고 여러 개의 폭포가 있습니다. 가장 큰 포타닌 빙하(Potanin Glacier)는 면적이 23km2입니다. Tavan Bogd 산맥은 현지 카자흐족, 투반족, 몽골족에게 신성한 곳으로 간주됩니다. 이 공원은 중국 국경을 따라 러시아에서부터 중국, 러시아, 몽골, 카자흐스탄을 나누는 알타이 산맥을 따라 200km 이상 뻗어 있습니다. 고대 부족들은 이 지역을 종교 의식을 위해 사용하면서 많은 유물을 남겼습니다. 오늘날 공원에 있는 수만 개의 암각화는 세계문화유산의 일부입니다. 또한 수많은 투르크 석인(Turkic Stone Men)과 석조 고분이 있습니다.",
-    "altai_tour_text2": "성수기는 기온이 따뜻해지고 눈이 녹는 6월부터 10월까지이며, 투어 캠프와 셔틀이 운행됩니다. 가장 바쁜 시기는 등산하기 가장 좋은 날씨인 8월과 9월이다. 또한 독수리 축제 주변에서는 관광객이 시골 여행을 추가할 수 있습니다. 추운 겨울철에는 스노우 스키, 독수리 사냥 등의 활동을 통해 공원에서 일년 내내 이용이 가능합니다.",
-    "altai_tour_button": "지금 예약",
+    "altai_tour_title": "알타이 타반 보그드 투어",
+    "altai_tour_text": "알타이 타반 보그드는 몽골의 가장 숨막히는 자연 경관 중 하나입니다. 4,374미터(14,201피트)의 몽골에서 가장 높은 봉우리인 휘텐 울이 중심에 서 있으며, '다섯 성인'이라는 이름을 가진 산의 가장 높은 봉우리입니다. 국립공원은 630,000헥타르에 걸쳐 있으며, 3개의 큰 민물 호수, 34개의 빙하, 여러 폭포가 있습니다. 가장 큰 빙하는 23km²의 포타닌 빙하입니다. 타반 보그드 산맥은 현지 카자흐, 투반, 몽골 커뮤니티에게 깊은 영적 의미를 지니고 있습니다.",
+    "altai_tour_text2": "이 놀라운 목적지에 대해 더 알아보려면 저희에게 연락하세요!",
+    "altai_tour_button": "예약하기",
     "horse_tour_title": "승마 투어",
-    "horse_tour_text": "사이바이투어에 오신 것을 환영합니다. 몽골의 수도 울란바토르에서 멀지 않은 곳에 승마 투어를 제공합니다. 말을 타는 것은 몽골을 여행하는 완벽한 방법입니다. 눈부시게 푸르른 광활한 초원을 말과 함께 한몸이 되어 달리는 경험을 경험해 보지 않은 사람은 결코 알 수 없을 것이다. 유목 생활의 역사, 자연의 아름다움, 독특한 전통을 경험하게 될 것이며 이 멋지고 스릴 넘치는 경험을 위해 저희 여행사는 낮에는 승마, 밤에는 별을 관찰할실수 있는 여행을 추전 드리며 승마여행에 여러분을 초대합니다.",
-    "reindeer_tour_title": "차아탄 투어",
-    "reindeer_tour_text": "세계에서 순록을 기우며 살아온 마지막 민족은 차탄족이다. 유목민으로서 그들은 독특한 문화를 자랑하며 고대 생활 방식을 여전히 보존하고 있습니다. 차아탄 부족의 독특한 유산을 탐구하며 몽골의 숨막히는 자연 그대로의 풍경을 탐험하고, 쿠브스굴 호수의 외딴 지역으로 네트워킹 차단된곳에 모험하며 차탄족에 독특한 문화를 알아가는 여행을 제안합니다. 이 모험 경험은 몽골 문화에 대한 깊은 이해도를 약속드립니다."
+    "horse_tour_text": "울란바타르 외곽이든 시골 깊은 곳이든, 몽골은 잊지 못할 승마 투어를 제공합니다. 끝없는 초원을 가로지르는 것은 몽골의 정신을 진정으로 경험하는 완벽한 방법입니다. 말과 하나가 되어 움직이는 느낌은 자연, 자유, 수세기에 걸친 유목민 전통과의 연결을 제공합니다.",
+    "reindeer_tour_title": "차탄(순록 사람들) 투어",
+    "reindeer_tour_text": "차탄은 세계에서 마지막으로 남은 유목 순록 목동 중 하나로, 몽골 북부의 후브스굴 호수 근처 외딴 타이가에 살고 있습니다. 자연과의 독특한 유대와 전통을 보존하는 그들의 삶은 희귀하고 잊지 못할 경험을 제공합니다."
   },
   "Footer": {
     "title1": "사이바이 투어",
-    "address": "우편번호:14253",
+    "address": "우편번호: 14253",
     "phone": "전화번호:",
-    "telegram": "전보:",
+    "telegram": "텔레그램:",
     "mail": "이메일:",
-    "title2": "여행용 키트",
+    "title2": "정보",
     "links": [
       {
-        "title": "몽골을 방문하기 가장 좋은 시기"
+        "title": "몽골의 계절"
       },
       {
-        "title": "비자"
+        "title": "비자 정보"
       },
       {
         "title": "보험"
       },
       {
-        "title": "날씨"
+        "title": "몽골의 날씨"
       },
       {
         "title": "전화 연결"
       },
       {
-        "title": "숙소"
+        "title": "숙박"
       }
     ],
-    "title3": "질문이 있나요?",
+    "title3": "질문이 있으신가요?",
     "ntitle": "이름",
     "ntitle1": "이메일",
     "ntitle2": "메시지",
@@ -472,374 +472,356 @@
     "t1": "시티 투어",
     "t2": "고비 투어",
     "t3": "중앙 투어",
-    "t4": "쿠브스굴 호수 투어(짧음)",
-    "t5": "쿠브스굴 호수 투어",
-    "t6": "고비항가이 투어"
+    "t4": "후브스굴 호수 투어 (짧은)",
+    "t5": "후브스굴 호수 투어",
+    "t6": "고비-항가이 투어"
   },
   "Accommodation": {
     "title": "숙박",
     "subtitle": "호텔",
     "hotels": [
       {
-        "title": "Shangri-La Hotel"
+        "title": "상그릴라 호텔"
       },
       {
-        "title": "Blue Sky Hotel"
+        "title": "블루 스카이 호텔"
       },
       {
-        "title": "Ramada Hotel"
+        "title": "라마다 호텔"
       },
       {
-        "title": "Edelweiss Hotel"
+        "title": "에델바이스 호텔"
       },
       {
-        "title": "Kempinski Hotel"
+        "title": "켐핀스키 호텔"
       },
       {
-        "title": "Mika Hotel"
+        "title": "미카 호텔"
       },
       {
-        "title": "Continental Hotel"
+        "title": "콘티넨탈 호텔"
       },
       {
-        "title": "Khongor Guesthouse"
+        "title": "콩고르 게스트하우스"
       },
       {
-        "title": "Mash Guesthouse"
+        "title": "마쉬 게스트하우스"
       }
     ]
   },
   "Khangai": {
-    "picture_text": "고비칸가이 투어 - 12박 13일",
-    "description": "대륙 국가는 대부분 대초원으로 덮여 있지만, 길을 따라 호수, 협곡, 사구, 절벽과 같은 경이로운 광경도 볼 수 있습니다. 한 지방에서 다른 지방으로 이동하려면 지구상에서 가장 거친 지형을 며칠간 운전해야 하며, 종종 광활한 빈 공간을 가로질러야 합니다. 때로는 길에서 유일한 동반자가 평원에서 풀을 뜯고 있는 말, 야크, 양 떼뿐일 때도 있습니다. 다른 때에는 독수리가 위에서 맴돌고 있는 모습이 보입니다.",
-    "day1": "1 일차 Ulaanbaatar - Baga gazariin chuluu (270km)",
-    "day1text": "산길과 계곡 주변에는 많은 샘물 외에도 고대의 무덤과 기념물이 많이 있습니다. 수두틴 암(Sudutyn am)이라고 불리는 포플러 바위 계곡, 자르갈란트(Jargalant) 동굴, 고대의 그림 글자 쓰여있는 바위 등 볼거리가 많습니다.",
-    "program": "일정",
-    "schedule1-1": "오전 08:00시 아침 식사",
-    "schedule1-2": "오전 09:00시 바가 가자르(Baga Gazar)로 이동",
-    "schedule1-3": "오전 12:00시 점심 시간",
-    "schedule1-4": "오후 13:00시 여행으로 돌아가기",
-    "schedule1-5": "오후 15:00시 장소 도착",
-    "schedule1-6": "오후 18:00시 저녁 식사 시간",
+    "picture_text": "고비-항가이 투어 - 13일 12박",
+    "description": "대륙 국가인 몽골은 대부분 초원으로 덮여 있지만, 여정 중에는 호수, 협곡, 모래 언덕, 절벽과 같은 경이로운 풍경을 볼 수 있습니다. 한 지역에서 다른 지역으로 이동하는 데는 종종 지구상에서 가장 거친 지형을 가로지르는 긴 운전이 필요합니다. 때로는 길에서 만나는 유일한 동반자는 초원에서 풀을 뜯는 말과 야크 떼입니다. 다른 때는 독수리가 조용히 머리 위를 맴돌기도 합니다.",
+    "day1": "1일. 바가 가자린 추루",
+    "day1text": "바가 가자린 추루는 울란바타르 남쪽 230km, 델게르초그트 마을 북서쪽 37km에 위치해 있으며, 대부분 포장 도로로 접근할 수 있습니다. 이 화강암 산악 지대는 최대 200m까지 솟아 있으며 300제곱킬로미터에 걸쳐 있습니다. 타힐가트 봉우리는 1768m에 이릅니다. 이 지역에는 시내, 사시나무 숲, 청동기 시대 무덤과 암각화부터 17-19세기 사원 유적까지 풍부한 역사적 유적이 있습니다.",
+    "program": "프로그램",
+    "schedule1-1": "08:00 - 아침 식사",
+    "schedule1-2": "08:30 - 바가 가자린 추루로 이동",
+    "schedule1-3": "12:00 경 - 점심 식사",
+    "schedule1-4": "15:00 경 - 도착",
+    "schedule1-5": "15:00 이후 - 하이킹 및 탐험 시간",
+    "schedule1-6": "18:00 - 저녁 식사",
     "icon1": "식사",
     "icon2": "3g/4g",
     "icon3": "충전",
-    "icon4": "욕실",
-    "icon5": "전기",
-    "day2": "2일차 Baga gazariin chuluu - 차간 수발가 (210km)",
-    "day2text": "Tsagaan suvarga /White Stupa/는 수직으로 90도 솟아오른 언덕으로 다양한 색상의 점토 퇴적물로 구성되어 있습니다. 이것은 Dundgovi 지방의 Ulziit sum에서 남서쪽으로 65km 떨어져 있습니다. Tsagaan suvarga는 높이 200m, 길이 400m의 큰 절벽입니다.",
-    "schedule2-1": "오전 08:00시 아침 식사",
-    "schedule2-2": "오전 09:00시 화이트 스투파(White Stupa)로 이동",
-    "schedule2-3": "오전 12:00시 점심 시간",
-    "schedule2-4": "오후 14:00시 목적지 도착",
-    "schedule2-5": "오후 18:00시 저녁 식사",
-    "day3": "3일차 차간 수발가 - 욜린암 (Yoliin am 210km)",
-    "day3text": "독수리, 야생 아르갈리양, 검독수리를 관찰할 수 있는 훌륭한 장소입니다. 처음에는 지역 조류를 보호하기 위해 설립되었지만 결국에는 겨울에 형성되어 여름까지 남아 있는 깊은 빙원을 방문하기 위한 인기 있는 장소가 되었습니다",
-    "schedule3-1": "오전 08:00시 아침 식사",
-    "schedule3-2": "오전 09:00시 Yolyn Am으로 출발",
-    "schedule3-3": "오전 12:00시 점심시간",
-    "schedule3-4": "오후 15:00시 장소 도착",
-    "schedule3-5": "오후 18:00시 저녁 식사 시간",
-    "day4": "4 일차 Yolyn Am - 혼골 모래 언덕 (180 km)",
-    "day4text": "이것은 몽골에서 가장 크고 가장 아름다운 사구 중 하나입니다. 높이가 200m에 달하는 이 모래 언덕의 폭은 7~8km, 길이는 약 180km입니다. 모래 언덕을 오르는 것은 정상에서의 경치뿐만 아니라 올라가는 동안 모래 언덕에서 나는 소리도 흥미럽다",
-    "schedule4-1": "오전 08:00시 아침 식사",
-    "schedule4-2": "오전 09:00시 혼고르 모래 언덕으로 출발",
-    "schedule4-3": "오전 12:00시 점심시간",
-    "schedule4-4": "오후 15:00시 낙타 타기",
-    "schedule4-5": "오후 16:00시 모래 언덕 올라갑니다 ",
-    "schedule4-6": "오후 18:00시 저녁 식사 시간",
-    "day5": "5 일차 혼고르 모래 언덕 - Baynzag (120km)",
-    "day5text": "폭이 5km, 길이가 약 8km인 독특한 텍스처를 가지고 있습니다. Roy Chapmen Endrius 미국의 고생물학자 인 그는 1922년 선원들과 함께 고대인의 흔적을 찾기 위한 탐험을 하던 중 이 지역에서 처음으로 공룡 뼈와 알을화석을 발견했습니다.",
-    "schedule5-1": "오전 08:00시 아침 식사",
-    "schedule5-2": "오전 09:00시 Bayanzag 으로 출발",
-    "schedule5-3": "오전 12:00시 점심시간",
-    "schedule5-4": "오후 14:00시 목작지 도착",
-    "schedule5-5": "오후 18:00시 저녁 식사 시간",
-    "day6": "6 일차 Bayanzag - 옹기 수도원 (160km)",
-    "day6text": "Dundgovi 지방의 Saihan-Ovoo soum에 위치하고 있습니다. 몽골에서 가장 큰 수도원 중 하나인 옹기(Ongi)는 1660년에 설립되었으며 옹기(Ongi) 강 북쪽과 남쪽 기슭에 두 개의 사원 단지로 구성되어 있습니다..",
-    "schedule6-1": "오전 08:00시 아침 식사",
-    "schedule6-2": "오전 12:00시 점심시간",
-    "schedule6-3": "오후 17:00시 현장 도착 후 아름다운 자연 감상 및 사진 촬영, 하이킹",
-    "schedule6-4": "오후 19:00시 저녁 식사",
-    "day7": "7 일차 옹기 수도원 - 카르호린 고대 수도(280km)",
-    "day7text": "1206년 칭기스칸 몽골 대제국을 설립하고 첫번째 수도인 하르호린을 건설했다.  하르호린시는 140년 동안 존재했고, 32년 동안 몽골의 중앙 수도였으며 다양한 종교사원이 공존했다. 이 도시는 크 당시에 세계에서 가장 큰 무역 도시였습니다",
-    "schedule7-1": "오전 08:00시 아침 식사",
-    "schedule7-2": "오전 09:00시 하르호린(Kharkhorin)으로 이동",
-    "schedule7-3": "오전 12:00시 점심시간",
-    "schedule7-4": "오후 16:00시 목적지 도착",
-    "schedule7-5": "오후 18:00시 저녁 식사",
-    "day8": "8 일차 카르호린 - 쳉헤르 온천 (120km)",
-    "day8text": "Arkhangai 지방의 Tsenkher 마을 남쪽에 있습니다. 물은 땅 속 깊은 곳에서 흘러나오는데, 그 물은 뜨거워서 흙물과 지하수와 섞이지 않습니다. 또한 스프링은 지하에 고압으로 유지되며 유속은 초당 10리터에 달합니다.",
-    "attention": "★주의★",
-    "attention_desc": "온천에 필요한 옷들을 챙겨오세요. (수영복, 비치웨어)",
-    "schedule8-1": "오전 08:00시 아침 식사",
-    "schedule8-2": "오전 09:00시 쳉헤르 온천 이동",
-    "schedule8-3": "오전 12:00시 점심 식사후 자유시간",
-    "schedule8-4": "오후 19:00시 저녁 식사",
-    "day9": "9 일차 쳉헤르 온천 - Terhiin tsagaan 호수 (235km)",
-    "day9text": "Terkhiin Tsagaan 호수는 비교적 순수한 담수가 있는 놀랍도록 아름다운 호수입니다. 호르고(Khorgo) 화산에서 흘러나온 용암류가 테르크 강(Terkh River)의 북쪽과 남쪽을 막아 해발 2060m 높이에 테르힌 차강 호수(Terkhiin Tsagaan Lake)를 형성했습니다. 호수의 길이는 16km, 너비는 4~10km, 깊이는 20m이며, 가장 깊은 곳은 28m, 표면 평가에서는 20km가 넘습니다.",
-    "schedule9-1": "오전 08:00시 아침 식사",
-    "schedule9-2": "오전 09:00시 테르힌 차간 호수 이동",
-    "schedule9-3": "오후 13:00시 점심 식사 이후 자유시간",
-    "schedule9-4": "오후 19:00시 저녁 식사",
-    "day10": "10 일차 Terhiin tsagaan 호수 - Shine ider sum (180km)",
-    "day10text": "게스트하우스에서 하루 쉬고 갑니다",
-    "schedule10-1": "오전 08:00시 아침 식사",
-    "schedule10-2": "오전 12:00시 점심 식사",
-    "schedule10-3": "오후 18:00시 저녁 식사",
-    "day11": "11 일차 Shine ider sum - Khuvsgul (280km)",
-    "day11text": "쿠브스굴은 울창한 숲, 빠르게 흐르는 강, 반짝이는 호수, 험준한 산으로 이루어진 땅입니다. 이곳은 몽골에서 가장 아름다운 지역으로 모든 강 굴곡이나 호수 만이 새롭고 놀라운 놀라움을 선사하는 것 같습니다.",
-    "attention11": "★승마 주의 사항★",
-    "att_desc1": "1. 절대로 말 뒤에 서 있으면 안된다.",
-    "att_desc2": "2. 말을 탈때는 오른쪽으로 타고 내린다",
-    "att_desc3": "3. 좀 더 빨리 혹은 달리고 싶을때 ... 추 추 라고 함니다.",
-    "schedule11-1": "오전 07:00시 아침 식사",
-    "schedule11-2": "오전 08:00시 쿠브스굴 으로 이동",
-    "schedule11-3": "오전 12:00시 점심 식사",
-    "schedule11-4": "오후 15:00시 말타기",
-    "schedule11-5": "오후 16:00시 욕망의 바위 방문",
-    "schedule11-6": "오후 19:00시 저녁 식사",
-    "day12": "12 일차 Khuvsgul - 볼간 아이막 (470km)",
-    "day12text": "해발 1208m 높이에 인구 13,000명의 작은 아이막 수도인 불간(Bulgan)시는 오랫동안 외국인들에게 울란바토르와 호프스골누르(Khovsgol Nuur) 중간에 하룻밤 묵는 곳으로 알려져 왔습니다. 몽골 중부 또는 남부를 여행했다면 Bulgan 시는 침엽수, 통나무집, 게르가 없는 모습에 깊은 인상을 받을 수 있습니다.",
-    "schedule12-1": "오전 07:00시 아침 식사",
-    "schedule12-2": "오전 08:00시 볼간아이막으로 이동",
-    "schedule12-3": "오전 12:00시 점심 식사",
-    "schedule12-4": "오후 18:00시 저녁 식사 ( 몽골 전통 음식 호르호그)",
-    "day13": "13 일차 볼간아이막 - 울란바타르 (460km)",
-    "day13text": "울란바토르는 몽골의 수도이다. 이곳은 Bogd Khaan Uul 국립공원과 접해 있는 Tuul 강 계곡에 있습니다..",
-    "schedule13-1": "오전 07:00시 아침 식사",
-    "schedule13-2": "오전 07:30시 울란바타르으로 이동",
-    "schedule13-3": "오전 12:00시 점심 식사",
-    "schedule13-4": "오후 15:00시 Gobi cashmer 구경",
-    "schedule13-5": "오후 18:00시 저녁 식사 ",
-    "button": "지금 예약"
+    "icon4": "목욕",
+    "icon5": "조명",
+    "day2": "2일. 차강 수브르가",
+    "day2text": "차강 수브르가 또는 화이트 스투파는 몽골 남서부 덩고비 주의 눈에 띄는 절벽 형성입니다. 한때 고대 해저였던 이곳의 층적 구조는 수백만 년에 걸쳐 형성되었습니다. 60미터 높이의 절벽은 400미터 이상 펼쳐져 있으며, 동쪽을 향해 있어 일출 시 아름답게 빛납니다. 멀리서 보면 고대 도시의 폐허처럼 보입니다.",
+    "schedule2-1": "08:00 - 아침 식사",
+    "schedule2-2": "08:30 - 차강 수브르가로 출발",
+    "schedule2-3": "12:00 경 - 점심 식사",
+    "schedule2-4": "14:00 경 - 화이트 스투파 도착",
+    "schedule2-5": "18:00 - 저녁 식사",
+    "day3": "3일. 욜린 암",
+    "day3text": "욜린 암 또는 독수리 계곡은 몽골 남부 구르반 사이한 산맥의 주운 사이카니 누루 산맥에 위치한 깊고 좁은 협곡입니다. 독수리(욜)의 이름을 따서 명명된 이 극적인 계곡은 건조한 고비 사막에 위치하지만 연중 얼음 필드로 유명합니다. 겨울이 끝날 무렵, 얼음은 몇 미터 두께로 수 킬로미터에 걸쳐 펼쳐질 수 있습니다.",
+    "schedule3-1": "08:00 - 아침 식사",
+    "schedule3-2": "09:00 - 욜린 암으로 출발",
+    "schedule3-3": "12:00 경 - 점심 식사",
+    "schedule3-4": "15:00 경 - 욜 계곡 도착",
+    "schedule3-5": "18:00 - 저녁 식사",
+    "day4": "4일. 홍고린 엘스",
+    "day4text": "홍고린 엘스 또는 '노래하는 모래 언덕'은 몽골에서 가장 크고 인상적인 모래 형성 중 하나입니다. 길이 180km, 너비 8km, 높이 200m에 이르는 이 거대한 모래 언덕은 숨막히는 풍경을 만들어냅니다. 바람이 불 때 모래는 독특한 허밍 소리를 내며 이 자연의 경이로움에 마법 같은 느낌을 더합니다.",
+    "schedule4-1": "08:00 - 아침 식사",
+    "schedule4-2": "09:00 - 홍고르 모래 언덕으로 출발",
+    "schedule4-3": "12:00 경 - 점심 식사",
+    "schedule4-4": "15:00 경 - 모래 언덕 도착",
+    "schedule4-5": "15:30 이후 - 모래 언덕 등반 및 낙타 타기",
+    "schedule4-6": "19:00 - 저녁 식사",
+    "day5": "5일. 바얀자그",
+    "day5text": "바얀자그 또는 불타는 절벽은 붉은 점토 형성으로, 바람과 비에 의해 수천 년 동안 조각되었습니다. 이름 바얀자그는 '사크사울이 풍부한'을 의미하며, 이 지역에서 자라는 사막 나무를 가리킵니다. 1922년 미국 고생물학자 로이 채프먼 앤드류스와 그의 팀은 고대 인간의 흔적을 찾던 중 공룡 화석을 우연히 발견했습니다.",
+    "schedule5-1": "08:00 - 아침 식사",
+    "schedule5-2": "09:00 - 바얀자그로 출발",
+    "schedule5-3": "12:00 경 - 점심 식사",
+    "schedule5-4": "14:00 경 - 바얀자그 도착",
+    "schedule5-5": "18:00 - 저녁 식사",
+    "day6": "6일. 옹긴 히드",
+    "day6text": "옹긴 히드 - 옹기 수도원은 한때 고비 사막에서 가장 큰 수도원 단지 중 하나였으며, 옹기 강 양쪽에 걸쳐 있고 다리로 연결되어 있었습니다. 남쪽에는 320년 전에 설립된 후타그트 수도원이 9개의 주요 사원을 가지고 있었고, 북쪽에는 약 240년 전에 지어진 발림 수도원이 13개의 사원을 가지고 있었습니다.",
+    "schedule6-1": "08:00 - 아침 식사",
+    "schedule6-2": "08:30 - 옹긴 히드로 출발",
+    "schedule6-3": "12:00 경 - 점심 식사",
+    "schedule6-4": "17:00 경 - 수도원 도착",
+    "schedule6-5": "19:00 - 저녁 식사",
+    "day7": "7일. 카르코린",
+    "day7text": "카르코린은 몽골 제국의 첫 수도로, 칭기즈 칸이 1206년에 건설했습니다. 몽골의 중심으로 32년 동안 기능했으며 140년 동안 주요 무역 및 종교 중심지로 번영했습니다. 1580년대에 달라이 라마의 명령으로 폐허 위에 에르데네 주 수도원의 첫 사원이 건설되었습니다.",
+    "schedule7-1": "08:00 - 아침 식사",
+    "schedule7-2": "09:00 - 카르코린으로 출발",
+    "schedule7-3": "12:00 경 - 점심 식사",
+    "schedule7-4": "16:00 경 - 도착",
+    "schedule7-5": "16:00 이후 - 카르코린 박물관 및 에르데네주 수도원 방문",
+    "schedule7-6": "19:00 - 저녁 식사",
+    "day8": "8일. 첸헤르 온천",
+    "day8text": "첸헤르 온천은 몽골에서 가장 유명한 천연 스파로, 아르항가이 주의 체체를레그 마을 남쪽 27km에 위치합니다. 숲이 우거진 언덕과 험준한 산으로 둘러싸인 이 온천은 85.5°C로 솟아나며 관절과 신경 질환을 완화하는 데 도움이 되는 것으로 알려져 있습니다.",
+    "attention": "★참고★",
+    "attention_desc": "온천을 위해 수영복과 비치웨어를 준비하세요.",
+    "schedule8-1": "08:00 - 아침 식사",
+    "schedule8-2": "09:00 - 첸헤르 온천으로 이동",
+    "schedule8-3": "12:00 경 - 점심 식사",
+    "schedule8-4": "14:30 경 - 온천 도착",
+    "schedule8-5": "14:30 이후 - 온천 즐기기",
+    "schedule8-6": "19:00 - 저녁 식사",
+    "day9": "9일. 테르히인 차강 누르",
+    "day9text": "테르히 백호수 또는 테르히인 차강 누르는 아르항가이 주에 위치한 신선한 화산 호수로, 울란바타르에서 서쪽으로 약 675km 떨어져 있습니다. 수천 년 전 테르히 강이 코르고 화산의 용암에 의해 막히면서 형성되었습니다. 호수는 해발 2,060미터에 위치하며 길이 16km, 너비 4-10km, 최대 깊이 28미터입니다.",
+    "schedule9-1": "08:00 - 아침 식사",
+    "schedule9-2": "09:00 - 테르히인 차강 누르로 출발",
+    "schedule9-3": "13:00 경 - 도착 및 점심 식사",
+    "schedule9-4": "19:00 - 저녁 식사",
+    "day10": "10일. 이데르 숨",
+    "day10text": "후브스굴 호수로 가는 길 중간에 이데르 숨에서 하룻밤을 보낼 것입니다. 날씨가 허락한다면 캠핑도 가능합니다. 평화로운 계곡에 위치한 이데르 숨은 긴 여행 중 편안한 휴식을 제공합니다.",
+    "schedule10-1": "08:00 - 아침 식사",
+    "schedule10-2": "08:30 - 이데르 숨으로 출발",
+    "schedule10-3": "12:00 경 - 점심 식사",
+    "schedule10-4": "18:00 경 - 도착 및 저녁 식사",
+    "day11": "11일. 후브스굴 누르",
+    "day11text": "후브스굴 호수 또는 후브스굴 누르는 몽골 북부 시베리아 타이가와의 국경에 해발 1,645미터에 위치합니다. 몽골에서 가장 큰 민물 호수이며 표면적 기준으로 두 번째로 큰 호수입니다. 길이 136km, 너비 36km, 최대 깊이 262미터입니다. 90개 이상의 강이 흘러들어가며, 남쪽으로 에긴 골 강을 통해 시베리아의 바이칼 호로 흘러갑니다.",
+    "schedule11-1": "07:00 - 아침 식사",
+    "schedule11-2": "08:00 - 후브스굴로 이동",
+    "schedule11-3": "12:00 경 - 점심 식사",
+    "schedule11-4": "15:00 경 - 호수 도착",
+    "schedule11-5": "15:30 이후 - 풍경 즐기기, 하이킹, 탐험 및 수영",
+    "schedule11-6": "17:30 경 - 소원 바위 섬 방문",
+    "schedule11-7": "19:30 - 저녁 식사",
+    "day12": "12일. 불간 아이막",
+    "day12text": "오늘 우리는 수도로 돌아가는 여정을 시작합니다. 중간에 불간 마을에서 하룻밤을 보낼 것입니다. 중부 또는 남부 몽골을 여행해왔다면 불간의 울창한 침엽수림과 전통적인 게르가 없는 풍경이 놀라울 수 있습니다.",
+    "schedule12-1": "07:00 - 아침 식사",
+    "schedule12-2": "08:00 - 불간 주로 이동",
+    "schedule12-3": "12:00 경 - 점심 식사",
+    "schedule12-4": "18:00 경 - 도착 및 저녁 식사",
+    "day13": "13일. 울란바타르로 돌아가기",
+    "day13text": "울란바타르로 돌아가는 길에 점심을 먹으며 이동할 것입니다. 교통 상황에 따라 약 15:00에 도착할 예정입니다. 이로써 투어가 종료되며, 남은 시간은 자유롭게 휴식하거나 도시를 탐험할 수 있습니다. 저녁에는 작별 만찬을 즐기며 여정을 축하할 것입니다.",
+    "schedule13-1": "07:00 - 아침 식사",
+    "schedule13-2": "07:30 - 울란바타르로 출발",
+    "schedule13-3": "12:00 경 - 점심 식사",
+    "schedule13-4": "15:00 경 - 도시 도착",
+    "schedule13-5": "15:30 이후 - 휴식, 울란바타르 자유 탐험",
+    "schedule13-6": "19:00 - 저녁 식사",
+    "button": "예약하기"
   },
   "City": {
-    "picture_text": "울란바토르 시티 투어 - 2박 3일",
-    "description": "울란바토르는 길을 찾기가 조금 어려울 수 있지만 경험이 풍부한 가이드의 도움으로 여행자는 세계적 수준의 박물관 방문, 전통 극장 관람, 세계 각국의 요리 맛보기, 캐시미어 매장 구경 등 목록에 있는 모든 활동을 완료할 수 있습니다. 새벽 3시까지 울란바토르 삶을 경험해보실수도 있습니아 . 실제로, 끊임없이 변화하는 이 도시는 몽골 모험의 가장 큰 놀라움일 수 있습니다.",
-    "day1": "1 일차 울란바타르",
-    "day1text": "울란바토르는 몽골의 수도이다. 이곳은 Bogd Khaan Uul 국립공원과 접해 있는 토올(Tuul) 강 계곡에 위치하고 있습니다.",
-    "program": "일정",
-    "schedule1-1": "오전 09:00시 아침 식사",
-    "schedule1-2": "오전 10:00시 수도 센터 Sukhbaatar 광장에서 여행 시작",
-    "schedule1-3": "오전 11:30시 몽골 복드칸 궁전 박물관 도착",
-    "schedule1-4": "오전 13:00시 점심시간",
-    "schedule1-5": "오후 15:00시 Gobi cashmer 구경",
-    "schedule1-6": "오후 18:00시 저녁 식사 자이산 언덕 방문",
-    "schedule1-7": "오후 19:00시 자이산 언덕 방문",
+    "picture_text": "울란바타르 시티 및 테렐지 국립공원 투어 - 2일 1박",
+    "description": "울란바타르와 주변 자연 경관은 혼자서 탐험하기에는 조금 어려울 수 있지만, 경험 많은 가이드와 함께라면 세계적 수준의 박물관, 전통 공연, 국제 요리, 고급 캐시미어 쇼핑을 즐길 수 있습니다. 짧은 드라이브 거리에 있는 테렐지 국립공원은 드라마틱한 바위 형상과 경치 좋은 계곡으로 유명하며, 유목민 문화를 경험할 수 있는 평화로운 탈출구를 제공합니다.",
+    "day1": "1일. 테렐지 국립공원",
+    "day1text": "테렐지 국립공원을 탐험하세요. 상징적인 거북이 바위와 웅장한 칭기즈 칸 기마상이 있습니다. 아랴발 수도원까지 짧은 하이킹을 즐기고, 경치 좋은 풍경을 가로지르는 승마를 즐기며, 전통 몽골 게르에서 하룻밤을 보낼 수 있습니다.",
+    "program": "프로그램",
+    "schedule1-1": "08:00 - 아침 식사",
+    "schedule1-2": "09:00 - 테렐지 국립공원으로 이동",
+    "schedule1-3": "11:30 - 칭기즈 칸 동상 단지 방문",
+    "schedule1-4": "13:30 - 점심 식사",
+    "schedule1-5": "15:00 - 거북이 바위 방문",
+    "schedule1-6": "16:00 - 아랴발 수도원 방문",
+    "schedule1-7": "17:30 - 승마/낙타 타기",
+    "schedule1-8": "18:00 - 저녁 식사 (몽골 전통 음식 호르호그)",
     "icon1": "식사",
     "icon2": "3g/4g",
     "icon3": "충전",
-    "icon4": "욕실",
-    "icon5": "전기",
-    "day2": "2 일차 테렐지 국립공원 (UB에서 80km)",
-    "day2text": "테렐지는 울란바토르 시 근처의 독특한 산입니다. 바위산 계곡마다 산의 가파른 경사면이 가로질러 독특한 풍경을 이루고 있습니다. 예를 들어 친구바위, 몽크바위, 및 거북바위 같은 수많은 전설적이고 역사적인 암석 동굴이 있습니다.",
-    "attention": "★승마 주의 사항★",
-    "attention_desc1": "1. 절대로 말 뒤에 서 있으면 안된다. ",
-    "attention_desc2": "2. 말을 탈때는 오른쪽으로 타고 내린다",
-    "attention_desc3": "3. 좀 더 빨리 혹은 달리고 싶을때 ... 추 추 라고 함니다.",
-    "schedule2-1": "오전 08:00시 아침 식사",
-    "schedule2-2": "오전 09:00시 테렐지 국립공원으로 이동",
-    "schedule2-3": "오전 12:00시 점심시간",
-    "schedule2-4": "오후 13:00시 거북바위에 올라",
-    "schedule2-5": "오후 14:00시 Aryabal Monastry 방문",
-    "schedule2-6": "오후 16:00시 말 타기 ( 톡수리 구경)",
-    "schedule2-7": "오후 18:00시 저녁 식사 (몽골 전통 음식 허르헉)",
-    "day3": "3 일차 칭기즈칸 동상(테렐지에서 20km) ",
-    "day3text": "몽골의 수도에서 약 54km 떨어진 곳에 위치한 세계 최대의 친기스칸 승마동상이다. 엘리베이터를 타고 동상의 꼭대기까지 올라갈 수 있으며, 이어지는 길을 따라 말의 머리 위에서 인상적인 전망을 감상하실수 있습니다.",
-    "schedule3-1": "오전 08:30시 아침 식사",
-    "schedule3-2": "오전 10:00시 칭기즈칸 동상 방문",
-    "schedule3-3": "오후 13:00시 점심 시간",
-    "schedule3-4": "오후 14:00시 몽골 자연사 박물관",
-    "schedule3-5": "오후 16:00시 게스트 하우수 (호텔) 복귀",
-    "button": "지금 예약"
+    "icon4": "목욕",
+    "icon5": "조명",
+    "day2": "2일. 울란바타르",
+    "day2text": "울란바타르, 몽골의 활기찬 수도를 발견하세요. 수흐바타르 광장에서 시작하여 선택한 박물관을 탐험할 수 있습니다. 칭기즈 칸 박물관, 자나바자르 미술관, 복드 칸 궁전 박물관 또는 완전한 타르보사우루스 골격이 있는 자연사 박물관을 방문하세요.",
+    "schedule2-1": "08:00 - 아침 식사",
+    "schedule2-2": "08:30 - 울란바타르 시내로 이동",
+    "schedule2-3": "10:00 - 수흐바타르 광장에서 투어 시작",
+    "schedule2-4": "10:30 - 칭기즈 칸 국립 박물관",
+    "schedule2-5": "12:00 - 선택한 박물관 방문",
+    "schedule2-6": "13:00 - 점심 식사",
+    "schedule2-7": "14:30 - 간단 수도원 방문",
+    "schedule2-8": "15:30 - 복드 칸 궁전 박물관 방문",
+    "schedule2-9": "17:00 - 자이산 기념관 방문",
+    "schedule2-10": "19:00 - 저녁 식사",
+    "button": "예약하기"
   },
   "Khuvsgul": {
-    "picture_text": "후브스굴 투어 ( Khuvsgul ) 6박 7일 ",
-    "description": "쿠브스굴 호수는 아시아의 스위스, 아시아의 푸른 진주로 알려져 있습니다. 해발 1645m, 길이 136km, 깊이 262m이다. 아시아에서 두 번째로 큰 담수호로 몽골 담수량의 약 70%, 전 세계 담수량의 0.4%를 보유하고 있다.",
-    "day1": "1일차 울란바토르 - 엘레센타사르하이 (280km)",
-    "day1text": "Elsentasarkhai는 Tuv, Uvurkhangai 및 Bulgan 지방에서 서쪽으로 뻗어 Khugnu Khan 산맥의 일부가 되는 모래 언덕의 일부입니다. 모래 언덕의 총 길이는 80km입니다.",
-    "attention": "★주의★",
-    "attention_desc": "차강 호수에서 홉스골 호수 까지 가는 길은 대부분이 비포장인 오프로드 도로입니다. 개인용 목베개를 준비하시면 보다 편안하게 이동할 수 있습니다.",
-    "program": "일정",
-    "schedule1-1": "오전 07:00시 아침식사",
-    "schedule1-2": "오전 08:30시 엘렌타사르하이로 이동",
-    "schedule1-3": "오전 12:00시 점심시간",
-    "schedule1-4": "오후 16:00시 낙타 타기",
-    "schedule1-5": "오후 18:00시 저녁식사",
+    "picture_text": "후브스굴 호수 투어 - 7일 6박",
+    "description": "후브스굴 호수는 종종 '아시아의 스위스' 및 '아시아의 푸른 진주'라고 불리며 해발 1,645미터에 위치합니다. 길이 136km, 깊이 262미터로 아시아에서 두 번째로 큰 민물 호수입니다. 몽골의 담수 70%와 세계 담수의 0.4%를 보유하고 있습니다. 후브스굴로 가는 길은 몽골의 다양하고 아름다운 풍경을 안내하며, 그 자체로 잊지 못할 경험이 될 것입니다.",
+    "day1": "1일. 엘센 타사르카이",
+    "day1text": "엘센 타사르카이 또는 '작은 고비'는 울란바타르 서쪽 약 280km에 위치합니다. 몽골 엘스 모래 언덕의 일부로, 투브, 우부르항가이, 불간 주를 가로지르며 후그누 칸 산맥과 합쳐집니다. 길이 80km의 이 모래 언덕은 사막, 초원, 산악 풍경의 멋진 조합을 제공합니다.",
+    "program": "프로그램",
+    "schedule1-1": "07:00 - 아침 식사",
+    "schedule1-2": "08:30 - 엘센 타사르카이로 이동",
+    "schedule1-3": "12:00 경 - 점심 식사",
+    "schedule1-4": "14:00 경 - 작은 고비 도착",
+    "schedule1-5": "14:00 이후 - 모래 언덕 등반 및 탐험",
+    "schedule1-6": "18:00 - 저녁 식사",
     "icon1": "식사",
     "icon3": "충전",
-    "icon4": "욕실",
-    "icon5": "전기",
-    "day2": "2일차 엘레센타사르하이 - 첸해르 온천(160km)",
-    "day2text": "Arkhangai 지방의 Tsenkher 마을 남쪽에 있습니다. 물은 땅 속 깊은 곳에서 흘러나오는데, 그 물은 뜨거워서 흙물과 지하수와 섞이지 않습니다. 또한 스프링은 지하에 고압으로 유지되며 유속은 초당 10리터에 달합니다. ",
-    "attention2": "★주의★",
-    "att_desc1": "온천에 필요한 옷들을 챙겨오세요. (수영복, 비치웨어)",
-    "schedule2-1": "오전 08:00시 아침식사",
-    "schedule2-2": "오전 09:00시 온천으로 이동",
-    "schedule2-3": "오전 12:00시 점심시간",
-    "schedule2-4": "오후 18:00시 저녁식사",
-    "day3": "3일차 첸헤르 온천  - 테르흐 차간 호수 Terhiin tsagaan nuur (235km)",
-    "day3text": "Terkhiin Tsagaan 호수는 비교적 순수한 담수가 있는 놀랍도록 아름다운 호수입니다. 호르고(Khorgo) 화산에서 흘러나온 용암류가 테르크 강(Terkh River)의 북쪽과 남쪽을 막아 해발 2060m 높이에 테르힌 차강 호수(Terkhiin Tsagaan Lake)를 형성했습니다. 호수의 길이는 16km, 너비는 4~10km, 깊이는 20m이며, 가장 깊은 곳은 28m, 표면 평가에서는 20km가 넘습니다.",
-    "schedule3-1": "오전 08:00시 아침식사",
-    "schedule3-2": "오전 09:00시 테르흐 차간 호수 이동",
-    "schedule3-3": "오후 13:00시 점심시간",
-    "schedule3-4": "오후 18:00시 저녁식사",
-    "day4": "4일차  테르흐 차간 호수에서 - Shine ider sum (180km)",
-    "day4text": "시내 이대르 마을에(Shine ider sum) 게스트 하우스에서 쉬었다갑니다 ",
-    "schedule4-1": "오전 08:00시 아침식사",
-    "schedule4-2": "오전 09:00시 쿠브스굴 호수로 이동",
-    "schedule4-3": "오후 13:00시 점심시간",
-    "schedule4-4": "오후 18:00시 저녁식사",
-    "day5": "5 일차 Shine ider - 쿠브스굴 호수(280km)",
-    "day5text": "쿠브스굴은 울창한 숲, 빠르게 흐르는 강, 반짝이는 호수, 험준한 산으로 이루어진 땅입니다. 이곳은 몽골에서 가장 아름다운 지역으로 모든 강 굴곡이나 호수 만이 새롭고 놀라운 놀라움을 선사하는 것 같습니다.",
-    "attention5": "★주의★: ",
-    "att_desc5_1": "호수 근처는 기온이 낮기 때문에 따뜻한 옷 꼭 챙겨오셔야 합니다.",
-    "att_desc5_2": "1. 절대로 말 뒤에 서 있으면 안된다. ",
-    "att_desc5_3": "2. 말을 탈때는 오른쪽으로 타고 내린다 ",
-    "att_desc5_4": "3. 좀 더 빨리 혹은 달리고 싶을때 ... 추 추 라고 함니다.",
-    "schedule5-1": "오전 07:30시 아침식사",
-    "schedule5-2": "오전 08:00시 쿠브스굴 호수로 이동",
-    "schedule5-3": "오전 12:00시 점심시간",
-    "schedule5-4": "오후 15:00시 수상보트 타고 후셀 바위로 갑니다",
-    "schedule5-5": "오후 17:00시 말 타기",
-    "schedule5-6": "오후 18:00시 저녁식사",
-    "day6": "6일차  Khuvsgul - Bulgan aimag (470km)",
-    "day6text": "해발 1208m 높이에 인구 13,000명의 작은 아이막 수도인 불간(Bulgan)시는 오랫동안 외국인들에게 울란바토르와 호프스골누르(Khuvsgul Nuur) 중간에 하룻밤 묵는 곳으로 알려져 왔습니다. 몽골 중부 또는 남부를 여행했다면 Bulgan 시는 침엽수, 통나무집, 게르가 없는 모습에 깊은 인상을 받을 수 있습니다.",
-    "schedule6-1": "오전 08:00시 아침식사",
-    "schedule6-2": "오전 09:00시 불간으로 이동",
-    "schedule6-3": "오전 12:00시 점심시간",
-    "schedule6-4": "오후 18:00시 저녁 식사(몽골 전통 음식 호르호그)",
-    "day7": "7일차 불간에서 - 울란바타르(460km)",
-    "day7text": "울란바토르는 몽골의 수도이다. 이곳은 Bogd Khaan Uul 국립공원과 접해 있는 Tuul 강 계곡에 있습니다.",
-    "schedule7-1": "오전 06:30시 아침식사",
-    "schedule7-2": "오전 07:30시 울란바토르로 이동",
-    "schedule7-3": "오전 12:00시 점심시간",
-    "schedule7-4": "오후 16:00시 고비캐시미어 구경 (Gobi cashmer)",
-    "schedule7-5": "오후 18:00시 저녁식사",
-    "button": "지금 예약"
+    "icon4": "목욕",
+    "icon5": "조명",
+    "day2": "2일. 첸헤르 온천",
+    "day2text": "첸헤르 온천은 아르항가이 주의 체체를레그 마을 남쪽에 위치합니다. 온천수는 높은 압력으로 지하 깊은 곳에서 솟아나며, 자연적인 높은 온도로 인해 지표수에 오염되지 않습니다. 초당 최대 10리터의 강하고 안정적인 흐름을 유지하며, 상쾌하고 치료적인 경험을 제공합니다.",
+    "attention2": "★참고★",
+    "att_desc1": "온천을 위해 수영복과 비치웨어를 준비하세요.",
+    "schedule2-1": "08:00 - 아침 식사",
+    "schedule2-2": "08:30 - 첸헤르 온천으로 이동",
+    "schedule2-3": "14:00 경 - 도착 및 점심 식사",
+    "schedule2-4": "15:30 경 - 온천 즐기기",
+    "schedule2-5": "18:00 - 저녁 식사",
+    "day3": "3일. 테르히인 차강 누르",
+    "day3text": "테르히 백호수는 아르항가이 주에 위치하며 울란바타르에서 서쪽으로 약 675km 떨어져 있습니다. 이 민물 호수는 길이 16km, 너비 약 6km이며, 코르고인 토고 및 인근 화산들의 분출로 인해 형성되었습니다. 수영하고 상쾌해지기에 좋은 장소입니다.",
+    "schedule3-1": "08:00 - 아침 식사",
+    "schedule3-2": "08:30 - 테르히 백호수로 출발",
+    "schedule3-3": "13:00 경 - 도착 및 점심 식사",
+    "schedule3-4": "15:00 경 - 하이킹, 땀 흘리기 및 수영",
+    "schedule3-5": "19:00 - 저녁 식사",
+    "day4": "4일. 이데르 숨",
+    "day4text": "후브스굴 호수로 가는 길 중간에 이데르 숨에서 하룻밤을 보낼 것입니다. 날씨가 허락한다면 캠핑도 가능합니다. 평화로운 계곡에 위치한 이데르 숨은 아름다운 풍경으로 둘러싸여 있습니다.",
+    "schedule4-1": "08:00 - 아침 식사",
+    "schedule4-2": "08:30 - 이데르 숨으로 이동",
+    "schedule4-3": "13:00 경 - 점심 식사",
+    "schedule4-4": "18:00 경 - 도착 및 저녁 식사",
+    "day5": "5일. 후브스굴 호수",
+    "day5text": "후브스굴 호수는 울창한 숲, 반짝이는 강, 험준한 산으로 둘러싸인 몽골의 가장 아름다운 주의 중심에 있습니다. '몽골의 푸른 진주'라고 불리는 이 호수는 맑고 깊은 고요함을 자랑합니다. 해안선의 모든 굴곡은 새로운 자연의 경이를 드러내며, 손길이 닿지 않은 자연과 연결할 수 있는 끝없는 기회를 제공합니다.",
+    "schedule5-1": "07:30 - 아침 식사",
+    "schedule5-2": "08:00 - 후브스굴 호수로 이동",
+    "schedule5-3": "12:00 경 - 무룬 시내에서 점심 식사",
+    "schedule5-4": "13:30 경 - 호수 캠프 도착",
+    "schedule5-5": "14:00 이후 - 후브스굴 호수 탐험 및 즐기기",
+    "schedule5-6": "19:00 - 저녁 식사",
+    "day6": "6일. 불간 아이막",
+    "day6text": "오늘 우리는 수도로 돌아가는 여정을 시작합니다. 중간에 불간 마을에서 하룻밤을 보낼 것입니다. 중부 또는 남부 몽골을 여행해왔다면 불간의 울창한 침엽수림과 전통적인 게르가 없는 풍경이 놀라울 수 있습니다.",
+    "schedule6-1": "08:00 - 아침 식사",
+    "schedule6-2": "09:00 - 불간 아이막으로 출발",
+    "schedule6-3": "13:00 - 점심 식사",
+    "schedule6-4": "19:00 - 도착 및 저녁 식사",
+    "day7": "7일. 울란바타르로 돌아가기",
+    "day7text": "울란바타르로 돌아가는 길에 점심을 먹으며 이동할 것입니다. 교통 상황에 따라 약 15:00에 도착할 예정입니다. 이로써 투어가 종료되며, 남은 시간은 자유롭게 휴식하거나 도시를 탐험할 수 있습니다. 저녁에는 작별 만찬을 즐기며 여정을 축하할 것입니다.",
+    "schedule7-1": "07:30 - 아침 식사",
+    "schedule7-2": "08:00 - 울란바타르로 이동",
+    "schedule7-3": "12:00 - 점심 식사",
+    "schedule7-4": "15:00 경 - 울란바타르 도착",
+    "schedule7-5": "19:00 - 저녁 식사",
+    "button": "예약하기"
   },
   "Gobi": {
-    "picture_text": "고비 투어 Gobi Tour 6박 7일",
-    "description": "고비는 모래 언덕, 산, 그리고 눈표범과 박트리아 낙타와 같은 희귀 동물로 유명합니다. 고비 구르반사이칸 국립공원(Gobi Gurvansaikhan National Park)의 콩고린 엘스(Khongoryn Els) 모래 언덕은 바람이 불면 노래를 부른다고 합니다. 공원에는 Yolyn Am 협곡의 깊은 빙원도 있습니다. 또한 고비는 바얀자그(Bayanzag)의 붉은 \"불타는 절벽\"에서 발견된 공룡 화석으로 가장 잘 알려져 있습니다.",
-    "day1": "1일차 울란바타르 - 차간 수바르가 (420km)",
-    "day1text": "Tsagaan suvarga /White Stupa/는 수직으로 90도 솟아 있으며 다양한 색상의 점토 퇴적물로 구성됩니다. 목적지는 Dundgovi 지방 Ulziit sum에서 남서쪽으로 65km 떨어져 있습니다. 차강 수바르가(Tsagaan suvarga)는 높이 200m의 큰 절벽으로 길이가 400m에 이릅니다.",
-    "attention": "★주의★",
-    "attention_desc": "몽골 고비의 길은 대부분이 비포장인 오프로드 도로입니다. 개인용 목베개를 준비하시면 보다 편안하게 이동할 수 있습니다.",
-    "program": "일정",
-    "schedule1-1": "오전 07:00시 아침식사",
-    "schedule1-2": "오전 07:30시 차간수바르가으로 출발",
-    "schedule1-3": "오전 12:00시 점심식사 ",
-    "schedule1-4": "오후 15:00시 차간수바르가으로 토착",
-    "schedule1-5": "오후 19:00시 전역 식사",
+    "picture_text": "고비 투어 - 7일 6박",
+    "description": "고비는 광활한 모래 언덕, 험준한 산, 눈 표범과 같은 희귀 동물로 유명합니다. 고비 구르반사이한 국립공원의 높은 홍고린 엘스 모래 언덕은 바람이 불 때 '노래'한다고 알려져 있으며, 욜린 암 협곡은 여름에도 얼음 필드가 있어 놀라움을 선사합니다.",
+    "day1": "1일. 차강 수브르가",
+    "day1text": "차강 수브르가 또는 화이트 스투파는 고비 사막의 눈에 띄는 석회암 절벽으로, 고대 도시의 폐허처럼 보입니다. 최대 30미터 높이에 400미터 이상 펼쳐져 있으며, 특히 일출과 일몰 때 아름다운 분홍색과 주황색 빛을 냅니다.",
+    "program": "프로그램",
+    "schedule1-1": "07:00 - 아침 식사",
+    "schedule1-2": "07:30 - 차강 수브르가로 출발",
+    "schedule1-3": "12:00 경 - 점심 식사",
+    "schedule1-4": "15:00 경 - 화이트 스투파 도착",
+    "schedule1-5": "19:00 - 저녁 식사",
     "icon1": "식사",
     "icon3": "충전",
-    "icon4": "욕실",
-    "icon5": "전기",
-    "day2": "2일차  차간 수바르가 - 욜린 암 (180km)",
-    "day2text": "독수리, 야생 아르갈리양, 검독수리를 관찰할 수 있는 훌륭한 장소입니다. 처음에는 지역 조류를 보호하기 위해 설립되었지만 결국에는 겨울에 형성되어 여름까지 남아 있는 깊은 빙원을 방문하기 위한 인기 있는 장소가 되었습니다",
-    "schedule2-1": "오전 08:00시 아침 식사",
-    "schedule2-2": "오전 09:00시 욜린 암 출발",
-    "schedule2-3": "오후 12:00시 점심 식사",
-    "schedule2-4": "오후 18:00시 전역 식사",
-    "day3": "3 일차 욜린 암에서 - 혼고르 모래 언덕 (180km)",
-    "day3text": "이것은 몽골에서 가장 크고 가장 아름다운 사구 중 하나입니다. 높이가 200m에 달하는 이 모래 언덕의 폭은 7~8km, 길이는 약 180km입니다. 모래 언덕을 오르는 것은 정상에서의 경치뿐만 아니라 올라가는 동안 모래 언덕에서 나는 소리도 흥미럽다",
-    "schedule3-1": "오전 09:00시 아침 식사",
-    "schedule3-2": "오전 10:00시 혼고르 모래 언덕 출발",
-    "schedule3-3": "오전 13:00시 점심 식사",
-    "schedule3-4": "오후 15:00시 낙타 타기",
-    "schedule3-5": "오후 17:00시 혼고르 모래 언덕 올라갑니다 ",
-    "schedule3-6": "오후 19:00시 전역 식사",
-    "day4": "4 일차 혼고르에서 - 바얀자그 (160km)",
-    "day4text": "폭이 5km, 길이가 약 8km인 독특한 텍스처를 가지고 있습니다. Roy Chapmen Endrius 미국의 고생물학자 인 그는 1922년 선원들과 함께 고대인의 흔적을 찾기 위한 탐험을 하던 중 이 지역에서 처음으로 공룡 뼈와 알을화석을 발견했습니다.",
-    "schedule4-1": "오전 08:30시 아침 식사",
-    "schedule4-2": "오전 09:00시 바얀자그 출발",
-    "schedule4-3": "오전 12:00시 점심 식사",
-    "schedule4-4": "오후 14:00시 바얀자그 도착 ",
-    "schedule4-5": "오후 19:00시 전역 식사",
-    "day5": "5 일차 바얀자그에서 - Baga Gazryn Chuluu (480km)",
-    "day5text": "산길과 계곡 주변에는 많은 샘물 외에도 고대의 무덤과 기념물이 많이 있습니다. 수두틴 암(Sudutyn am)이라고 불리는 포플러 바위 계곡, 자르갈란트(Jargalant) 동굴, 고대의 그림 글자 쓰여있는 바위 등 볼거리가 많습니다.",
-    "schedule5-1": "오전 08:00시 아침 식사",
-    "schedule5-2": "오전 08:30시 Baga Gazryn Chuluu 출발",
-    "schedule5-3": "오전 12:00시 점심 식사",
-    "schedule5-4": "오후 17:00시 도착 후 아름다운 자연을 감상하고 사진을 찍고 하이킹을 해보세요.",
-    "schedule5-5": "오후 19:00시 전역 식사",
-    "day6": "6 일차 Baga gazryn chuluu - 테렐지 국립공원 (300km)",
-    "day6text": "테렐지는 울란바토르 시 근처의 독특한 산입니다. 바위산 계곡마다 산의 가파른 경사면이 가로질러 독특한 풍경을 이루고 있습니다. 예를 들어 친구바위, 몽크바위 및 거북바위 같은 수많은 전설적이고 역사적인 암석 동굴이 있습니다.",
-    "attention1": "★승마 주의 사항★",
-    "att_desc1": "1. 절대로 말 뒤에 서 있으면 안된다.",
-    "att_desc2": "2. 말을 탈때는 오른쪽으로 타고 내린다 ",
-    "att_desc3": "3. 좀 더 빨리 혹은 달리고 싶을때 ... 추 추 라고 함니다",
-    "schedule6-1": "오전 07:00시 아침 식사",
-    "schedule6-2": "오전 07:30시 테렐지 국립공원 출발",
-    "schedule6-3": "오전 12:00시 점심 식사",
-    "schedule6-4": "오후 15:00시 테렐지에서 말타기 (독수리 구경)",
-    "schedule6-5": "오후 16:00시 Aryabal monastery 방문",
-    "schedule6-6": "오후 18:00시 저녁 식사 ( 몽골 전통 음식 호르호그)",
-    "day7": "7일차 테렐지에서 - 울란바토르 (80km)",
-    "day7text": "울란바토르는 몽골의 수도이다. 이곳은 보그드칸 (Bogd Khaan Uul) 국립공원과 접해 있는 토올 강 (Tuul) 계곡에 있습니다.",
-    "schedule7-1": "오전 08:00시 아침 식사",
-    "schedule7-2": "오전 10:00시 친기스칸 동상",
-    "schedule7-3": "오전 12:00시 점심 식사",
-    "schedule7-4": "오후 14:00시 Gobi cashmer 구경",
-    "schedule7-5": "오후 18:00시 저녁 식사",
-    "button": "지금 예약"
+    "icon4": "목욕",
+    "icon5": "조명",
+    "day2": "2일. 욜린 암",
+    "day2text": "욜린 암 또는 독수리 계곡은 고비 구르반사이한 산맥에 위치한 깊고 좁은 협곡으로, 연중 얼음 필드로 유명합니다. 야생 양, 독수리 등을 볼 수 있는 좋은 장소입니다.",
+    "schedule2-1": "08:00 - 아침 식사",
+    "schedule2-2": "08:30 - 욜린 암으로 출발",
+    "schedule2-3": "12:00 경 - 점심 식사",
+    "schedule2-4": "13:00 경 - 욜 계곡 도착",
+    "schedule2-5": "19:00 - 저녁 식사",
+    "day3": "3일. 홍고린 엘스",
+    "day3text": "홍고린 엘스 또는 '노래하는 모래 언덕'은 몽골에서 가장 크고 인상적인 모래 형성 중 하나입니다. 높이 300미터에 길이 수 마일에 걸쳐 펼쳐져 있습니다. 바람이 불 때 모래는 독특한 허밍 소리를 내며 마법 같은 느낌을 줍니다.",
+    "schedule3-1": "08:00 - 아침 식사",
+    "schedule3-2": "09:00 - 홍고르 모래 언덕으로 출발",
+    "schedule3-3": "13:00 경 - 점심 식사",
+    "schedule3-4": "16:00 경 - 홍고르 도착",
+    "schedule3-5": "16:30 이후 - 모래 언덕 등반",
+    "schedule3-6": "19:00 - 저녁 식사",
+    "day4": "4일. 바얀자그",
+    "day4text": "바얀자그 또는 불타는 절벽은 붉은 사암 형성으로, 일출과 일몰 때 화려하게 빛납니다. 1922년 미국 고생물학자 로이 채프먼 앤드류스는 공룡 뼈와 세계 최초의 공룡 알을 발견했습니다.",
+    "schedule4-1": "08:30 - 아침 식사",
+    "schedule4-2": "09:00 - 바얀자그로 출발",
+    "schedule4-3": "12:00 경 - 점심 식사",
+    "schedule4-4": "14:00 경 - 절벽 도착",
+    "schedule4-5": "19:00 - 저녁 식사",
+    "day5": "5일. 바가 가자린 추루",
+    "day5text": "바가 가자린 추루는 몽골 남부의 초원에서 드라마틱하게 솟아난 화강암 산악 지대입니다. 눈에 띄는 바위 형성, 동굴, 고대 암각화로 유명하며 자연의 아름다움과 문화적 역사가 독특하게 조화를 이룹니다.",
+    "schedule5-1": "08:00 - 아침 식사",
+    "schedule5-2": "08:30 - 바가 가자린 추루로 출발",
+    "schedule5-3": "12:00 경 - 점심 식사",
+    "schedule5-4": "17:00 경 - 도착",
+    "schedule5-5": "17:00 이후 - 즐기기, 사진 찍기 및 하이킹",
+    "schedule5-6": "19:30 - 저녁 식사",
+    "day6": "6일. 테렐지 국립공원",
+    "day6text": "오늘 우리는 울란바타르에서 가까운 테렐지 국립공원으로 향합니다. 상징적인 거북이 바위를 탐험하고, 아랴발 수도원까지 짧은 하이킹을 즐기며, 전통 몽골 게르에서 하룻밤을 보낼 수 있습니다.",
+    "schedule6-1": "07:00 - 아침 식사",
+    "schedule6-2": "07:30 - 테렐지 국립공원으로 출발",
+    "schedule6-3": "12:00 경 - 점심 식사",
+    "schedule6-4": "15:00 경 - 테렐지 도착, 거북이 바위 방문",
+    "schedule6-5": "16:00 - 아랴발 수도원 방문",
+    "schedule6-6": "18:00 - 저녁 식사",
+    "day7": "7일. 울란바타르로 돌아가기",
+    "day7text": "울란바타르로 돌아가는 길에 인상적인 칭기즈 칸 기마상을 방문할 것입니다. 교통 상황에 따라 점심 시간에 도시에 도착할 예정입니다. 이로써 투어가 종료되며, 남은 시간은 자유롭게 휴식하거나 도시를 탐험할 수 있습니다.",
+    "schedule7-1": "08:00 - 아침 식사",
+    "schedule7-2": "09:00 - 칭기즈 칸 동상 단지 방문",
+    "schedule7-3": "12:30 경 - 점심 식사",
+    "schedule7-4": "14:00 이후 - 도시 자유 탐험",
+    "schedule7-5": "18:00 - 저녁 식사",
+    "button": "예약하기"
   },
   "Central": {
-    "picture_text": "중앙몽골 4박 5일 센트럴 투어",
-    "description": "몽골의 환경은 전반적으로 자연과 주로 늦은 도시화, 전통적으로 생존을 위해 자원을 절약하는 유목 생활 방식, 매우 존경받는 영성과 자연의 힘과 사람들의 조화로 인해 여전히 양호한 상태로 보존되어 있습니다. 센트럴 투어를 선택 하시면 도시와 시골의 아름다움을 모두 보실수 있으며 기억에 남는 여행이 될것입니다.",
-    "day1": "   1일차 울란바토르-엘센타사르하이 (UB에서 280km)",
-    "day1text": "Elsen Tasarkhai는 울란바토르에서 서쪽으로 280km 떨어진 Uvurkhangai Aimag(지방)의 Burd soum에 위치해 있습니다. 이 지역의 자연은 정말 훌륭하고 휴식을 취하기에 좋습니다. 이 지역은 사구로 둘러싸여 있고 모래언덕은 희귀한 수풀로 덮여 있으며 강 근처에는 작은 숲도 있습니다.",
-    "attention": "★주위 사항★",
-    "att_desc": "★: 낙타를 탈 때 강렬한 색상의 옷이나 바람에 의해 소리가 심하게 나는 옷은 자제하고 밑창이 거친 신발은 신지 않는 것이 좋다.낙타에게 접근할 때는 차분하게 말의 좌측이나 앞부분으로 다가가야 한다.",
-    "program": "일정",
-    "schedule1-1": "오전 08:30시 아침식사",
-    "schedule1-2": "​오전 09:30시 엘센 타사르하이(Elsen Tasarkhai)로 이동",
-    "schedule1-3": "오전 12:00시 점심시간",
-    "schedule1-4": "오후 14:00시 엘센 타사르하이 도착 (낙타 타기)",
-    "schedule1-5": "오후 16:00시 아름다운 자연을 감상하는 자유시간.",
-    "schedule1-6": "오후 18:00시 저녁 식사",
-    "schedule1-7": "우후 21:00시 이후 작은 불꽃축제를 열며 밤하늘에 쏟아지는 별을 감상할수도 있슴니다.",
+    "picture_text": "중앙 아이막 투어 - 5일 4박",
+    "description": "몽골의 환경은 광활한 자연 경관, 늦은 도시 개발, 자원 보존과 자연에 대한 깊은 존중을 바탕으로 한 전통적인 유목 생활 방식 덕분에 매우 잘 보존되어 있습니다. 중앙 투어는 활기찬 도시 생활과 고요한 시골의 아름다움을 완벽하게 조화시킵니다.",
+    "day1": "1일. 엘센 타사르카이",
+    "day1text": "엘센 타사르카이 또는 '작은 고비'는 울란바타르 서쪽 약 280km에 위치합니다. 몽골 엘스 모래 언덕의 일부로, 투브, 우부르항가이, 불간 주를 가로지르며 후그누 칸 산맥과 합쳐집니다. 길이 80km의 이 모래 언덕은 사막, 초원, 산악 풍경의 멋진 조합을 제공합니다.",
+    "program": "프로그램",
+    "schedule1-1": "08:30 - 아침 식사",
+    "schedule1-2": "09:00 - 엘센 타사르카이로 이동",
+    "schedule1-3": "12:30 - 점심 식사",
+    "schedule1-4": "14:00 - 엘센 타사르카이 도착",
+    "schedule1-5": "14:00 이후 - 즐기기, 하이킹 및 탐험",
+    "schedule1-6": "19:00 - 저녁 식사",
     "icon1": "식사",
     "icon3": "충전",
-    "icon4": "욕실",
-    "icon5": "전기",
-    "day2": "2일차 엘센타사르하이-첸케르 온천(엘센타사르하이에서 160km)",
-    "day2text": "Arkhangai 지방의 Tsenkher 마을 남쪽에 있습니다. 물은 땅 속 깊은 곳에서 흘러나오는데, 그 물은 뜨거워서 흙물과 지하수와 섞이지 않습니다. 또한 스프링은 지하에 고압으로 유지되며 유속은 초당 10리터에 달합니다. ",
-    "attention2": "★주의 사항★",
-    "att_desc2": "온천에 필요한 옷들을 챙겨오세요. (수영복, 비치웨어)",
-    "schedule2-1": "오전 08:30시 아침 식사",
-    "schedule2-2": "오전 09:30시 Tsenkher 온천으로 출발",
-    "schedule2-3": "오전 12:00시 점심시간",
-    "schedule2-4": "오후 15:00시 도착 후 온천/스파 이용",
-    "schedule2-5": "오후 18:00시 저녁 식사",
-    "day3": "3일차 Tsenkher 온천-Kharkhorin 마을-Ugii nuur (우기호수) (Tsenkher에서 우기호수 까지190km))",
-    "day3text": "1206년 칭기스칸 몽골 대제국을 설립하고 첫번째 수도인 하르호린을 건설했다.  하르호린시는 140년 동안 존재했고, 32년 동안 몽골의 중앙 수도였으며 다양한 종교사원이 공존했다. 이 도시는 크 당시에 세계에서 가장 큰 무역 도시였습니다",
-    "attention3": "아르한한가이 주 ( ARHANGAI) 는 몽골의 서부지역에 위치하고 있으며 오기호수는 몽골 낚시에 중요한 담수호입니다. 길이 8km 폭 6km 깊이 7미터의  달하는 호수이며 국내외 관광객들이 즐겨 찾는 명소입니다.",
-    "schedule3-1": "오전 08:00시 아침 식사",
-    "schedule3-2": "오전 09:00시 하르호린(Kharkhorin)으로 출발",
-    "schedule3-3": "오전 12:00시 점심시간",
-    "schedule3-4": "오후 13:00시 ErdeneZuu Monastry 방문",
-    "schedule3-5": "오후 14:00시 Ugii nuur 오기호수 출발",
-    "schedule3-6": "오후 18:00시 저녁 식사",
-    "day4": "4일차 우기 호수 - 테렐지 국립공원 (420km)",
-    "day4text": "테렐지는 울란바토르 시 근처의 독특한 산입니다. 바위산 계곡마다 산의 가파른 경사면이 가로질러 독특한 풍경을 이루고 있습니다. 예를 들어 몽크바위, 거북바위 등 전설적이고 역사적인 바위동굴이 많이 있습니다.",
-    "attention4": "★승마 주의 사항★:",
-    "att_desc4_1": "1. 절대로 말 뒤에 서 있으면 안된다. ",
-    "att_desc4_2": "2. 말을 탈때는 오른쪽으로 타고 내린다",
-    "att_desc4_3": "내린다 3. 좀 더 빨리 혹은 달리고 싶을때 ... 추 추 라고 함니다.",
-    "schedule4-1": "오전 07:00시 아침 식사",
-    "schedule4-2": "오전 07:30시 테렐지 국립공원으로 이동.",
-    "schedule4-3": "오전 12:00시 점심식사",
-    "schedule4-4": "오후 15:00시 테렐지 국립공원 도착 ( 말 타기 )",
-    "schedule4-5": "오후 17:00시 아라이발 수도원 방문",
-    "schedule4-6": "오후 18:00시 저녁식사 ( 몽골 전통 음식 허르허그)",
-    "day5": "5일차 테렐지 국립공원 - 울란바토르로 돌아옵니다 (70km)",
-    "day5text": "울란바토르는 몽골의 수도이다. 이곳은 Bogd Khaan Uul 국립공원과 접해 있는 토올(Tuul) 강 계곡에 위치하고 있습니다",
-    "schedule5-1": "오전 10:00시 아침 식사",
-    "schedule5-2": "오전 11:00시 울란바토르로 이동",
-    "schedule5-3": "오전 12:00시 점심 식사",
-    "schedule5-4": "오후 14:00시 숙소에 도착합니다",
-    "button": "지금 예약"
+    "icon4": "목욕",
+    "icon5": "조명",
+    "day2": "2일. 첸헤르 온천",
+    "day2text": "첸헤르 온천은 아르항가이 주의 체체를레그 마을 남쪽에 위치합니다. 온천수는 높은 압력으로 지하 깊은 곳에서 솟아나며, 자연적인 높은 온도로 인해 지표수에 오염되지 않습니다.",
+    "attention2": "★참고★",
+    "att_desc2": "온천을 위해 수영복과 비치웨어를 준비하세요.",
+    "schedule2-1": "08:00 - 아침 식사",
+    "schedule2-2": "09:00 - 첸헤르 온천으로 출발",
+    "schedule2-3": "12:00 경 - 점심 식사",
+    "schedule2-4": "15:00 경 - 온천 도착",
+    "schedule2-5": "15:00 이후 - 온천 즐기기, 휴식 및 몸 담그기",
+    "schedule2-6": "18:00 - 저녁 식사",
+    "day3": "3일. 카르코린, 우기 누르",
+    "day3text": "카르코린, 몽골 제국의 고대 수도로 칭기즈 칸이 1206년에 건설했습니다. 몽골의 정치 및 문화 중심지로 32년 동안 기능했으며 140년 동안 주요 무역 및 종교 중심지로 번영했습니다. 우기 호수는 아르항가이 주에 위치한 고요한 민물 호수로, 낚시, 조류 관찰 및 평화로운 휴식에 이상적입니다.",
+    "schedule3-1": "08:00 - 아침 식사",
+    "schedule3-2": "08:30 - 카르코린으로 출발",
+    "schedule3-3": "12:00 경 - 점심 식사",
+    "schedule3-4": "13:00 경 - 카르코린 및 에르데네주 수도원 방문",
+    "schedule3-5": "14:30 경 - 우기 호수로 출발",
+    "schedule3-6": "18:00 경 - 도착 및 저녁 식사",
+    "schedule3-7": "19:00 이후 - 호수 즐기기 및 휴식",
+    "day4": "4일. 테렐지 국립공원",
+    "day4text": "테렐지는 울란바타르 외곽에 위치한 눈에 띄는 산악 지역으로, 드라마틱한 바위 형상과 경치 좋은 계곡으로 유명합니다. 상징적인 거북이 바위가 있으며, 인근의 아랴발 수도원은 언덕 위에 평화롭게 자리 잡고 있습니다.",
+    "schedule4-1": "07:00 - 아침 식사",
+    "schedule4-2": "07:30 - 테렐지 국립공원으로 출발",
+    "schedule4-3": "12:00 경 - 점심 식사",
+    "schedule4-4": "15:00 경 - 거북이 바위, 테렐지 국립공원 도착",
+    "schedule4-5": "16:00 경 - 아랴발 수도원 방문",
+    "schedule4-6": "18:00 - 저녁 식사 (몽골 전통 음식 호르호그)",
+    "day5": "5일. 울란바타르로 돌아가기",
+    "day5text": "오늘 우리는 울란바타르로 돌아가는 길에 점심을 먹으며 이동할 것입니다. 약 15:00에 도착할 예정이며, 이로써 투어가 종료됩니다. 남은 시간은 자유롭게 휴식하거나 도시를 탐험할 수 있습니다.",
+    "schedule5-1": "10:00 - 아침 식사",
+    "schedule5-2": "11:00 - 울란바타르로 이동",
+    "schedule5-3": "12:30 경 - 점심 식사",
+    "schedule5-4": "15:00 경 - 숙소 도착",
+    "button": "예약하기"
   }
 }

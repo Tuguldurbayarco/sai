@@ -512,6 +512,19 @@
   justify-content: center;
   margin-left: 1.7rem;
   color: #000;
+  position: relative;
+  z-index: 9999;
+}
+
+/* Language switcher dropdown styles */
+.language-switcher {
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+.language-switcher button {
+  position: static !important;
+  z-index: inherit !important;
 }
 
 .switcher_change_btn {
@@ -1243,11 +1256,11 @@
     height: 30px;
   }
   .switcher_btn {
-    position: fixed;
-    top: 12px;
-    z-index: 50;
-    left: 8%;
-    transform: translateX(-70%);
+    position: static !important;
+    top: auto !important;
+    z-index: inherit !important;
+    left: auto !important;
+    transform: none !important;
   }
   .switcher {
     font-size: 100%;

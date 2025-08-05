@@ -1,24 +1,68 @@
 import { useLocale } from 'next-intl';
 import React from 'react';
-import {useTranslations} from 'next-intl';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Form from 'react-bootstrap/Form';
+
+type Language = {
+  code: string;
+  name: string;
+  flag: string;
+  nativeName: string;
+};
+
+const languages: Language[] = [
+  { code: 'en', name: 'English', flag: '/g-britain.png', nativeName: 'English' },
+  { code: 'ko', name: 'Korean', flag: '/s-korea.png', nativeName: '한국어' },
+  { code: 'hb', name: 'Hebrew', flag: '/israel.svg', nativeName: 'עברית' },
+];
 
 export default function LocalSwitcher() {
-  const t = useTranslations('Index');
   const localActive = useLocale();
+  const currentLanguage = languages.find(lang => lang.code === localActive) || languages[0];
 
-  const handleImageClick = () => {
-    const nextLocale = localActive === 'ko' ? 'en' : 'ko';
-    location.href = `/${nextLocale}`;
+  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLang = event.target.value;
+    if (selectedLang !== localActive) {
+      location.href = `/${selectedLang}`;
+    }
   };
 
   return (
-    <div onClick={handleImageClick} className='switcher_btn' style={{ cursor: 'pointer' }}>
+    <div className="language-switcher d-flex align-items-center">
+      {/* Current language flag */}
       <img 
-        src={localActive === 'ko' ? '/g-britain.png' : '/s-korea.png'}
-        alt='switcher flag'
-        height="auto"
-        width="36px"
+        src={currentLanguage.flag}
+        alt={`${currentLanguage.name} flag`}
+        style={{
+          width: '24px',
+          height: 'auto',
+          borderRadius: '2px',
+        }}
       />
+      
+      {/* React Bootstrap Form.Select */}
+      <Form.Select
+        value={localActive}
+        onChange={handleLanguageChange}
+        size="sm"
+        style={{
+          width: 'auto',
+          border: 'none',
+          backgroundColor: 'transparent',
+          fontSize: '14px',
+          fontWeight: '500',
+          cursor: 'pointer',
+          paddingLeft: '8px',
+          boxShadow: 'none'
+        }}
+        aria-label="Language selector"
+      >
+        {languages.map((language) => (
+          <option key={language.code} value={language.code}>
+            {language.nativeName}
+          </option>
+        ))}
+      </Form.Select>
     </div>
-  )
+  );
 }
