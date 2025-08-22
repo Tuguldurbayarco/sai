@@ -1,12 +1,12 @@
 // Final working server.js for cPanel - clean and functional
-const http = require('http');
-const nodemailer = require('nodemailer');
+const http = require("http");
+const nodemailer = require("nodemailer");
 
 // Hardcoded values - ALL environment variables included
-const SMTP_HOST = 'bizmail22.itools.mn';
-const SMTP_USER = 'no-reply@saibaitour.mn';
-const SMTP_PASS = '&3_[]CD(5U3skgf?'; // ⚠️ REPLACE WITH ACTUAL PASSWORD
-const BUSINESS_EMAIL = 'info@saibaitour.mn';
+const SMTP_HOST = "bizmail22.itools.mn";
+const SMTP_USER = "no-reply@saibaitour.mn";
+const SMTP_PASS = ""; // ⚠️ REPLACE WITH ACTUAL PASSWORD
+const BUSINESS_EMAIL = "info@saibaitour.mn";
 
 // // Create nodemailer transporter
 // const transporter = nodemailer.createTransporter({
@@ -32,75 +32,81 @@ const BUSINESS_EMAIL = 'info@saibaitour.mn';
 // });
 
 // Create server
-const server = http.createServer(function(req, res) {
+const server = http.createServer(function (req, res) {
   // Set CORS headers
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
   // Handle OPTIONS (CORS preflight)
-  if (req.method === 'OPTIONS') {
+  if (req.method === "OPTIONS") {
     res.writeHead(200);
     res.end();
     return;
   }
-  
+
   // Get the path (handle both relative and full paths)
   const fullPath = req.url;
-  const pathOnly = fullPath.split('?')[0]; // Remove query parameters
-  
+  const pathOnly = fullPath.split("?")[0]; // Remove query parameters
+
   // Endpoint 1: Health check
-  if (pathOnly.includes('/health')) {
-    res.writeHead(200, {'Content-Type': 'application/json'});
-    res.end(JSON.stringify({
-      status: 'OK',
-      message: 'Mail service is running',
-      smtp_host: SMTP_HOST,
-      smtp_user: SMTP_USER,
-      timestamp: new Date().toISOString()
-    }));
+  if (pathOnly.includes("/health")) {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(
+      JSON.stringify({
+        status: "OK",
+        message: "Mail service is running",
+        smtp_host: SMTP_HOST,
+        smtp_user: SMTP_USER,
+        timestamp: new Date().toISOString(),
+      })
+    );
     return;
   }
-  
+
   // Endpoint 2: Email sending (READY FOR FRONTEND)
-  if (pathOnly.includes('/api/send-email') && req.method === 'POST') {
-    let body = '';
-    req.on('data', chunk => {
+  if (pathOnly.includes("/api/send-email") && req.method === "POST") {
+    let body = "";
+    req.on("data", (chunk) => {
       body += chunk.toString();
     });
-    
-    req.on('end', () => {
+
+    req.on("end", () => {
       try {
         const emailData = JSON.parse(body);
         const { to, subject, text, html, from } = emailData;
-        
+
         // Validation - only subject and content are required since we send to BUSINESS_EMAIL
         if (!subject || (!text && !html)) {
-          res.writeHead(400, {'Content-Type': 'application/json'});
-          res.end(JSON.stringify({
-            success: false,
-            error: 'Missing required fields: subject and either text or html'
-          }));
+          res.writeHead(400, { "Content-Type": "application/json" });
+          res.end(
+            JSON.stringify({
+              success: false,
+              error: "Missing required fields: subject and either text or html",
+            })
+          );
           return;
         }
-        
+
         // Optional: validate 'to' field if provided (for logging purposes)
         if (to && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to)) {
-          res.writeHead(400, {'Content-Type': 'application/json'});
-          res.end(JSON.stringify({
-            success: false,
-            error: 'Invalid sender email format in "to" field'
-          }));
+          res.writeHead(400, { "Content-Type": "application/json" });
+          res.end(
+            JSON.stringify({
+              success: false,
+              error: 'Invalid sender email format in "to" field',
+            })
+          );
           return;
         }
-        
+
         // Send email using nodemailer
         const mailOptions = {
           from: from || SMTP_USER,
           to: BUSINESS_EMAIL,
           subject: subject,
-          text: text || '',
-          html: html || ''
+          text: text || "",
+          html: html || "",
         };
 
         // transporter.sendMail(mailOptions, (error, info) => {
@@ -135,61 +141,67 @@ const server = http.createServer(function(req, res) {
         //   }));
         // });
 
-          // Success response
-          res.writeHead(200, {'Content-Type': 'application/json'});
-          res.end(JSON.stringify({
+        // Success response
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(
+          JSON.stringify({
             success: true,
-            message: 'Email sent successfully',
+            message: "Email sent successfully",
             messageId: info.messageId,
             email_data: {
               to: BUSINESS_EMAIL,
               subject: subject,
-              from: from || SMTP_USER
-            }}));
-        
+              from: from || SMTP_USER,
+            },
+          })
+        );
       } catch (error) {
-        res.writeHead(400, {'Content-Type': 'application/json'});
-        res.end(JSON.stringify({
-          success: false,
-          error: 'Invalid JSON data'
-        }));
+        res.writeHead(400, { "Content-Type": "application/json" });
+        res.end(
+          JSON.stringify({
+            success: false,
+            error: "Invalid JSON data",
+          })
+        );
       }
     });
     return;
   }
-  
+
   // Endpoint 3: Root info
-  if (pathOnly === '/mail-service' || pathOnly === '/') {
-    res.writeHead(200, {'Content-Type': 'application/json'});
-    res.end(JSON.stringify({
-      message: 'SAI Mail Service is running',
-      version: '1.0.0',
-      smtp_config: {
-        host: SMTP_HOST,
-        user: SMTP_USER,
-        business_email: BUSINESS_EMAIL
-      },
-      endpoints: ['/', '/health', '/api/send-email'],
-      status: 'READY FOR FRONTEND - Email endpoint active',
-      note: 'All emails are sent to business email regardless of "to" field'
-    }));
+  if (pathOnly === "/mail-service" || pathOnly === "/") {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(
+      JSON.stringify({
+        message: "SAI Mail Service is running",
+        version: "1.0.0",
+        smtp_config: {
+          host: SMTP_HOST,
+          user: SMTP_USER,
+          business_email: BUSINESS_EMAIL,
+        },
+        endpoints: ["/", "/health", "/api/send-email"],
+        status: "READY FOR FRONTEND - Email endpoint active",
+        note: 'All emails are sent to business email regardless of "to" field',
+      })
+    );
     return;
   }
-  
+
   // Default response for any other path
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('SAI Mail Service!\nNodeJS ' + process.versions.node + '\n');
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("SAI Mail Service!\nNodeJS " + process.versions.node + "\n");
 });
 
 // Listen (cPanel will assign port)
 server.listen();
 
-console.log('🚀 SAI Mail Service is running!');
-console.log('📧 SMTP Host:', SMTP_HOST);
-console.log('👤 SMTP User:', SMTP_USER);
-console.log('🔑 SMTP Pass:', SMTP_PASS ? '***SET***' : 'NOT SET');
-console.log('🔗 Health check: /health');
-console.log('📋 Root: /');
-console.log('📬 Email endpoint: /api/send-email');
-console.log('📧 Using Nodemailer for SMTP');
-console.log('✅ READY FOR FRONTEND USE!');
+console.log("🚀 SAI Mail Service is running!");
+console.log("📧 SMTP Host:", SMTP_HOST);
+console.log("👤 SMTP User:", SMTP_USER);
+console.log("🔑 SMTP Pass:", SMTP_PASS ? "***SET***" : "NOT SET");
+console.log("🔗 Health check: /health");
+console.log("📋 Root: /");
+console.log("📬 Email endpoint: /api/send-email");
+console.log("📧 Using Nodemailer for SMTP");
+console.log("✅ READY FOR FRONTEND USE!");
