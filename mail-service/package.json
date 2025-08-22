@@ -1,0 +1,33 @@
+{
+  "name": "sai-mail-service",
+  "version": "1.0.0",
+  "description": "Standalone mail service for SAI tour website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "cpanel-start": "NODE_ENV=production node server.js",
+    "cpanel-restart": "pm2 restart sai-mail-service || pm2 start server.js --name sai-mail-service",
+    "cpanel-stop": "pm2 stop sai-mail-service",
+    "cpanel-status": "pm2 status sai-mail-service",
+    "cpanel-logs": "pm2 logs sai-mail-service",
+    "install-deps": "npm install nodemailer",
+    "setup-pm2": "npm install -g pm2 && pm2 startup && pm2 save"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "cpanel": {
+    "app_name": "sai-mail-service",
+    "app_type": "nodejs",
+    "start_script": "npm run cpanel-start",
+    "restart_script": "npm run cpanel-restart",
+    "stop_script": "npm run cpanel-stop"
+  }
+}
