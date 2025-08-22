@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+// Updated to use mail service instead of nodemailer
 
 function emailBody(body: any){
     return `
@@ -17,30 +17,30 @@ Please refrain from replying directly to this email, as it is sent from a no-rep
 `
 }
 
-export default function sendFormReceivedEmail(body: any){
-    const transporter = nodemailer.createTransport({
-        name: process.env.MAIL_FROM_NAME,
-        host: process.env.MAIL_HOST,
-        port: process.env.MAIL_PORT,
-        secure: false,
-        auth: {
-            user: process.env.MAIL_USERNAME,
-            pass: process.env.MAIL_PASSWORD,
-        },
-    } as any);
-    const mailOptions = {
-        from: process.env.MAIL_FROM_ADDRESS,
-        to: body.email,
-        subject: `Thank you for contacting Saibaitour!`,
-        html: emailBody(body),
-    };
-    transporter.sendMail(mailOptions,(error, info) => {
-        if (error){
-            console.error(error);
-        } else {
-            console.log("Email Sent", info);
-            return true;
+export default async function sendFormReceivedEmail(body: any){
+    try {
+        const response = await fetch('https://saibaitour.mn/mail-service/api/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                from: 'info@saibaitour.mn',
+                to: body.email,
+                subject: 'Thank you for contacting Saibaitour!',
+                html: emailBody(body)
+            }),
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
-        transporter.close();
-    });
+        
+        const result = await response.json();
+        console.log("Email Sent via Mail Service:", result);
+        return result;
+    } catch (error) {
+        console.error("Failed to send email via mail service:", error);
+        return { success: false, error };
+    }
 }

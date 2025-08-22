@@ -1,12 +1,14 @@
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
-import {getTranslations} from 'next-intl/server';
-import {unstable_setRequestLocale} from 'next-intl/server';
 
-const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Khangai');
-  return (
+const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);
+  
+  // Function to add locale prefix to href
+  function addLocaleToHref(href: string): string {
+    return `/${validLocale}${href}`;
+  }  return (
     <div className='tours_and_events_margin_top'>
       <div className='visibility_area'> {/*For description*/}
         <div>
@@ -17,8 +19,8 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             />
           </div>
           <div className='tours_background_color'>
-            <h1 className='tours_main_description_header'>{t('picture_text')}</h1>
-            <p className='tours_main_description'>{t('description')}</p>
+            <h1 className='tours_main_description_header'>{t('Khangai.picture_text')}</h1>
+            <p className='tours_main_description'>{t('Khangai.description')}</p>
           </div>
           <div style={{position: 'relative'}}>
             <img
@@ -31,10 +33,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day1')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day1')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day1text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day1text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -43,33 +45,33 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule1-1')}</li>
-                  <li>{t('schedule1-2')}</li>
-                  <li>{t('schedule1-3')}</li>
-                  <li>{t('schedule1-4')}</li>
-                  <li>{t('schedule1-5')}</li>
-                  <li>{t('schedule1-6')}</li>
+                  <li>{t('Khangai.schedule1-1')}</li>
+                  <li>{t('Khangai.schedule1-2')}</li>
+                  <li>{t('Khangai.schedule1-3')}</li>
+                  <li>{t('Khangai.schedule1-4')}</li>
+                  <li>{t('Khangai.schedule1-5')}</li>
+                  <li>{t('Khangai.schedule1-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -86,10 +88,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day2')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day2')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day2text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day2text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -98,32 +100,32 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule2-1')}</li>
-                  <li>{t('schedule2-2')}</li>
-                  <li>{t('schedule2-3')}</li>
-                  <li>{t('schedule2-4')}</li>
-                  <li>{t('schedule2-5')}</li>
+                  <li>{t('Khangai.schedule2-1')}</li>
+                  <li>{t('Khangai.schedule2-2')}</li>
+                  <li>{t('Khangai.schedule2-3')}</li>
+                  <li>{t('Khangai.schedule2-4')}</li>
+                  <li>{t('Khangai.schedule2-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -140,10 +142,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day3')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day3')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day3text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day3text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -152,32 +154,32 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule3-1')}</li>
-                  <li>{t('schedule3-2')}</li>
-                  <li>{t('schedule3-3')}</li>
-                  <li>{t('schedule3-4')}</li>
-                  <li>{t('schedule3-5')}</li>
+                  <li>{t('Khangai.schedule3-1')}</li>
+                  <li>{t('Khangai.schedule3-2')}</li>
+                  <li>{t('Khangai.schedule3-3')}</li>
+                  <li>{t('Khangai.schedule3-4')}</li>
+                  <li>{t('Khangai.schedule3-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -194,10 +196,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day4')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day4')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day4text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day4text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -206,33 +208,33 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule4-1')}</li>
-                  <li>{t('schedule4-2')}</li>
-                  <li>{t('schedule4-3')}</li>
-                  <li>{t('schedule4-4')}</li>
-                  <li>{t('schedule4-5')}</li>
-                  <li>{t('schedule4-6')}</li>
+                  <li>{t('Khangai.schedule4-1')}</li>
+                  <li>{t('Khangai.schedule4-2')}</li>
+                  <li>{t('Khangai.schedule4-3')}</li>
+                  <li>{t('Khangai.schedule4-4')}</li>
+                  <li>{t('Khangai.schedule4-5')}</li>
+                  <li>{t('Khangai.schedule4-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -249,10 +251,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day5')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day5')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day5text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day5text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -261,32 +263,32 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule5-1')}</li>
-                  <li>{t('schedule5-2')}</li>
-                  <li>{t('schedule5-3')}</li>
-                  <li>{t('schedule5-4')}</li>
-                  <li>{t('schedule5-5')}</li>
+                  <li>{t('Khangai.schedule5-1')}</li>
+                  <li>{t('Khangai.schedule5-2')}</li>
+                  <li>{t('Khangai.schedule5-3')}</li>
+                  <li>{t('Khangai.schedule5-4')}</li>
+                  <li>{t('Khangai.schedule5-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -303,10 +305,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day6')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day6')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day6text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day6text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -315,32 +317,32 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule6-1')}</li>
-                  <li>{t('schedule6-2')}</li>
-                  <li>{t('schedule6-3')}</li>
-                  <li>{t('schedule6-4')}</li>
-                  <li>{t('schedule6-5')}</li>
+                  <li>{t('Khangai.schedule6-1')}</li>
+                  <li>{t('Khangai.schedule6-2')}</li>
+                  <li>{t('Khangai.schedule6-3')}</li>
+                  <li>{t('Khangai.schedule6-4')}</li>
+                  <li>{t('Khangai.schedule6-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -357,10 +359,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day7')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day7')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day7text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day7text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -369,33 +371,33 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule7-1')}</li>
-                  <li>{t('schedule7-2')}</li>
-                  <li>{t('schedule7-3')}</li>
-                  <li>{t('schedule7-4')}</li>
-                  <li>{t('schedule7-5')}</li>
-                  <li>{t('schedule7-6')}</li>
+                  <li>{t('Khangai.schedule7-1')}</li>
+                  <li>{t('Khangai.schedule7-2')}</li>
+                  <li>{t('Khangai.schedule7-3')}</li>
+                  <li>{t('Khangai.schedule7-4')}</li>
+                  <li>{t('Khangai.schedule7-5')}</li>
+                  <li>{t('Khangai.schedule7-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -412,45 +414,45 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day8')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day8')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day8text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day8text')}</p>
               </div>
               <div>
-                <p className='tour_left_column_subheader'>{t('attention')}</p>
-                <p className='tour_left_column_text_sec'>{t('attention_desc')}</p>
+                <p className='tour_left_column_subheader'>{t('Khangai.attention')}</p>
+                <p className='tour_left_column_text_sec'>{t('Khangai.attention_desc')}</p>
               </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule8-1')}</li>
-                  <li>{t('schedule8-2')}</li>
-                  <li>{t('schedule8-3')}</li>
-                  <li>{t('schedule8-4')}</li>
-                  <li>{t('schedule8-5')}</li>
-                  <li>{t('schedule8-6')}</li>
+                  <li>{t('Khangai.schedule8-1')}</li>
+                  <li>{t('Khangai.schedule8-2')}</li>
+                  <li>{t('Khangai.schedule8-3')}</li>
+                  <li>{t('Khangai.schedule8-4')}</li>
+                  <li>{t('Khangai.schedule8-5')}</li>
+                  <li>{t('Khangai.schedule8-6')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -467,10 +469,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day9')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day9')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day9text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day9text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -479,14 +481,14 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule9-1')}</li>
-                  <li>{t('schedule9-2')}</li>
-                  <li>{t('schedule9-3')}</li>
-                  <li>{t('schedule9-4')}</li>
+                  <li>{t('Khangai.schedule9-1')}</li>
+                  <li>{t('Khangai.schedule9-2')}</li>
+                  <li>{t('Khangai.schedule9-3')}</li>
+                  <li>{t('Khangai.schedule9-4')}</li>
                   <li></li>
                   <li></li>
                   <li></li>
@@ -494,19 +496,19 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -523,10 +525,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day10')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day10')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day10text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day10text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -535,31 +537,31 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule10-1')}</li>
-                  <li>{t('schedule10-2')}</li>
-                  <li>{t('schedule10-3')}</li>
-                  <li>{t('schedule10-4')}</li>
+                  <li>{t('Khangai.schedule10-1')}</li>
+                  <li>{t('Khangai.schedule10-2')}</li>
+                  <li>{t('Khangai.schedule10-3')}</li>
+                  <li>{t('Khangai.schedule10-4')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -576,42 +578,42 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day11')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day11')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day11text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day11text')}</p>
               </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule11-1')}</li>
-                  <li>{t('schedule11-2')}</li>
-                  <li>{t('schedule11-3')}</li>
-                  <li>{t('schedule11-4')}</li>
-                  <li>{t('schedule11-5')}</li>
-                  <li>{t('schedule11-6')}</li>
-                  <li>{t('schedule11-7')}</li>
+                  <li>{t('Khangai.schedule11-1')}</li>
+                  <li>{t('Khangai.schedule11-2')}</li>
+                  <li>{t('Khangai.schedule11-3')}</li>
+                  <li>{t('Khangai.schedule11-4')}</li>
+                  <li>{t('Khangai.schedule11-5')}</li>
+                  <li>{t('Khangai.schedule11-6')}</li>
+                  <li>{t('Khangai.schedule11-7')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -628,10 +630,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day12')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day12')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day12text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day12text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -640,31 +642,31 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule12-1')}</li>
-                  <li>{t('schedule12-2')}</li>
-                  <li>{t('schedule12-3')}</li>
-                  <li>{t('schedule12-4')}</li>
+                  <li>{t('Khangai.schedule12-1')}</li>
+                  <li>{t('Khangai.schedule12-2')}</li>
+                  <li>{t('Khangai.schedule12-3')}</li>
+                  <li>{t('Khangai.schedule12-4')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
             </div>
@@ -681,10 +683,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('day13')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.day13')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>{t('day13text')}</p>
+                <p className='tour_left_column_text'>{t('Khangai.day13text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader' style={{ visibility: 'hidden' }}>text</p>
@@ -693,37 +695,37 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>{t('program')}</p>
+                <p className='tour_left_column_header'>{t('Khangai.program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>{t('schedule13-1')}</li>
-                  <li>{t('schedule13-2')}</li>
-                  <li>{t('schedule13-3')}</li>
-                  <li>{t('schedule13-4')}</li>
-                  <li>{t('schedule13-5')}</li>
+                  <li>{t('Khangai.schedule13-1')}</li>
+                  <li>{t('Khangai.schedule13-2')}</li>
+                  <li>{t('Khangai.schedule13-3')}</li>
+                  <li>{t('Khangai.schedule13-4')}</li>
+                  <li>{t('Khangai.schedule13-5')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
                   <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('Khangai.icon3')}
                 </p>
               </div>
               <div style={{marginTop: "2%"}}>
-                <Link href="/contacts/#targetBlock" className='myButton '>
-                  {t('button')}
+                <Link href={addLocaleToHref("/contacts/#targetBlock")} className='myButton '>
+                  {t('Khangai.button')}
                 </Link>
               </div>
             </div>

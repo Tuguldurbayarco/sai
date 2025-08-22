@@ -1,11 +1,13 @@
-import {getTranslations} from 'next-intl/server';
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import InputForm from '@/components/UI/InputForm';
-import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Contacts');
-  return (
+const Contacts = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);
+  
+  // Function to add locale prefix to href
+  function addLocaleToHref(href: string): string {
+    return `/${validLocale}${href}`;
+  }  return (
     <div >
       <div style={{width: "100%"}}>
         <img 
@@ -15,7 +17,7 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
           height='auto'
         />
         <div className='header_container_for_picture'>
-          <h1 className='header_on_picture'>{t('title')}</h1>
+          <h1 className='header_on_picture'>{t('Contacts.title')}</h1>
         </div>
       </div>
       <div style={{width: "100%", height: "100%", textAlign: "center"}}> {/*Endehee*/}
@@ -47,7 +49,7 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
                 height='auto'
                 className='contact_paddings'
               />
-              <a href={`https://www.google.com/maps?q=${encodeURIComponent('47.924610, 106.863472')}`} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>{t('fourth')}</a>
+              <a href={`https://www.google.com/maps?q=${encodeURIComponent('47.924610, 106.863472')}`} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>{t('Contacts.fourth')}</a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -63,52 +65,52 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
       </div> {/*Ene hurter*/}
       <div className='visibility_area'>
         <div>
-          <h2 className='contact_subheader'>{t('header')}</h2>
+          <h2 className='contact_subheader'>{t('Contacts.header')}</h2>
         </div>
         <div >
-          <p className='contact_text'>{t('text')}</p>
+          <p className='contact_text'>{t('Contacts.text')}</p>
         </div>
       </div>
       <div id="targetBlock" className='visibility_area'>
-        <h2 className='contact_subheader'>{t('second')}</h2>
-        <p className='contact_text' style={{textAlign: "center"}}>{t('third')}</p>
+        <h2 className='contact_subheader'>{t('Contacts.second')}</h2>
+        <p className='contact_text' style={{textAlign: "center"}}>{t('Contacts.third')}</p>
         <div className='visibility_area'>
           <InputForm
-            formHeader={t('formHeader')}
-            formTitle={t('name')}
-            formPlaceholder1={t('first')}
-            formPlaceholder2={t('last')}
-            mail={t('email')}
-            countryTitle={t('country')}
-            tourTitle={t('tour')}
-            numberTitle={t('number')}
-            messageTitle={t('message')}
-            agreeTitle={t('agree')}
-            buttonTitle={t('button')}
-            choice={t('choice')}
-            disabled_mask1={t('disabled_mask1')}
-            choice1={t('choice1')}
-            choice2={t('choice2')}
-            choice3={t('choice3')}
-            choice4={t('choice4')}
-            choice5={t('choice5')}
-            disabled_mask2={t('disabled_mask2')}
-            choice6={t('choice6')}
-            choice7={t('choice7')}
-            choice8={t('choice8')}
-            country1={t('country1')}
-            country2={t('country2')}
-            country3={t('country3')}
-            country4={t('country4')}
-            country5={t('country5')}
-            country6={t('country6')}
-            country7={t('country7')}
-            country8={t('country8')}
-            country9={t('country9')}
-            country10={t('country10')}
-            country11={t('country11')}
-            country12={t('country12')}
-            country13={t('country13')}
+            formHeader={t('Contacts.formHeader')}
+            formTitle={t('Contacts.name')}
+            formPlaceholder1={t('Contacts.first')}
+            formPlaceholder2={t('Contacts.last')}
+            mail={t('Contacts.email')}
+            countryTitle={t('Contacts.country')}
+            tourTitle={t('Contacts.tour')}
+            numberTitle={t('Contacts.number')}
+            messageTitle={t('Contacts.message')}
+            agreeTitle={t('Contacts.agree')}
+            buttonTitle={t('Contacts.button')}
+            choice={t('Contacts.choice')}
+            disabled_mask1={t('Contacts.disabled_mask1')}
+            choice1={t('Contacts.choice1')}
+            choice2={t('Contacts.choice2')}
+            choice3={t('Contacts.choice3')}
+            choice4={t('Contacts.choice4')}
+            choice5={t('Contacts.choice5')}
+            disabled_mask2={t('Contacts.disabled_mask2')}
+            choice6={t('Contacts.choice6')}
+            choice7={t('Contacts.choice7')}
+            choice8={t('Contacts.choice8')}
+            country1={t('Contacts.country1')}
+            country2={t('Contacts.country2')}
+            country3={t('Contacts.country3')}
+            country4={t('Contacts.country4')}
+            country5={t('Contacts.country5')}
+            country6={t('Contacts.country6')}
+            country7={t('Contacts.country7')}
+            country8={t('Contacts.country8')}
+            country9={t('Contacts.country9')}
+            country10={t('Contacts.country10')}
+            country11={t('Contacts.country11')}
+            country12={t('Contacts.country12')}
+            country13={t('Contacts.country13')}
           />
         </div>
       </div>

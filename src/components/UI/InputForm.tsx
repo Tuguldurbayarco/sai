@@ -19,36 +19,84 @@ const InputForm = ({...props}: any) => {
     console.log('Data', name, last, country, tour, number, email, message);
     e.preventDefault();
 
-    const response = await fetch("/bookForm", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        last,
-        country,
-        tour,
-        number,
-        email,
-        message
-      }),
-    });
+    try {
+      // Send booking email to business via mail service
+      const businessEmailResponse = await fetch("https://saibaitour.mn/mail-service/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: email, // FROM user's email
+          to: 'info@saibaitour.mn', // TO business email
+          subject: `New Tour Booking: ${tour}`,
+          html: `
+            <h2>New Tour Booking Request</h2>
+            <p><strong>Name:</strong> ${name} ${last}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Country:</strong> ${country}</p>
+            <p><strong>Tour:</strong> ${tour}</p>
+            <p><strong>Number of People:</strong> ${number}</p>
+            <p><strong>Message:</strong> ${message || 'No additional message'}</p>
+            <hr>
+            <p><em>This email was sent from your website contact form.</em></p>
+            <p><strong>Reply to:</strong> ${email}</p>
+          `
+        }),
+      });
 
-    {/*Change it*/}
-    if (response.ok) {
-      alert('Booking form submitted successfully!'); {/*Please agree to the terms and conditions before submitting the form.*/}
-    } else {
-      alert("Something went wrong, please try again!")
+      if (!businessEmailResponse.ok) {
+        throw new Error('Failed to send business email');
+      }
+
+      // Send confirmation email to customer
+      const customerEmailResponse = await fetch("https://saibaitour.mn/mail-service/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: 'info@saibaitour.mn', // FROM business email
+          to: email, // TO user's email
+          subject: 'Thank you for your tour booking request - Saibaitour',
+          html: `
+            <h2>Thank you for your tour booking request!</h2>
+            <p>Dear ${name} ${last},</p>
+            <p>We have received your request for the <strong>${tour}</strong> tour.</p>
+            <p>Our team will review your request and get back to you within 24 hours with more details and pricing information.</p>
+            <p><strong>Your request details:</strong></p>
+            <ul>
+              <li>Tour: ${tour}</li>
+              <li>Number of people: ${number}</li>
+              <li>Country: ${country}</li>
+            </ul>
+            <p>If you have any urgent questions, please don't hesitate to contact us directly.</p>
+            <p>Best regards,<br>The Saibaitour Team</p>
+            <hr>
+            <p><small>This is an automated confirmation email. Please do not reply to this email.</small></p>
+          `
+        }),
+      });
+
+      if (!customerEmailResponse.ok) {
+        throw new Error('Failed to send confirmation email');
+      }
+
+      alert('Booking form submitted successfully!');
+      
+      // Reset form
+      setName('');
+      setLast('');
+      setCountry('');
+      setTour('');
+      setNumber('');
+      setEmail('');
+      setMessage('');
+      
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert("Something went wrong, please try again!");
     }
-
-  setName('');
-  setLast('');
-  setCountry('');
-  setTour('');
-  setNumber('');
-  setEmail('');
-  setMessage('');
   };
 
   return (

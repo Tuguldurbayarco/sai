@@ -1,11 +1,15 @@
-import {getTranslations} from 'next-intl/server';
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import Link from 'next/link';
 import '../../nextButton.css';
-import {unstable_setRequestLocale} from 'next-intl/server';
 
-const IceFestival = async ({params: {locale}}: {params: {locale: string}}) => {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Events');
+const IceFestival = ({params: {locale}}: {params: {locale: string}}) => {  
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);
+  
+  // Function to add locale prefix to href
+  function addLocaleToHref(href: string): string {
+    return `/${validLocale}${href}`;
+  }
   return (
     <div className='visibility_area'>
       <div className='image_container'>
@@ -18,23 +22,23 @@ const IceFestival = async ({params: {locale}}: {params: {locale: string}}) => {
       </div>
       <div className='main_container'>
         <div className='events_margins'> 
-          <p className='header_container'>{t('ice-festival.title')}</p>
+          <p className='header_container'>{t('Events.ice-festival.title')}</p>
         </div>
         <div>
-          <p className='text_container' style={{textAlign: 'justify'}}>{t('ice-festival.text')}</p>
+          <p className='text_container' style={{textAlign: 'justify'}}>{t('Events.ice-festival.text')}</p>
         </div>
         <div className='text_container'> 
         </div>
       </div>
       <div className='events_button_btn'> 
-        <Link href={'./eagle'}>
+        <Link href={addLocaleToHref('/events/eagle')}>
           <button className='events_button'>
-            {t('previous')}
+            {t('Events.previous')}
           </button>
         </Link>
-        <Link href={'./naadam'}>
+        <Link href={addLocaleToHref('/events/naadam')}>
           <button className='events_button'> 
-            {t('next')}
+            {t('Events.next')}
           </button>
         </Link>
       </div>

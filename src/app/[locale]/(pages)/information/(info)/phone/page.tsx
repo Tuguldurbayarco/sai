@@ -1,11 +1,8 @@
-import {getTranslations} from 'next-intl/server';
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import { mobileCompanies } from '@/constants'
-import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Phone = async ({params: {locale}}: {params: {locale: string}}) => {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Information')
-  return (
+const Phone = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);  return (
     <div className='visibility_area' style={{marginTop: "7.4%"}}>
       <img
         src='/pmain.jpg'

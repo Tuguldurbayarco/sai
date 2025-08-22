@@ -1,14 +1,15 @@
-import {useTranslations} from 'next-intl';
+import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 
 function MenuButtons(lang: string) {
-  const t = useTranslations('Index');
-
+  const validLocale = isValidLocale(lang as Locale) ? (lang as Locale) : defaultLocale;
+  const t = createTranslator(validLocale);
+  
   return {
-    label1: t('menu.label1'),
-    label2: t('menu.label2'),
-    label3: t('menu.label3'),
-    label4: t('menu.label4'),
-    label5: t('menu.label5'),
+    label1: t('Index.menu.0.label'),
+    label2: t('Index.menu.1.label'),
+    label3: t('Index.menu.2.label'),
+    label4: t('Index.menu.3.label'),
+    label5: t('Index.menu.4.label'),
   };
 }
 
@@ -23,8 +24,7 @@ export default MenuButtons
 /*
 function MenuButtons({children}: { children: React.ReactNode }) {
   
-  const t = useTranslations('Index');
-  return (
+    return (
     <>
       <div style={{display: "flex"}}>
         {React.Children.map(children, (child, index) => (

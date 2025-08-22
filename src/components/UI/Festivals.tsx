@@ -1,15 +1,21 @@
-import {useTranslations} from 'next-intl';
+import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 import Image from 'next/image'
 import { FESTIVALS } from '@/constants'
 import Link from "next/link";
 
-const Festivals = () => {
-  const t = useTranslations('Events');
-  return (
+const Festivals = ({locale}: {locale?: Locale}) => {
+  const validLocale = isValidLocale(locale || 'en') ? (locale || 'en') : defaultLocale;
+  const t = createTranslator(validLocale);
+  
+  // Function to add locale prefix to href
+  function addLocaleToHref(href: string): string {
+    return `/${validLocale}${href}`;
+  }
+    return (
     <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
       {FESTIVALS.map((element, index) => (
         <div key={index} className='main_page_festivals_container'>
-          <a href={element.href}>
+          <a href={addLocaleToHref(element.href)}>
             <img
               src={element.src}
               alt='festivals'
@@ -19,8 +25,8 @@ const Festivals = () => {
             />
           </a>
           <div style={{textAlign: "center", padding: "1%", marginBottom: "4%"}}>
-            <Link href={element.href} className='mainpage_festivals_title trocchi-regular'>
-              {t(`festivals.${index}.title`)}
+            <Link href={addLocaleToHref(element.href)} className='mainpage_festivals_title trocchi-regular'>
+              {t(`Events.festivals.${index}.title`)}
             </Link>
           </div>
         </div>

@@ -1,5 +1,14 @@
 import "./globals.css";
 
+// Generate static params for all supported locales
+export function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'ko' },
+    { locale: 'hb' }
+  ];
+}
+
 export default function LocaleLayout({
   children,
   params: {locale}

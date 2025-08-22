@@ -2,14 +2,13 @@ import Slider from "@/components/UI/Slider";
 import Festivals from "@/components/UI/Festivals";
 import Trips from "@/components/UI/Trips";
 import Link from "next/link";
-import {getTranslations} from 'next-intl/server';
-import {unstable_setRequestLocale} from 'next-intl/server';
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import IndividualTours from "@/components/UI/IndividualTours";
 import Accommodation from "@/components/UI/Accomodation";
 
-export default async function Index({params: {locale}}: {params: {locale: string}}) {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Index');
+export default function Index({params: {locale}}: {params: {locale: string}}) {
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);
   return (
     <main>
       <div>
@@ -17,27 +16,25 @@ export default async function Index({params: {locale}}: {params: {locale: string
           <Slider />
         </div>
         <div className="header_container_for_picture">
-          <p className="mainpage_header_on_pictute">{t('title')} <br />{t('subtitle')}</p>
-          <Link href="/contacts/#targetBlock" className="mainpage_link_on_pictute">
-            {t('link')}
+          <p className="mainpage_header_on_pictute">{t('Index.title')} <br />{t('Index.subtitle')}</p>
+          <Link href={`/${validLocale}/contacts/#targetBlock`} className="mainpage_link_on_pictute">
+            {t('Index.link')}
           </Link>
         </div>
       </div>
       <div className="visibility_area" >
-        <h2 className="tour_items_header trocchi-regular">{t('header')}</h2>
+        <h2 className="tour_items_header trocchi-regular">{t('Index.header')}</h2>
         <div>
-          <Festivals/>
+          <Festivals locale={validLocale}/>
         </div>
         <div>
-          <Trips/>
+          <Trips locale={validLocale}/>
         </div>
         <div>
-          <IndividualTours/>
+          <IndividualTours locale={validLocale}/>
         </div>
         <div>
-          <Accommodation params={{
-            locale: ""
-          }}/>
+          <Accommodation locale={validLocale}/>
         </div>
       </div>
     </main>

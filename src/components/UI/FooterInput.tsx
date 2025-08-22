@@ -11,30 +11,74 @@ export default function FooterInput({title, mail, messages, button, pl1, pl2, ..
   const sendMail = async (e: any) => {
     e.preventDefault();
 
-    const response = await fetch("/contactForm", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        last,
-        email,
-        message
-      }),
-    });
+    try {
+      // Send contact email to business via mail service
+      const businessEmailResponse = await fetch("https://saibaitour.mn/mail-service/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: email, // FROM user's email
+          to: 'info@saibaitour.mn', // TO business email
+          subject: `New Contact Form Submission from ${name} ${last}`,
+          html: `
+            <h2>New Contact Form Submission</h2>
+            <p><strong>Name:</strong> ${name} ${last}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Message:</strong></p>
+            <p>${message}</p>
+            <hr>
+            <p><em>This email was sent from your website contact form.</em></p>
+            <p><strong>Reply to:</strong> ${email}</p>
+          `
+        }),
+      });
 
-    if (!response.ok) {
-      alert('Somthing went wrong, please try again!')
-      console.error(`Ошибка запроса: ${response.status}`);
-    } else {
+      if (!businessEmailResponse.ok) {
+        throw new Error('Failed to send business email');
+      }
+
+      // Send confirmation email to customer
+      const customerEmailResponse = await fetch("https://saibaitour.mn/mail-service/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: 'info@saibaitour.mn', // FROM business email
+          to: email, // TO user's email
+          subject: 'Thank you for contacting Saibaitour',
+          html: `
+            <h2>Thank you for contacting us!</h2>
+            <p>Dear ${name} ${last},</p>
+            <p>We have received your message and will get back to you within 24 hours.</p>
+            <p><strong>Your message:</strong></p>
+            <p>${message}</p>
+            <p>If you have any urgent questions, please don't hesitate to contact us directly.</p>
+            <p>Best regards,<br>The Saibaitour Team</p>
+            <hr>
+            <p><small>This is an automated confirmation email. Please do not reply to this email.</small></p>
+          `
+        }),
+      });
+
+      if (!customerEmailResponse.ok) {
+        throw new Error('Failed to send confirmation email');
+      }
+
       alert('Message sent successfully!');
+      
+      // Reset form
+      setName('');
+      setLast('');
+      setEmail('');
+      setMessage('');
+      
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Something went wrong, please try again!');
     }
-
-    setName('');
-    setLast('');
-    setEmail('');
-    setMessage('');
   };
 
   return (

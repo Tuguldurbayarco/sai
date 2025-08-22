@@ -3,10 +3,20 @@ import Link from "next/link";
 import {useState, useEffect} from "react";
 import LocalSwitcher from "./UI/Switcher";
 import { NAV_LINKS } from "@/constants";
-import {useTranslations} from 'next-intl';
+import { createTranslator, defaultLocale, isValidLocale } from "@/lib/i18n";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const t = useTranslations('Index');
+  const pathname = usePathname();
+  // Extract locale from pathname
+  const locale = pathname.split('/')[1];
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);
+  
+  // Function to add locale prefix to href
+  function addLocaleToHref(href: string): string {
+    return `/${validLocale}${href}`;
+  }
   const [scrolled, setScrolled] = useState(false);
 
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -52,15 +62,15 @@ const Navbar = () => {
   function menuLabel(link: { href: string, key: string, title: string }){
     switch (link.key){
       case "about":
-        return t("menu.0.label");
+        return t("Index.menu.0.label");
       case "events":
-        return t("menu.1.label");
+        return t("Index.menu.1.label");
       case "tours":
-        return t("menu.2.label");
+        return t("Index.menu.2.label");
       case "information":
-        return t("menu.3.label");
+        return t("Index.menu.3.label");
       case "contacts":
-        return t("menu.4.label");
+        return t("Index.menu.4.label");
       default:
         return "";
     }
@@ -72,7 +82,7 @@ const Navbar = () => {
     };
   
     return (
-      <Link href={link.href} key={link.key} 
+      <Link href={addLocaleToHref(link.href)} key={link.key} 
         className="navbar_menu_buttons"
         onMouseEnter={({ currentTarget }) => currentTarget.style.color = "#2f2399"}
         onMouseLeave={({ currentTarget }) => currentTarget.style.color = "#000"}
@@ -89,7 +99,7 @@ const Navbar = () => {
         <nav className={`navbar ${scrolled ? 'scrolled' : 'non_scrolled'}`} 
           style={{display: "flex", justifyContent: "center", position: 'fixed', top: 0, width: '100%'}} 
         >
-          <Link href="/" className={`logo ${scrolled ? 'scrolled' : ''} logo_margin`}>
+          <Link href={`/${validLocale}/`} className={`logo ${scrolled ? 'scrolled' : ''} logo_margin`}>
             <img src="/logo.png" alt="logo" height='auto'/>
           </Link>
           <div className={`header_burger ${isMenuOpen ? 'open' : ''}`} onClick={handleBurgerClick}>

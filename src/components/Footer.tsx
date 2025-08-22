@@ -1,10 +1,16 @@
 import FooterInput from "./UI/FooterInput"
-import {useTranslations} from 'next-intl';
 import { links } from "@/constants";
 import Link from "next/link"
+import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 
-const Footer = () => {
-  const t = useTranslations('Footer');
+const Footer = ({locale}: {locale: Locale}) => {
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);
+  
+  // Function to add locale prefix to href
+  function addLocaleToHref(href: string): string {
+    return `/${validLocale}${href}`;
+  }
 
   return (
     <footer style={{ backgroundColor: "#3d3d3b" }}>
@@ -13,12 +19,12 @@ const Footer = () => {
           <div className="footer_first_column">
             {/* 1 column */}
             <div style={{color: "#fff"}}>
-              <h2 className="footer_containers_title">{t('title2')}</h2>
+              <h2 className="footer_containers_title">{t('Footer.title2')}</h2>
               <div>
                 {links.map((link, index) => (
                   <li key={link.key} style={{ display: 'block', marginBottom: "2%" }}>
-                    <Link href={link.href} key={link.key} style={{textDecoration: "none", color: "#fff"}} className="footer_containers_text">
-                      {t(`links.${index}.title`)}
+                    <Link href={addLocaleToHref(link.href)} key={link.key} style={{textDecoration: "none", color: "#fff"}} className="footer_containers_text">
+                      {t(`Footer.links.${index}.title`)}
                     </Link>
                   </li>
                 ))}
@@ -28,21 +34,21 @@ const Footer = () => {
           {/* 2 column */}
           <div className="footer_second_column">
             <div style={{color: "#fff"}} >
-              <h2 className="footer_containers_title">{t('title1')}</h2>
+              <h2 className="footer_containers_title">{t('Footer.title1')}</h2>
               <div className="footer_containers_text">
                 <p>
                   Ulaanbaatar, Mongolia,<br />
                   Bayangol District, 9th Khoroo,<br />
-                  3-2 building, {t('address')}
+                  3-2 building, {t('Footer.address')}
                 </p>
                 <div>
-                  <strong >{t('phone')} </strong>
+                  <strong >{t('Footer.phone')} </strong>
                   +976-88109099<br />
-                  <strong style={{opacity: "0"}}>{t('phone')} </strong>
+                  <strong style={{opacity: "0"}}>{t('Footer.phone')} </strong>
                   +976-89750308<br /> 
                 </div>
                 <p>
-                  <strong>{t('mail')} </strong>
+                  <strong>{t('Footer.mail')} </strong>
                   info@saibaitour.mn<br />
                 </p>
               </div>
@@ -51,18 +57,18 @@ const Footer = () => {
           {/* 3 column */}
           <div className="footer_third_column">
             <div style={{color: "#fff"}}>
-              <h2 className="footer_containers_title">{t('title3')}</h2>
+              <h2 className="footer_containers_title">{t('Footer.title3')}</h2>
             </div>
             <div style={{gap: "2%", display: "flex", width: "100%"}}>
               <div>
                 {/*<FooterInput/>*/}
                 <FooterInput 
-                  title={t('ntitle')} 
-                  mail={t('ntitle1')} 
-                  messages={t('ntitle2')} 
-                  button={t('button')} 
-                  pl1={t('placeholder1')} 
-                  pl2={t('placeholder2')}
+                  title={t('Footer.ntitle')} 
+                  mail={t('Footer.ntitle1')} 
+                  messages={t('Footer.ntitle2')} 
+                  button={t('Footer.button')} 
+                  pl1={t('Footer.placeholder1')} 
+                  pl2={t('Footer.placeholder2')}
                 />
               </div>
             </div>

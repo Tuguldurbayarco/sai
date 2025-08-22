@@ -1,11 +1,8 @@
-import {unstable_setRequestLocale} from 'next-intl/server';
-import {getTranslations} from 'next-intl/server';
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import '../../../../globals.css';
 
-const Hotels = async ({params: {locale}}: {params: {locale: string}}) => {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Accommodation')
-  return (
+const Hotels = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);  return (
     <div className='visibility_area'>
       <div className='hotels_display hotels_top_margin'>
         <div className='hotel_image hotels_container_display'>

@@ -1,11 +1,16 @@
-import {getTranslations} from 'next-intl/server';
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import Link from 'next/link';
 import '../../nextButton.css';
-import {unstable_setRequestLocale} from 'next-intl/server';
 
-const CamelFestival = async ({params: {locale}}: {params: {locale: string}}) => {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Events');
+const CamelFestival = ({params: {locale}}: {params: {locale: string}}) => {  
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);
+  
+  // Function to add locale prefix to href
+  function addLocaleToHref(href: string): string {
+    return `/${validLocale}${href}`;
+  }
+
   return (
     <div className='visibility_area'>
       <div className='image_container'>
@@ -18,23 +23,23 @@ const CamelFestival = async ({params: {locale}}: {params: {locale: string}}) => 
       </div>
       <div className='main_container'>
         <div className='events_margins'> 
-          <p className='header_container'>{t('camel-festival.title')}</p>
+          <p className='header_container'>{t('Events.camel-festival.title')}</p>
         </div>
         <div>
-          <p className='text_container' style={{textAlign: 'justify'}}>{t('camel-festival.text')}</p>
+          <p className='text_container' style={{textAlign: 'justify'}}>{t('Events.camel-festival.text')}</p>
         </div>
         <div className='text_container'> 
         </div>
       </div>
       <div className='events_button_btn'> 
-        <Link href={'./tsagaansar'}>
+        <Link href={addLocaleToHref('/events/tsagaansar')}>
           <button className='events_button'>
-            {t('previous')}
+            {t('Events.previous')}
           </button>
         </Link>
-        <Link href={'./eagle'}>
+        <Link href={addLocaleToHref('/events/eagle')}>
           <button className='events_button'> 
-            {t('next')}
+            {t('Events.next')}
           </button>
         </Link>
       </div>

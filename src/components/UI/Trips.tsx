@@ -1,16 +1,22 @@
+import { createTranslator, isValidLocale, defaultLocale, Locale } from "@/lib/i18n";
 import { TOURS_IMAGES, TOURS_IMAGES_2 } from '@/constants'
-import {useTranslations} from 'next-intl';
 import Link from "next/link";
 
-const Trips = () => {
-  const t = useTranslations('Tours');
-  return (
+const Trips = ({locale}: {locale?: Locale}) => {
+  const validLocale = isValidLocale(locale || 'en') ? (locale || 'en') : defaultLocale;
+  const t = createTranslator(validLocale);
+  
+  // Function to add locale prefix to href
+  function addLocaleToHref(href: string): string {
+    return `/${validLocale}${href}`;
+  }
+    return (
     <div >
-      <h2 className='tour_items_header trocchi-regular'>{t('title')}</h2>
+      <h2 className='tour_items_header trocchi-regular'>{t('Tours.title')}</h2>
       <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
         {TOURS_IMAGES.map((element, index) => (
           <div key={element.id} className='main_page_three_tours_container'>
-            <a href={element.href}>
+            <a href={addLocaleToHref(element.href)}>
               <img 
                 key={element.id} 
                 src={element.src} 
@@ -20,8 +26,8 @@ const Trips = () => {
               /> 
             </a>
             <div style={{textAlign: "center", padding: "1%"}}>
-              <Link href={element.href} className='mainpage_festivals_title trocchi-regular'>
-                {t(`tourList.${index}.title`)}
+              <Link href={addLocaleToHref(element.href)} className='mainpage_festivals_title trocchi-regular'>
+                {t(`Tours.tourList.${index}.title`)}
               </Link>
             </div>
           </div>
@@ -30,7 +36,7 @@ const Trips = () => {
       <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", marginTop: "0.7%"}}>
         {TOURS_IMAGES_2.map((elem, ind) => (
           <div key={elem.id} className='main_page_two_tours_container'>
-            <a href={elem.href}>
+            <a href={addLocaleToHref(elem.href)}>
               <img 
                 key={elem.id} 
                 src={elem.src} 
@@ -40,8 +46,8 @@ const Trips = () => {
               /> 
             </a>
             <div style={{textAlign: "center", marginBottom: "5%", padding: "1%"}}>
-              <Link href={elem.href} className='mainpage_festivals_title trocchi-regular'>
-                {t(`tourList.${ind + 3}.title`)}
+              <Link href={addLocaleToHref(elem.href)} className='mainpage_festivals_title trocchi-regular'>
+                {t(`Tours.tourList.${ind + 3}.title`)}
               </Link>
             </div>
           </div>

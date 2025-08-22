@@ -1,10 +1,7 @@
-import {getTranslations} from 'next-intl/server';
-import {unstable_setRequestLocale} from 'next-intl/server';
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 
-const Weather = async ({params: {locale}}: {params: {locale: string}}) => {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Information');
-  return (
+const Weather = ({params: {locale}}: {params: {locale: string}}) => {  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);  return (
     <div className='visibility_area'>
       <div className='visa_margin_top' style={{marginBottom: "4%", textAlign: "justify"}}>
         <p className='visa_title'>{t('weather.title')}</p>

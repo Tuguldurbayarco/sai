@@ -1,10 +1,10 @@
-import {getTranslations} from 'next-intl/server';
+import { createTranslator, isValidLocale, defaultLocale } from "@/lib/i18n";
 import EventContainer from '@/components/UI/EventContainer';
-import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Events = async ({params: {locale}}: {params: {locale: string}}) => {
-  unstable_setRequestLocale(locale);
-  const t = await getTranslations('Events');
+const Events = ({params: {locale}}: {params: {locale: string}}) => {
+  const validLocale = isValidLocale(locale) ? locale : defaultLocale;
+  const t = createTranslator(validLocale);
+  
   return (
     <div>
       <div>
@@ -14,11 +14,11 @@ const Events = async ({params: {locale}}: {params: {locale: string}}) => {
           width='100%'
         />
         <div className='header_container_for_picture'>
-          <h1 className='header_on_picture'>{t('title')}</h1>
+          <h1 className='header_on_picture'>{t('Events.title')}</h1>
         </div>
       </div>
       <div className='visibility_area' style={{marginTop: "5%"}}>
-        <EventContainer/>
+        <EventContainer locale={validLocale}/>
       </div>
     </div>
   )

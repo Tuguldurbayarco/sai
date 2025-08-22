@@ -823,5 +823,12 @@
     "schedule5-3": "Around 12:30 - Lunch",
     "schedule5-4": "Around 15:00 - Arrival at the accommodation",
     "button": "Go to Booking"
+  },
+  "Terms": {
+    "title": "Terms & Conditions",
+    "contract": "YOUR HOLIDAY CONTRACT",
+    "contract_text": "When you book a tour or other travel arrangements our contract with you takes effect when we send you a written Booking Confirmation / Invoice by email. Once the contract is made we are responsible for providing you with the tour you have booked and you are responsible to pay us for it, in each case subject to terms and conditions.",
+    "note": "PLEASE NOTE",
+    "note_text": "It is important to check carefully the Booking Confirmation and the Itinerary of your tour when you receive it that all the details are exactly as you requested. Our responsibility is to provide you with the services you have booked as described in the itinerary and as confirmed to you. If your group consists of two or more people traveling together, the person who makes the tour booking by signing our booking form or otherwise contracting with us accepts the responsibility for making all payments to us for all members of the party. We will send all the documents and other relevant information to the lead guest, and the lead guest is responsible for ensuring that the other members of the party are kept fully informed. If you are aged under 18 /on the departure date/ and your parents or guardians are not traveling with you, we must have their written consent to proceed with the booking."
   }
 }
