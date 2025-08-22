@@ -1,160 +1,207 @@
-# SAI Mail Service
+# Mail Service - SMTP Backend
 
-A standalone Node.js mail service for the SAI tour website using Nodemailer with SMTP.
+A minimal SMTP backend service for saibaitour.mn using Node.js and Nodemailer.
 
-## Features
+## Node.js Version
 
-- Simple email sending API
-- SMTP integration with bizmail22.itools.mn
-- Frontend constructs email content
-- Health check endpoint
-- SMTP connection testing
-- cPanel Node.js app compatible
+- **Required**: Node.js 20.19.2 (exact version)
+- **cPanel**: Set Node.js version to 20.19.2 in cPanel
 
-## Setup
+## Local Development
 
-### 1. Install Dependencies
+1. **Switch to correct Node.js version:**
+
+```bash
+nvm use 20.19.2
+# or if not installed: nvm install 20.19.2
+```
+
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 2. Environment Configuration
-
-Copy `env.example` to `.env` and fill in your credentials:
-
-```bash
-cp env.example .env
-```
-
-Edit `.env` with your actual values:
-
-```env
-SMTP_HOST=bizmail22.itools.mn
-SMTP_PORT=465
-SMTP_SECURE=true
-SMTP_USER=your_actual_email@domain.com
-SMTP_PASS=your_actual_password
-ALLOWED_ORIGINS=https://yourdomain.com,http://localhost:3000
-NODE_ENV=production
-```
-
-### 3. Test Locally
+3. Start development server:
 
 ```bash
 npm run dev
 ```
 
-The service will start on port 3001.
+4. Test the service:
+
+- Main endpoint: http://localhost:3000/mail-service
+- Health check: http://localhost:3000/mail-service/health
+- SMTP test: http://localhost:3000/mail-service/test-smtp
+
+## cPanel Deployment
+
+1. Upload all files to your cPanel Node.js app directory
+2. **Important**: Set Node.js version to **20.19.2** in cPanel
+3. Install dependencies: `npm install --production`
+4. **Set Environment Variables** in cPanel:
+   - Go to your Node.js app in cPanel
+   - Find "Environment Variables" section
+   - Add: `SMTP_PASSWORD` = `your_actual_smtp_password`
+5. Start the app: `npm start`
+
+## Environment Variables
+
+The service requires these environment variables to be set in cPanel:
+
+- **SMTP_PASSWORD**: Your SMTP password for no-reply@saibaitour.mn
+- **PORT**: (Optional) Override default port 3000
+- **BASE_PATH**: (Optional) Override default /mail-service path
+
+### Setting Environment Variables in cPanel:
+
+1. **In cPanel Node.js App Manager:**
+
+   - Go to "Node.js Apps" in cPanel
+   - Click on your app
+   - Find "Environment Variables" section
+   - Add: `SMTP_PASSWORD` = `your_smtp_password`
+
+2. **Or via SSH/File Manager:**
+   - Create `.env` file in your app directory
+   - Add: `SMTP_PASSWORD=your_smtp_password`
+
+**⚠️ Security Note:** Never commit passwords to version control. Use environment variables for all sensitive data.
+
+## Deployment URLs
+
+After deployment, your service will be available at:
+
+- **Main service**: `https://saibaitour.mn/mail-service`
+- **Health check**: `https://saibaitour.mn/mail-service/health`
+- **SMTP test**: `https://saibaitour.mn/mail-service/test-smtp`
+- **Email endpoint**: `https://saibaitour.mn/mail-service/send-email`
 
 ## API Endpoints
 
-### Health Check
-- **GET** `/health` - Check if service is running
+### GET `/mail-service`
 
-### Root Endpoint
-- **GET** `/` - Service information and available endpoints
+Returns service status and information.
 
-### Test SMTP Connection
-- **GET** `/api/test-smtp` - Test SMTP server connection
+### GET `/mail-service/health`
 
-### Send Email
-- **POST** `/api/send-email`
-- **Body:**
-  ```json
-  {
-    "to": "recipient@example.com",
-    "subject": "Email Subject",
-    "text": "Plain text version",
-    "html": "<h1>HTML version</h1>",
-    "from": "sender@example.com" // optional, uses SMTP_USER if not provided
-  }
-  ```
+Health check endpoint for monitoring.
+
+### GET `/mail-service/test-smtp`
+
+Tests SMTP connection configuration.
+
+### POST `/mail-service/send-email`
+
+Sends an email using the configured SMTP settings.
+
+**Request Body:**
+
+```json
+{
+  "from": "no-reply@saibaitour.mn",
+  "to": "recipient@example.com",
+  "subject": "Email Subject",
+  "html": "<h1>Email content in HTML format</h1>",
+  "text": "Plain text version (optional)"
+}
+```
+
+**Response:**
+
+```json
+{
+  "message": "Email sent successfully",
+  "status": "success",
+  "messageId": "<message-id>",
+  "timestamp": "2025-08-22T..."
+}
+```
+
+## Email Configuration
+
+The service is configured to send emails from a no-reply address:
+
+- **From Address**: `no-reply@saibaitour.mn` (all emails sent from this address)
+- **SMTP Host**: bizmail22.itools.mn
+- **SMTP Port**: 465 (SSL)
+- **SMTP User**: no-reply@saibaitour.mn
+- **SMTP Password**: [configured]
 
 ## Frontend Integration
 
-The frontend constructs the email content and sends it to the mail service:
+The service is integrated with the frontend forms:
 
-```typescript
-// Example: Send a simple email
-const result = await fetch('/api/send-email', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({
-    to: 'info@saibaitour.mn',
-    subject: 'New Tour Booking',
-    html: '<h2>Tour booking request</h2><p>Details...</p>'
-  })
-});
-```
+- **Contact Forms**: Send notifications to `info@saibaitour.mn`
+- **Booking Forms**: Send tour booking requests to `info@saibaitour.mn`
+- **Customer Confirmations**: Send automated confirmations to user emails
+- **Reply Handling**: User emails are included in HTML body for business staff to reply
 
-## Deployment on cPanel
+## CORS Configuration
 
-### 1. Create Node.js App in cPanel
-- Go to cPanel → "Node.js Apps"
-- Click "Create Application"
-- Set app name: `sai-mail-service`
-- Set app root: `/home/username/mail-service`
-- Set app URL: `yourdomain.com/mail-service`
-- Set app startup file: `server.js`
-- Set Node.js version: 18.x or higher
+The service is configured to accept requests from **any origin**:
 
-### 2. Upload Files
-- Upload the `mail-service` folder to your cPanel hosting
-- Place it in the directory you specified in the Node.js app
+- **Origin**: `*` (all origins allowed)
+- **Methods**: GET, POST, PUT, DELETE, OPTIONS
+- **Headers**: Content-Type, Authorization, X-Requested-With
+- **Credentials**: Disabled (not needed for this service)
 
-### 3. Install Dependencies
+This allows the service to be called from:
+
+- Web browsers (frontend applications)
+- Mobile apps
+- Other backend services
+- Any domain or subdomain
+
+## Testing
+
+After deployment, test these endpoints:
+
+- `https://saibaitour.mn/mail-service` - Main service status
+- `https://saibaitour.mn/mail-service/health` - Health check
+- `https://saibaitour.mn/mail-service/test-smtp` - SMTP connection test
+- `https://saibaitour.mn/mail-service/send-email` - Send test email
+
+## Next Steps
+
+This is the complete setup with email functionality:
+
+1. ✅ Basic Express server with subdirectory support
+2. ✅ Nodemailer configuration and SMTP setup
+3. ✅ Email sending endpoint with validation
+4. ✅ SMTP connection testing
+5. 🔄 Add rate limiting and security features (optional)
+
+## Example Usage
+
+**Test SMTP Connection:**
+
 ```bash
-cd mail-service
-npm install --production
+curl https://saibaitour.mn/mail-service/test-smtp
 ```
 
-### 4. Create Environment File
-Create `.env` file with your actual credentials
+**Send Test Email:**
 
-### 5. Start the App
-- In cPanel Node.js Apps, click "Start" on your app
-- The app will run on the port assigned by cPanel
-
-### 6. Alternative: Use PM2 (Optional)
 ```bash
-npm run setup-pm2
-npm run cpanel-start
+curl -X POST https://saibaitour.mn/mail-service/send-email \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "no-reply@saibaitour.mn",
+    "to": "test@example.com",
+    "subject": "Test Email",
+    "html": "<h1>This is a test message</h1><p>Sent from the mail service.</p>"
+  }'
 ```
 
-## cPanel Node.js App Management
+**Send Business Notification:**
 
-- **Start/Stop**: Use cPanel's Node.js Apps interface
-- **Restart**: Click restart button in cPanel
-- **Logs**: View logs in cPanel or use PM2 commands
-- **Port**: cPanel automatically assigns and manages the port
-
-## Security Notes
-
-- The service includes CORS protection
-- Only specified origins can access the API
-- Environment variables keep credentials secure
-- Input validation on all endpoints
-
-## Troubleshooting
-
-### SMTP Connection Issues
-1. Check your credentials in `.env`
-2. Verify SMTP settings with your hosting provider
-3. Test connection with `/api/test-smtp` endpoint
-
-### Service Not Starting
-1. Check cPanel Node.js Apps status
-2. Verify Node.js version (requires >=16)
-3. Check error logs in cPanel
-
-### Emails Not Sending
-1. Verify SMTP credentials
-2. Check if emails are being blocked by spam filters
-3. Verify the email addresses are correct
-
-### cPanel Specific Issues
-1. Make sure Node.js app is created and started
-2. Check app root directory path
-3. Verify startup file is `server.js`
-4. Check Node.js version compatibility
+```bash
+curl -X POST https://saibaitour.mn/mail-service/send-email \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "no-reply@saibaitour.mn",
+    "to": "info@saibaitour.mn",
+    "subject": "New Contact Form Submission",
+    "html": "<h2>New Contact Form Submission</h2><p><strong>Name:</strong> John Doe</p><p><strong>Email:</strong> john@example.com</p><p><strong>Customer Email:</strong> john@example.com</p>"
+  }'
+```

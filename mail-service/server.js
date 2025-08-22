@@ -1,207 +1,181 @@
-// Final working server.js for cPanel - clean and functional
-const http = require("http");
+const express = require("express");
+const cors = require("cors");
 const nodemailer = require("nodemailer");
 
-// Hardcoded values - ALL environment variables included
-const SMTP_HOST = "bizmail22.itools.mn";
-const SMTP_USER = "no-reply@saibaitour.mn";
-const SMTP_PASS = ""; // ⚠️ REPLACE WITH ACTUAL PASSWORD
-const BUSINESS_EMAIL = "info@saibaitour.mn";
-
-// // Create nodemailer transporter
-// const transporter = nodemailer.createTransporter({
-//   host: SMTP_HOST,
-//   port: 465, // Standard SMTP port, adjust if needed
-//   secure: true, // true for 465, false for other ports
-//   auth: {
-//     user: SMTP_USER,
-//     pass: SMTP_PASS
-//   },
-//   tls: {
-//     rejectUnauthorized: false // For self-signed certificates
-//   }
-// });
-
-// Verify transporter connection
-// transporter.verify(function(error, success) {
-//   if (error) {
-//     console.log('❌ SMTP connection error:', error);
-//   } else {
-//     console.log('✅ SMTP server is ready to send emails');
-//   }
-// });
-
-// Create server
-const server = http.createServer(function (req, res) {
-  // Set CORS headers
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-
-  // Handle OPTIONS (CORS preflight)
-  if (req.method === "OPTIONS") {
-    res.writeHead(200);
-    res.end();
-    return;
+// Load environment variables from .env file (for local development)
+if (process.env.NODE_ENV !== "production") {
+  try {
+    require("dotenv").config();
+  } catch (error) {
+    console.log("dotenv not available, using system environment variables");
   }
+}
 
-  // Get the path (handle both relative and full paths)
-  const fullPath = req.url;
-  const pathOnly = fullPath.split("?")[0]; // Remove query parameters
+const app = express();
+const PORT = process.env.PORT || 3000;
+const BASE_PATH = "/mail-service"; // Base path for subdirectory deployment
 
-  // Endpoint 1: Health check
-  if (pathOnly.includes("/health")) {
-    res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(
-      JSON.stringify({
-        status: "OK",
-        message: "Mail service is running",
-        smtp_host: SMTP_HOST,
-        smtp_user: SMTP_USER,
-        timestamp: new Date().toISOString(),
-      })
-    );
-    return;
-  }
+// SMTP configuration using environment variables
+const SMTP_CONFIG = {
+  host: "bizmail22.itools.mn",
+  //host: "mail.saibaitour.mn",
+  port: 465, // Standard SMTP port, adjust if needed
+  secure: true, // true for 465, false for other ports
+  auth: {
+    user: "no-reply@saibaitour.mn",
+    pass: process.env.SMTP_PASSWORD, // Get password from environment variable
+  },
+};
 
-  // Endpoint 2: Email sending (READY FOR FRONTEND)
-  if (pathOnly.includes("/api/send-email") && req.method === "POST") {
-    let body = "";
-    req.on("data", (chunk) => {
-      body += chunk.toString();
-    });
+// Validate SMTP configuration
+if (!process.env.SMTP_PASSWORD) {
+  console.error("❌ SMTP_PASSWORD environment variable is not set!");
+  console.error(
+    "Please set SMTP_PASSWORD in your cPanel Node.js app environment variables."
+  );
+  console.error(
+    "For local development, create a .env file with SMTP_PASSWORD=your_password"
+  );
+  process.exit(1);
+}
 
-    req.on("end", () => {
-      try {
-        const emailData = JSON.parse(body);
-        const { to, subject, text, html, from } = emailData;
+console.log("✅ SMTP configuration loaded successfully");
+console.log(`📧 SMTP Host: ${SMTP_CONFIG.host}`);
+console.log(`📧 SMTP Port: ${SMTP_CONFIG.port}`);
+console.log(`📧 SMTP User: ${SMTP_CONFIG.auth.user}`);
+console.log(
+  `🔒 SMTP Password: ${process.env.SMTP_PASSWORD ? "***SET***" : "NOT SET"}`
+);
 
-        // Validation - only subject and content are required since we send to BUSINESS_EMAIL
-        if (!subject || (!text && !html)) {
-          res.writeHead(400, { "Content-Type": "application/json" });
-          res.end(
-            JSON.stringify({
-              success: false,
-              error: "Missing required fields: subject and either text or html",
-            })
-          );
-          return;
-        }
+// Create transporter
+const transporter = nodemailer.createTransport(SMTP_CONFIG);
 
-        // Optional: validate 'to' field if provided (for logging purposes)
-        if (to && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to)) {
-          res.writeHead(400, { "Content-Type": "application/json" });
-          res.end(
-            JSON.stringify({
-              success: false,
-              error: 'Invalid sender email format in "to" field',
-            })
-          );
-          return;
-        }
+// Middleware
+app.use(
+  cors({
+    origin: "*", // Accept all origins
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allow all common methods
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"], // Allow common headers
+    credentials: false, // No credentials needed for this service
+    optionsSuccessStatus: 200, // Some legacy browsers choke on 204
+  })
+);
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-        // Send email using nodemailer
-        const mailOptions = {
-          from: from || SMTP_USER,
-          to: BUSINESS_EMAIL,
-          subject: subject,
-          text: text || "",
-          html: html || "",
-        };
-
-        // transporter.sendMail(mailOptions, (error, info) => {
-        //   if (error) {
-        //     console.log('❌ Email sending failed:', error);
-        //     res.writeHead(500, {'Content-Type': 'application/json'});
-        //     res.end(JSON.stringify({
-        //       success: false,
-        //       error: 'Failed to send email',
-        //       details: error.message
-        //     }));
-        //     return;
-        //   }
-
-        //   console.log('✅ Email sent successfully:');
-        //   console.log('  Message ID:', info.messageId);
-        //   console.log('  Sent to:', BUSINESS_EMAIL);
-        //   console.log('  Original sender:', to || 'Not specified');
-        //   console.log('  Subject:', subject);
-
-        //   // Success response
-        //   res.writeHead(200, {'Content-Type': 'application/json'});
-        //   res.end(JSON.stringify({
-        //     success: true,
-        //     message: 'Email sent successfully',
-        //     messageId: info.messageId,
-        //     email_data: {
-        //       to: BUSINESS_EMAIL,
-        //       subject: subject,
-        //       from: from || SMTP_USER
-        //     }
-        //   }));
-        // });
-
-        // Success response
-        res.writeHead(200, { "Content-Type": "application/json" });
-        res.end(
-          JSON.stringify({
-            success: true,
-            message: "Email sent successfully",
-            messageId: info.messageId,
-            email_data: {
-              to: BUSINESS_EMAIL,
-              subject: subject,
-              from: from || SMTP_USER,
-            },
-          })
-        );
-      } catch (error) {
-        res.writeHead(400, { "Content-Type": "application/json" });
-        res.end(
-          JSON.stringify({
-            success: false,
-            error: "Invalid JSON data",
-          })
-        );
-      }
-    });
-    return;
-  }
-
-  // Endpoint 3: Root info
-  if (pathOnly === "/mail-service" || pathOnly === "/") {
-    res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(
-      JSON.stringify({
-        message: "SAI Mail Service is running",
-        version: "1.0.0",
-        smtp_config: {
-          host: SMTP_HOST,
-          user: SMTP_USER,
-          business_email: BUSINESS_EMAIL,
-        },
-        endpoints: ["/", "/health", "/api/send-email"],
-        status: "READY FOR FRONTEND - Email endpoint active",
-        note: 'All emails are sent to business email regardless of "to" field',
-      })
-    );
-    return;
-  }
-
-  // Default response for any other path
-  res.writeHead(200, { "Content-Type": "text/plain" });
-  res.end("SAI Mail Service!\nNodeJS " + process.versions.node + "\n");
+// Test route
+app.get(BASE_PATH + "/", (req, res) => {
+  res.json({
+    message: "Mail Service is running!",
+    status: "OK",
+    timestamp: new Date().toISOString(),
+    basePath: BASE_PATH,
+  });
 });
 
-// Listen (cPanel will assign port)
-server.listen();
+// Health check route
+app.get(BASE_PATH + "/health", (req, res) => {
+  res.json({
+    status: "healthy",
+    service: "mail-service",
+    uptime: process.uptime(),
+    basePath: BASE_PATH,
+  });
+});
 
-console.log("🚀 SAI Mail Service is running!");
-console.log("📧 SMTP Host:", SMTP_HOST);
-console.log("👤 SMTP User:", SMTP_USER);
-console.log("🔑 SMTP Pass:", SMTP_PASS ? "***SET***" : "NOT SET");
-console.log("🔗 Health check: /health");
-console.log("📋 Root: /");
-console.log("📬 Email endpoint: /api/send-email");
-console.log("📧 Using Nodemailer for SMTP");
-console.log("✅ READY FOR FRONTEND USE!");
+// Email sending endpoint
+app.post(BASE_PATH + "/send-email", async (req, res) => {
+  try {
+    const { to, html, subject, from } = req.body;
+
+    // Basic validation
+    if (!subject || !html) {
+      return res.status(400).json({
+        error: "Subject and message are required",
+        status: "error",
+      });
+    }
+
+    // Email content
+    const mailOptions = {
+      from: SMTP_CONFIG.auth.user,
+      to: to,
+      subject,
+      html,
+      text: html,
+    };
+
+    // Send email
+    const info = await transporter.sendMail(mailOptions);
+
+    res.json({
+      message: "Email sent successfully",
+      status: "success",
+      messageId: info.messageId,
+      timestamp: new Date().toISOString(),
+    });
+  } catch (error) {
+    console.error("Email sending error:", error);
+    res.status(500).json({
+      error: "Failed to send email",
+      status: "error",
+      details: error.message,
+    });
+  }
+});
+
+// Preflight OPTIONS handler for email endpoint
+app.options(BASE_PATH + "/send-email", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization, X-Requested-With"
+  );
+  res.status(200).end();
+});
+
+// SMTP test endpoint
+app.get(BASE_PATH + "/test-smtp", async (req, res) => {
+  try {
+    // Verify SMTP connection
+    await transporter.verify();
+    res.json({
+      message: "SMTP connection successful",
+      status: "success",
+      smtp: {
+        host: SMTP_CONFIG.host,
+        port: SMTP_CONFIG.port,
+        secure: SMTP_CONFIG.secure,
+        user: SMTP_CONFIG.auth.user,
+      },
+      timestamp: new Date().toISOString(),
+    });
+  } catch (error) {
+    console.error("SMTP test error:", error);
+    res.status(500).json({
+      error: "SMTP connection failed",
+      status: "error",
+      details: error.message,
+    });
+  }
+});
+
+// Root redirect (optional - redirects root to mail-service)
+app.get("/", (req, res) => {
+  res.redirect(BASE_PATH);
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+  console.log(`Base path: ${BASE_PATH}`);
+  console.log(`Test URL: http://localhost:${PORT}${BASE_PATH}`);
+  console.log(`Health check: http://localhost:${PORT}${BASE_PATH}/health`);
+  console.log(`SMTP test: http://localhost:${PORT}${BASE_PATH}/test-smtp`);
+  console.log(
+    `Email endpoint: http://localhost:${PORT}${BASE_PATH}/send-email`
+  );
+});
+
+module.exports = app;
